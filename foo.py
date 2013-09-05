@@ -19,20 +19,20 @@ enable_Sk           = 1
 
 plot_indiv          = 0
 
-curr_id             = 'yang' #unique id to identify pattern and associated Sk
+curr_id             = 'test2' #unique id to identify pattern and associated Sk
 folder              = 'data'    #name of folder in which data is stored
 
 # for packing code
-num_species         = 5
-num_stagegrowth     = 100
-num_stagerelax      = 5
-num_cells           = [250, 120, 95, 90, 60]
-radii               = [0.012, 0.0095, 0.0085, 0.009, 0.008]
-#num_cells           = [100, 50]
-#radii               = [0.042, 0.01] 
-growthrate          = 1
+num_species         = 2
+num_stagegrowth     = 1000
+num_stagerelax      = 500
+#num_cells           = [250, 120, 95, 90, 60]
+#radii               = [0.012, 0.0095, 0.0085, 0.009, 0.008]
+num_cells           = [100,20]
+radii               = [0.01,0.001]
+growthrate          = 0.3
 transmod            = 0.0001
-start_quench        = 0.58
+start_quench        = 0.5
 start_config        = 0 # generate (0) or read (1)
 num_MC              = 100
 len_cell            = 0.08
@@ -138,10 +138,17 @@ if(enable_Sk):
         plt.xlabel('x')
         plt.ylabel('y')
 
+        rng = [0,1]
+        plt.xlim(rng)
+        plt.ylim(rng)
+
         plt.subplot(2,n_s+1,i+1+1+n_s, aspect = 'equal')
         plt.plot(k,Sk)
         plt.xlabel('k')
         plt.ylabel('S(k)')
+
+        plt.xlim([0,3])
+        plt.ylim([0,3])
 
         shutil.copyfile(out_Sk, filenames.Sk + str(i) + '.txt')
         print "inputs were: "+ ', '.join(str(input) for input in inputs)
@@ -161,11 +168,17 @@ if(enable_Sk):
     plt.title('all species')
     plt.xlabel('x')
     plt.ylabel('y')
-    
+    plt.xlim(rng)
+    plt.ylim(rng)
+
+   
     plt.subplot(2,n_s+1,2*(n_s+1),aspect = 'equal')
     plt.plot(k,Sk)
     plt.xlabel('k')
     plt.ylabel('S(k)')
+
+    plt.xlim([0,3])
+    plt.ylim([0,3])
 
     plt.tight_layout(pad=0.5, h_pad=None, w_pad = None, rect = [0,0,1,1])
     plt.savefig(filenames.Skfig+'all.eps', bbox_inches=0)
