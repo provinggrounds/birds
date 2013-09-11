@@ -1,38 +1,37 @@
-# foo.py
-
+#!/Users/ccl/Library/Enthought/Canopy_64bit/User/bin/python
 
 import pylab as plt
 import shutil
 import csv
 import sys
-import matplotlib as mpl
 
 from subprocess import Popen, PIPE
 from numpy import *
 from matplotlib import rc, rcParams
 
+# formatting plots
 rc('font',**{'size':4.0,'family':'Times New Roman','serif':['Computer Modern']})
-rc('figure',**{'figsize':[12,10]})
+#rc('figure',**{'figsize':[12,10]})
 
-enable_packing      = 0
+enable_packing      = 1
 enable_Sk           = 1
 
 plot_indiv          = 0
 
-curr_id             = 'test2' #unique id to identify pattern and associated Sk
+curr_id             = 'test3' #unique id to identify pattern and associated Sk
 folder              = 'data'    #name of folder in which data is stored
 
 # for packing code
-num_species         = 2
-num_stagegrowth     = 1000
-num_stagerelax      = 500
+num_species         = 3
+num_stagegrowth     = 100
+num_stagerelax      = 5
 #num_cells           = [250, 120, 95, 90, 60]
 #radii               = [0.012, 0.0095, 0.0085, 0.009, 0.008]
-num_cells           = [100,20]
-radii               = [0.01,0.001]
-growthrate          = 0.3
+num_cells           = [50,100,800]
+radii               = [0.01,0.0001,0.00005]
+growthrate          = 1
 transmod            = 0.0001
-start_quench        = 0.5
+start_quench        = 0.3
 start_config        = 0 # generate (0) or read (1)
 num_MC              = 100
 len_cell            = 0.08
@@ -97,11 +96,6 @@ if(enable_Sk):
     
     f = plt.figure(1)
     
-    mpl.rcParams['axes.labelsize']= 'small'
-    mpl.rcParams['axes.titlesize']= 'small'
-    mpl.rcParams['xtick.labelsize'] = 'small'
-    mpl.rcParams['ytick.labelsize'] = 'small'
-
     # calc Sk for each indiv species
 
     tot_x = []
@@ -170,7 +164,6 @@ if(enable_Sk):
     plt.ylabel('y')
     plt.xlim(rng)
     plt.ylim(rng)
-
    
     plt.subplot(2,n_s+1,2*(n_s+1),aspect = 'equal')
     plt.plot(k,Sk)
