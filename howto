@@ -1,0 +1,23 @@
+modify stuff
+
+git add <file>
+# adds new files for you to commit
+
+git status
+# shows wht's ready to add, files that aren't added, etc
+
+git diff
+# shows the differences since you last committed
+
+git commit
+# this will 'commit' the changes you've made
+# this'll pop up a file; add a comment to the top empty line that's meaningful saying what changes were made
+
+git push https://github.com/provinggrounds/birds.git
+git push
+# this will push all your commits to the github website
+
+git pull https://github.com/provinggrounds/birds.git
+git pull
+# this will pull any changes from the server down locally
+
