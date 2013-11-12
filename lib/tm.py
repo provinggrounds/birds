@@ -32,7 +32,7 @@ def MakeRad(res, n_s):
     for i in range(0,len):
         cur = []
         for j in range(0,n_s):
-            cur.append( (int(i / numper**(n_s - 1 - j)) % numper) * inc )
+            cur.append( round((int(i / numper**(n_s - 1 - j)) % numper) * inc , 5))
         rad.append(cur)
 
     if res == 2:
@@ -234,7 +234,19 @@ def Upload(res, curr_id, numbands):
     os.system(cmd)
 
 def Download(res, curr_id):
+    
     print 'running tm.download...'
+
+    [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
+
+    down_folder = './dat/' + curr_id + '/Download/'
+    
+    ensure_dir(down_folder)
+    
+    cmd = 'scp ' + 'chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/out/* ' + down_folder
+
+    os.system(cmd)
+
 
 def Analyze(res, curr_id):
     print 'running tm.analyze...'

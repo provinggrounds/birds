@@ -128,7 +128,7 @@ def main():
     #Calcg2()
     #CalcSk()
     birds.MakePlots(curr_id)
-    #tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
+    #tm.Upload(2, curr_id, numbands=250) # 1, 2, 3 are for different resolutions.
     #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)
 
