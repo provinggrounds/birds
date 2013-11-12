@@ -89,8 +89,8 @@
 
 (set-param! resolution (vector3 (* res_x res) (* res_y res) 1)) ; use a 8x8x8 grid
 
-(define fname (string-append VAR_STRING_APPEND)
+(define fname (string-append VAR_STRING_APPEND))
 
 ;; Run calculation
-(run-tm);
-;(run-tm (output-at-kpoint X  fix-efield-phase output-efield-z)) ; run simulation and output E-field at point X
+;(run-tm);
+(run-tm (output-at-kpoint X  fix-efield-phase output-efield-z)) ; run simulation and output E-field at point X

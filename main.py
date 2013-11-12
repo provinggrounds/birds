@@ -125,11 +125,10 @@ def CalcSk():
 def main():
     #SaveParams()
     #GetConfig()
-    #Calcg2()
     #CalcSk()
-#birds.MakePlots(curr_id)
-    tm.Upload(1, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
-#tm.Download(1, curr_id)
+    birds.MakePlots(curr_id)
+    #tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
+    #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)
 
 main()

@@ -194,11 +194,11 @@ def PlotSk(curr_id, n_s):
     
         fname = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_' + str(i) + '.txt'
 
-        data = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
+        lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
         k = []
         Sk = []
-        for i in range(len(data)):
-            el = data[i][0].split(' ')
+        for i in range(len(lines)):
+            el = lines[i][0].split(' ')
             k.append( float(el[0]) )
             Sk.append( float(el[1]) )
         plt.loglog(k,Sk)
@@ -211,11 +211,11 @@ def PlotSk(curr_id, n_s):
     plt.ylabel('S(k)')
     plt.title('all species')
     
-    data = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
+    lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
     k = []
     Sk = []
-    for i in range(len(data)):
-        el = data[i][0].split(' ')
+    for i in range(len(lines)):
+        el = lines[i][0].split(' ')
         k.append( float(el[0]) )
         Sk.append( float(el[1]) )
     plt.loglog(k,Sk)
@@ -308,9 +308,9 @@ def CalcBands(curr_id, res, n_s):
     fname_out = './dat/' + curr_id + '/Download/' + curr_id + '_out'
     fname_band = './dat/' + curr_id + '/' + curr_id + '_bands.csv'
 
-    data = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
-
     ensure_dir(fname_band)
+
+    initiate = 0
     
     if not os.path.exists(fname_band):
         lines = [[]]
@@ -319,54 +319,65 @@ def CalcBands(curr_id, res, n_s):
         numrows = 0
         numcols = 0
         numbands_i = 0
-
-    else:
-        data = list(csv.reader( open(fname_band, 'rb') , delimiter = '\t' ))
-        lines = [line.split() for line in data]
-        numrows = len(lines)
-        numcols = len(lines[0])
-        numbands_i = ((numcols-2)+1)/3
-
-    print('(rows,cols,bands) = {:d}, {:d}, {:d}'.format(numrows,numcols,numbands_i))
+        initiate = 1
 
     for r in rad:
 
+        cur_fout = fname_out
+        for i in range(0, n_s):
+            cur_fout += '_r{:0.4f}'.format(float(r[i]))
+        cur_fout += '.OUT'
+        print 'opening file ' + cur_fout
+
         print 'adding bands for',
         print r
-        
+
+        if not initiate:
+            lines = list(csv.reader( open(fname_band, 'rb') , delimiter = '\t' ))
+
+            lines = [line[0].split(',') for line in lines]
+            numrows = len(lines)
+            numcols = len(lines[0])
+            numbands_i = ((numcols-2)+1)/3
+
+        cur_row = numrows
+
+        print('(rows,cols,bands) = {:d}, {:d}, {:d}'.format(numrows,numcols,numbands_i))
+
+        print 'checking if already in file...'
+
         changerad = 0
-        
         for row in range(1,numrows):
             checknum = 0
+
+            print '(cur, new) = ',
+            print [ float(i) for i in lines[row][0:n_s] ],
+            print r
+
             for c in range(n_s):
                 cur_rad = float('{:0.4f}'.format(float(lines[row][c])))
                 my_rad = float('{:0.4f}'.format(float(r[c])))
-                print cur_rad,
-                print my_rad
+
+
                 if(cur_rad != my_rad):
                     break
-                print(checknum)
-                checknum += 1
+                checknum = checknum + 1
                 if(checknum == n_s):
                     print('ALREADY IN FILE')
                     changerad = 1
                     break
-
             if(changerad): break
-
-        curr_fout = fname_out
-        for i in range(0, n_s):
-            curr_fout += '_r{:0.4f}'.format(float(r[i]))
-        curr_fout += '.OUT'
-
-        print 'opening file ' + curr_fout
+        if(changerad): continue
 
         tmp_bands = 'tmp_bands.del'
         tmp_bands2 = 'tmp.del'
-        cmd0 = 'cat ' + curr_fout + ' | grep -i \"Range\" > ' + tmp_bands2
+        cmd0 = 'cat ' + cur_fout + ' | grep -i \"Range\" > ' + tmp_bands2
         cmd1 = 'awk \'{print $4, $10}\' tmp.del > ' + tmp_bands
         os.system(cmd0)
         os.system(cmd1)
+
+        # write all band lines to cur_line
+        cur_line = []
 
         with open(tmp_bands,'r') as fin_bands:
             bands = [band.split() for band in fin_bands]
@@ -374,8 +385,9 @@ def CalcBands(curr_id, res, n_s):
             
             print 'num bands...' + str(numbands_f)
         
+            # first write all radii
             for r_sp in r:
-                dat.write("%0.4f " % r_sp)
+                cur_line.append(r_sp)
             
             prv_lo = 0.0
             prv_hi = 0.0
@@ -389,13 +401,14 @@ def CalcBands(curr_id, res, n_s):
                     normgap = gap/midfreq
                 else:
                     normgap = 0
+
                 if(cur_lo>0):
-                    dat.write(" %0.4f %0.6f %0.6f" % (normgap, cur_lo, cur_hi))
-                else:
-                    dat.write(" %0.6f %0.6f" % (cur_lo, cur_hi))
+                    cur_line.append(normgap)
+                cur_line.append(cur_lo)
+                cur_line.append(cur_hi)
+
                 prv_lo = cur_lo
                 prv_hi = cur_hi
-            dat.write('\n')
                 
         cmd0 = 'rm ' + tmp_bands2
         cmd1 = 'rm ' + tmp_bands
@@ -403,39 +416,89 @@ def CalcBands(curr_id, res, n_s):
         os.system(cmd0)
         os.system(cmd1)
 
-        print list(dat)
-        dat.close()
+        lines.append(cur_line)
         
-        dat = open(fname_band,'r+')
-        
-        lines = [line.split() for line in dat]
-
         # add band numbers to topline if exceed existing
         if(initiate):
             print 'initating bands'
             lines[0].append('1L')
             lines[0].append('1H')
             for i in range(2,numbands_f+1):
-                col1 = '{:d}-{:d}'.format(i-1,i)
+                col1 = '{:d}to{:d}'.format(i-1,i)
                 col2 = '{:d}L'.format(i)
                 col3 = '{:d}H'.format(i)
                 lines[0].extend([col1,col2,col3])
             initiate = 0
-        #print lines[0]
         elif(numbands_f > numbands_i):
             print 'adding new bands'
             for i in range(numbands_i+1,numbands_f+1):
-                col1 = '{:d}-{:d}'.format(i-1,i)
+                col1 = '{:d}to{:d}'.format(i-1,i)
                 col2 = '{:d}L'.format(i)
                 col3 = '{:d}H'.format(i)
                 lines[0].extend([col1,col2,col3])
-        for el in lines:
-            dat.write('{0}\n'.format(' '.join(el)))
-        dat.close()
-        dat = open(fname_band,'r+')
-    dat.close()
 
-        #print lines[0]
+        with open(fname_band, 'w') as f:
+            for line in lines:
+                for el in line:
+                    f.write('%s,' % el)
+                f.write('\n')
+            f.close()
+    cur_row = numrows + 1
+
+def CalcBandsMin(curr_id, min, n_s):
+    
+    print 'outputting all gaps for ' + curr_id + ' greater than {:0.4f}'.format(float(min))
+
+    
+    fname_band = './dat/' + curr_id + '/' + curr_id + '_bands.csv'
+    lines = list(csv.reader( open(fname_band, 'rb') , delimiter = '\t' ))
+    lines = [line[0].split(',') for line in lines]
+    numrows = len(lines)
+    numcols = len(lines[0])
+    
+    y_ind = []
+
+    for r in range(1, numrows):
+        for c in range(n_s+3-1, numcols, 3):
+            if c>=len(lines[r]):
+                break
+            if lines[r][c] == "":
+                break
+            cur_num = float(lines[r][c])
+            if cur_num > float(min):
+                print 'comparing {:0.4f} to {:0.4f}'.format(cur_num, float(min))
+                y_ind.append(c)
+    y_ind = list(set(y_ind))
+    y_ind.sort()
+
+    out_name = './dat/' + curr_id + '/' + curr_id + '_bands_min{:0.2f}'.format(float(min)) + '.csv'
+    
+    fout = open(out_name,'w+')
+    for x in range(numrows):
+        print lines[x][0],
+        print lines[x][1],
+        fout.write(lines[x][0])
+        fout.write(',')
+        fout.write(lines[x][1])
+        fout.write(',')
+        print '|',
+        for y in y_ind:
+            if y>=len(lines[x]):
+                break
+            print lines[x][y-1],
+            print lines[x][y+1],
+            print lines[x][y],
+            fout.write(lines[x][y-1])
+            fout.write(',')
+            fout.write(lines[x][y+1])
+            fout.write(',')
+            fout.write(lines[x][y])
+            fout.write(',')
+            print '|',
+        fout.write('\n')
+        print '\n'
+
+    fout.close()
 
 def MakePlots(curr_id):
 
@@ -448,6 +511,8 @@ def MakePlots(curr_id):
 #    GetNN(curr_id, n_s, n_c, r_c, coords)
 #    PlotCenters(curr_id, n_s, n_c, r_c, coords)
 #    PlotSk(curr_id, n_s)
-#    PlotBands(curr_id, 1, n_s)
+    PlotBands(curr_id, 1, n_s)
 #    PlotBands(curr_id, 2, n_s)
-    CalcBands(curr_id, 1, n_s)
+#    CalcBands(curr_id, 2, n_s)
+    CalcBandsMin(curr_id, 0.03, n_s)
+    CalcBandsMin(curr_id, 0.05, n_s)
