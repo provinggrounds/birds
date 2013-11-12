@@ -107,10 +107,13 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
     fin_param = './lib/param_DNT.ctl'
     
     fname_param = curr_id + '_param'
-
+    
+    append_rad = ''
     for i in range(0, n_s):
-        fname_param += '_r{:0.4f}'.format(float(rad[i]))
-    fname_param += '.ctl'
+        append_rad += '_r{:0.4f}'.format(float(rad[i]))
+    
+    fname_param = fname_param + append_rad + '.ctl'
+    fname_append = '_' + curr_id + '_MHUDS' + append_rad
 
     fout_param = './dat/' + curr_id + '/Upload/' + fname_param
     
@@ -127,6 +130,9 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
     old3 = 'VAR_DEF_FILENAME'
     new3 = '\"' + fname_define + '\"'
 
+    old4 = 'VAR_STRING_APPEND'
+    new4 = '\"' + fname_append + '\"'
+
     #copies
     os.system("cp %s %s" % (fin_param, fout_param))
 
@@ -135,11 +141,13 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
     cmd1 = "sed -i~ -e 's/" + old1 + "/" + new1 + "/' " + fout_param
     cmd2 = "sed -i~ -e 's/" + old2 + "/" + new2 + "/' " + fout_param
     cmd3 = "sed -i~ -e 's/" + old3 + "/" + new3 + "/' " + fout_param
+    cmd4 = "sed -i~ -e 's/" + old4 + "/" + new4 + "/' " + fout_param
 
     os.system(cmd0)
     os.system(cmd1)
     os.system(cmd2)
     os.system(cmd3)
+    os.system(cmd4)
 
     os.system("rm %s" % (fout_param + '~'))
 

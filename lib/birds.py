@@ -228,7 +228,6 @@ def PlotSk(curr_id, n_s):
     plt.suptitle('structure factor, S(k)', fontsize=12)
     plt.savefig(fout, bbox_inches=0, dpi = 300)
 
-
 def PlotBands(curr_id, res, n_s):
     
     print 'plotting bands...'
@@ -300,6 +299,144 @@ def PlotBands(curr_id, res, n_s):
         plt.title(r)
         plt.savefig(curr_fband, format='png', dpi=300, bbox_inches='tight')
 
+def CalcBands(curr_id, res, n_s):
+    
+    print 'calculating bands...'
+
+    rad = tm.MakeRad(res, n_s)
+
+    fname_out = './dat/' + curr_id + '/Download/' + curr_id + '_out'
+    fname_band = './dat/' + curr_id + '/' + curr_id + '_bands.csv'
+
+    data = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
+
+    ensure_dir(fname_band)
+    
+    if not os.path.exists(fname_band):
+        lines = [[]]
+        for i in range(n_s):
+            lines[0].append('r' + str(i))
+        numrows = 0
+        numcols = 0
+        numbands_i = 0
+
+    else:
+        data = list(csv.reader( open(fname_band, 'rb') , delimiter = '\t' ))
+        lines = [line.split() for line in data]
+        numrows = len(lines)
+        numcols = len(lines[0])
+        numbands_i = ((numcols-2)+1)/3
+
+    print('(rows,cols,bands) = {:d}, {:d}, {:d}'.format(numrows,numcols,numbands_i))
+
+    for r in rad:
+
+        print 'adding bands for',
+        print r
+        
+        changerad = 0
+        
+        for row in range(1,numrows):
+            checknum = 0
+            for c in range(n_s):
+                cur_rad = float('{:0.4f}'.format(float(lines[row][c])))
+                my_rad = float('{:0.4f}'.format(float(r[c])))
+                print cur_rad,
+                print my_rad
+                if(cur_rad != my_rad):
+                    break
+                print(checknum)
+                checknum += 1
+                if(checknum == n_s):
+                    print('ALREADY IN FILE')
+                    changerad = 1
+                    break
+
+            if(changerad): break
+
+        curr_fout = fname_out
+        for i in range(0, n_s):
+            curr_fout += '_r{:0.4f}'.format(float(r[i]))
+        curr_fout += '.OUT'
+
+        print 'opening file ' + curr_fout
+
+        tmp_bands = 'tmp_bands.del'
+        tmp_bands2 = 'tmp.del'
+        cmd0 = 'cat ' + curr_fout + ' | grep -i \"Range\" > ' + tmp_bands2
+        cmd1 = 'awk \'{print $4, $10}\' tmp.del > ' + tmp_bands
+        os.system(cmd0)
+        os.system(cmd1)
+
+        with open(tmp_bands,'r') as fin_bands:
+            bands = [band.split() for band in fin_bands]
+            numbands_f = len(bands)
+            
+            print 'num bands...' + str(numbands_f)
+        
+            for r_sp in r:
+                dat.write("%0.4f " % r_sp)
+            
+            prv_lo = 0.0
+            prv_hi = 0.0
+    
+            for band in bands:
+                cur_lo = float(band[0])
+                cur_hi = float(band[1])
+                if(cur_lo > prv_hi):
+                    gap = cur_lo - prv_hi
+                    midfreq = (cur_lo + prv_hi)/2
+                    normgap = gap/midfreq
+                else:
+                    normgap = 0
+                if(cur_lo>0):
+                    dat.write(" %0.4f %0.6f %0.6f" % (normgap, cur_lo, cur_hi))
+                else:
+                    dat.write(" %0.6f %0.6f" % (cur_lo, cur_hi))
+                prv_lo = cur_lo
+                prv_hi = cur_hi
+            dat.write('\n')
+                
+        cmd0 = 'rm ' + tmp_bands2
+        cmd1 = 'rm ' + tmp_bands
+
+        os.system(cmd0)
+        os.system(cmd1)
+
+        print list(dat)
+        dat.close()
+        
+        dat = open(fname_band,'r+')
+        
+        lines = [line.split() for line in dat]
+
+        # add band numbers to topline if exceed existing
+        if(initiate):
+            print 'initating bands'
+            lines[0].append('1L')
+            lines[0].append('1H')
+            for i in range(2,numbands_f+1):
+                col1 = '{:d}-{:d}'.format(i-1,i)
+                col2 = '{:d}L'.format(i)
+                col3 = '{:d}H'.format(i)
+                lines[0].extend([col1,col2,col3])
+            initiate = 0
+        #print lines[0]
+        elif(numbands_f > numbands_i):
+            print 'adding new bands'
+            for i in range(numbands_i+1,numbands_f+1):
+                col1 = '{:d}-{:d}'.format(i-1,i)
+                col2 = '{:d}L'.format(i)
+                col3 = '{:d}H'.format(i)
+                lines[0].extend([col1,col2,col3])
+        for el in lines:
+            dat.write('{0}\n'.format(' '.join(el)))
+        dat.close()
+        dat = open(fname_band,'r+')
+    dat.close()
+
+        #print lines[0]
+
 def MakePlots(curr_id):
 
     [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
@@ -313,3 +450,4 @@ def MakePlots(curr_id):
 #    PlotSk(curr_id, n_s)
 #    PlotBands(curr_id, 1, n_s)
 #    PlotBands(curr_id, 2, n_s)
+    CalcBands(curr_id, 1, n_s)
