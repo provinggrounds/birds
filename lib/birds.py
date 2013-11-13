@@ -5,6 +5,7 @@ import readcenters
 import csv
 import sys
 import os
+from PIL import Image
 from lib import tm
 import pylab as pyl
 import matplotlib as mpl
@@ -299,6 +300,88 @@ def PlotBands(curr_id, res, n_s):
         plt.title(r)
         plt.savefig(curr_fband, format='png', dpi=300, bbox_inches='tight')
 
+def PlotSomeBands(curr_id, res, n_s, subbands):
+    
+    print 'plotting bands...'
+    
+    rad = tm.MakeRad(res, n_s)
+    
+    fname_out = './dat/' + curr_id + '/Download/' + curr_id + '_out'
+    fname_band = './dat/' + curr_id + '/Plots/Bands/' + curr_id + '_subbands'
+    
+    ensure_dir(fname_band)
+    
+    min = 0.1
+    max = 0.65
+
+
+    jet = cm = plt.get_cmap('jet')
+    cNorm  = colors.Normalize(vmin=0, vmax=len(subbands))
+    scalarMap = cmx.ScalarMappable(norm=cNorm, cmap=jet)
+
+    
+    for r in rad:
+        
+        curr_fout = fname_out
+        curr_fband = fname_band
+        
+        for i in range(0, n_s):
+            curr_fout += '_r{:0.4f}'.format(float(r[i]))
+            curr_fband += '_r{:0.4f}'.format(float(r[i]))
+        curr_fout += '.OUT'
+        curr_fband += '.png'
+        print 'plotting bands for ' + curr_fout
+        
+        tmp_bands = 'tmp_bands.del'
+        tmp_bands2 = 'tmp.del'
+        cmd0 = 'cat ' + curr_fout + ' | grep -i \"Range\" > ' + tmp_bands2
+        cmd1 = 'awk \'{print $4, $10}\' tmp.del > ' + tmp_bands
+        os.system(cmd0)
+        os.system(cmd1)
+        
+        fig = plt.figure(figsize=(10,10))
+        
+        ax = fig.gca()
+        ax.set_aspect(5)
+        ax.xaxis.set_ticks_position('none')
+        ax.yaxis.set_ticks_position('none')
+        plt.xticks([])
+        plt.yticks([0.2, 0.4, 0.6])
+        plt.tick_params(axis='y', which='major', labelsize=2)
+        plt.tick_params(axis='x', which='major', labelsize=0)
+        plt.tick_params(axis='both', which='minor', labelsize=0)
+        plt.setp(ax.get_xticklabels(), visible=False)
+        
+        with open(tmp_bands,'r') as fin_bands:
+            bands = [b.split() for b in fin_bands]
+            
+            for i in range(len(subbands)):
+                
+                colorVal = scalarMap.to_rgba(i)
+
+                cur_hi = float(bands[int(subbands[i-1])][1])
+                nxt_lo = float(bands[int(subbands[i-1])+1][0])
+                
+                if(nxt_lo > cur_hi):
+                    plt.vlines(0, cur_hi, nxt_lo, color=colorVal, linewidths = 100)
+                        
+        cmd0 = 'rm ' + tmp_bands
+        cmd1 = 'rm ' + tmp_bands2
+        
+        os.system(cmd0)
+        os.system(cmd1)
+        
+        plt.axis([-0.1,0.1,min,max])
+        ax.yaxis.labelpad = -1
+
+        
+        ax.text(0.5,0.97,r,
+                horizontalalignment='center',
+                transform=ax.transAxes)
+        
+        #        plt.text(0,5.05,fname_out,size='8',horizontalalignment='center')
+        plt.savefig(curr_fband, format='png', dpi=300, bbox_inches='tight')
+
 def CalcBands(curr_id, res, n_s):
     
     print 'calculating bands...'
@@ -473,32 +556,72 @@ def CalcBandsMin(curr_id, min, n_s):
 
     out_name = './dat/' + curr_id + '/' + curr_id + '_bands_min{:0.2f}'.format(float(min)) + '.csv'
     
-    fout = open(out_name,'w+')
-    for x in range(numrows):
-        print lines[x][0],
-        print lines[x][1],
-        fout.write(lines[x][0])
-        fout.write(',')
-        fout.write(lines[x][1])
-        fout.write(',')
-        print '|',
-        for y in y_ind:
-            if y>=len(lines[x]):
-                break
-            print lines[x][y-1],
-            print lines[x][y+1],
-            print lines[x][y],
-            fout.write(lines[x][y-1])
+    with open(out_name,'w+') as fout:
+        
+        for x in range(numrows):
+            print lines[x][0],
+            print lines[x][1],
+            fout.write(lines[x][0])
             fout.write(',')
-            fout.write(lines[x][y+1])
-            fout.write(',')
-            fout.write(lines[x][y])
+            fout.write(lines[x][1])
             fout.write(',')
             print '|',
-        fout.write('\n')
-        print '\n'
+            for y in y_ind:
+                if y>=len(lines[x]):
+                    break
+                print lines[x][y-1],
+                print lines[x][y+1],
+                print lines[x][y],
+                fout.write(lines[x][y-1])
+                fout.write(',')
+                fout.write(lines[x][y+1])
+                fout.write(',')
+                fout.write(lines[x][y])
+                fout.write(',')
+                print '|',
+            fout.write('\n')
+            print '\n'
 
-    fout.close()
+        fout.close()
+
+def GridPlots(curr_id, res, n_s):
+
+    out_img = './dat/' + curr_id + '/Plots/' + curr_id + 'grid.jpg'
+    
+    ensure_dir(out_img)
+    
+    min = 0
+    max = 0.5
+    inc = 0.05
+    
+    rad = [i * inc for i in range(0, int(max/inc)+1)]
+    
+    fname_band = './dat/' + curr_id + '/Plots/Bands/' + curr_id + '_subbands'
+    
+    max_x = 0
+    max_y = 0
+    
+    for i in rad:
+        for j in rad:
+            curr_fband = fname_band + '_r{:0.4f}_r{:0.4f}.png'.format(i,j)
+            cur_x = Image.open(curr_fband).size[0]
+            cur_y = Image.open(curr_fband).size[1]
+            if cur_x > max_x: max_x = cur_x
+            if cur_y > max_y: max_y = cur_y
+    print 'max (x,y) = ({:d},{:d})'.format(max_x,max_y)
+
+    blank_img = Image.new("RGB", (len(rad) * max_x, len(rad) * max_y), "white")
+    
+    for i in range(len(rad)):
+        for j in range(len(rad)):
+            cur_x = i * max_x
+            cur_y = j * max_y
+            curr_fband = fname_band + '_r{:0.4f}_r{:0.4f}.png'.format(rad[i],rad[j])
+            print 'pasting ' + curr_fband
+            blank_img.paste(Image.open(curr_fband), (cur_x, cur_y))
+
+    blank_img.save(out_img)
+
 
 def MakePlots(curr_id):
 
@@ -508,11 +631,16 @@ def MakePlots(curr_id):
     for i in range(0,n_s):
         N += n_c[i]
 
+    subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]
+
 #    GetNN(curr_id, n_s, n_c, r_c, coords)
 #    PlotCenters(curr_id, n_s, n_c, r_c, coords)
 #    PlotSk(curr_id, n_s)
-    PlotBands(curr_id, 1, n_s)
+#    PlotBands(curr_id, 1, n_s)
+#    PlotSomeBands(curr_id, 1, n_s, subbands)
+#    PlotSomeBands(curr_id, 2, n_s, subbands)
+    GridPlots(curr_id, 2, n_s)
 #    PlotBands(curr_id, 2, n_s)
 #    CalcBands(curr_id, 2, n_s)
-    CalcBandsMin(curr_id, 0.03, n_s)
-    CalcBandsMin(curr_id, 0.05, n_s)
+#    CalcBandsMin(curr_id, 0.03, n_s)
+#    CalcBandsMin(curr_id, 0.05, n_s)

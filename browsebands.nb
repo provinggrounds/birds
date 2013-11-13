@@ -1,0 +1,183 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6496,        174]
+NotebookOptionsPosition[      6019,        153]
+NotebookOutlinePosition[      6374,        169]
+CellTagsIndexPosition[      6331,        166]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"shn2", "[", 
+      RowBox[{"x_", ",", 
+       RowBox[{"r_:", " ", "0"}]}], "]"}], ":=", 
+     RowBox[{"StringReplace", "[", 
+      RowBox[{
+       RowBox[{"ToString", "@", 
+        RowBox[{"NumberForm", "[", 
+         RowBox[{"x", ",", "r", ",", 
+          RowBox[{"ExponentFunction", "\[Rule]", 
+           RowBox[{"(", 
+            RowBox[{"Null", "&"}], ")"}]}]}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"RegularExpression", "@", "\"\<\\\\.0*$\>\""}], "\[Rule]", 
+        "\"\<\>\""}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"currid", " ", "=", " ", "\"\<twospecies\>\""}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"min", " ", "=", " ", "0.05"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"max", " ", "=", " ", "0.5"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"inc", " ", "=", " ", "0.05"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"fin", " ", "=", " ", 
+     RowBox[{"StringJoin", "[", 
+      RowBox[{
+      "\"\<./dat/\>\"", ",", "currid", ",", "\"\</Plots/Bands/\>\"", ",", 
+       "\[IndentingNewLine]", "currid", ",", "\"\<_subbands_r\>\"", ",", 
+       RowBox[{"shn2", "[", 
+        RowBox[{"a", ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "4"}], "}"}]}], "]"}], ",", "\"\<_r\>\"", ",", 
+       RowBox[{"shn2", "[", 
+        RowBox[{"b", ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "4"}], "}"}]}], "]"}], ",", "\"\<.png\>\""}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"ImageResize", "[", 
+     RowBox[{
+      RowBox[{"Import", "[", 
+       RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], "<>", "fin"}], "]"}], ",", 
+      "50"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "min", ",", "max", ",", "inc"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "min", ",", "max", ",", "inc"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwd0E8oQwEAx/FNS1uZRi7Mv5UkHEb+24FEG/m3ckKELSvsgomV02hTpi0x
+5WE19LaMtnYQJWZs0VtNDhwkl0XLtHi1JO/3Dt8+969kRKtUpXA4nDwm6Ppe
+WVX435tnHe0WSCgfCMgnn3dhroQi4WmGyAnlYZ4PHtGGc6gXe65gxH3H+pbj
+/YB/wgSrTDcRh3XRGOtEf8ZNJ+NcW9YjTP7OPUH/gVDUxXhStZ0PW9W0BJZH
+ksUwWZMogWn89FGosvWMwaKG5XEYVRxr4OahcgpK7ZQOxita9LCUV2+A+wWk
+Fbomxbuw2CzN7mac7pOzhjZilfA+s6Ma8mpdjdBUKJDB+eBaKwwHrKxLGmIB
+DtB7rMNFgw7YRQyxpr6+zOxfM3+/jEbYO15mhk0/Z+vQYrm1wdDi5xZUh7k7
+0ESn2aGHcpPw0uRzQr3A7IFZVMILtTvBc8jjBi7gP1k2/hs=
+  "]],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 0.5, $CellContext`b$$ = 0.45, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 0.05, 0.5, 0.05}, {
+      Hold[$CellContext`b$$], 0.05, 0.5, 0.05}}, Typeset`size$$ = {
+    50., {213., 217.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$8105$$ = 
+    0, $CellContext`b$8106$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 0.05, $CellContext`b$$ = 0.05}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$8105$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$8106$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`shn2[
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Optional[
+           Pattern[$CellContext`r, 
+            Blank[]], 0]] := StringReplace[
+          ToString[
+           
+           NumberForm[$CellContext`x, $CellContext`r, 
+            ExponentFunction -> (Null& )]], RegularExpression["\\.0*$"] -> 
+          ""]; $CellContext`currid = "twospecies"; $CellContext`min = 
+        0.05; $CellContext`max = 0.5; $CellContext`inc = 
+        0.05; $CellContext`fin = 
+        StringJoin[
+         "./dat/", $CellContext`currid, "/Plots/Bands/", $CellContext`currid, 
+          "_subbands_r", 
+          $CellContext`shn2[$CellContext`a$$, {3, 4}], "_r", 
+          $CellContext`shn2[$CellContext`b$$, {3, 4}], ".png"]; ImageResize[
+         Import[
+          StringJoin[
+           NotebookDirectory[], $CellContext`fin]], 50]), 
+      "Specifications" :> {{$CellContext`a$$, 0.05, 0.5, 
+         0.05}, {$CellContext`b$$, 0.05, 0.5, 0.05}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{248., {271., 276.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.593287152570961*^9, 3.5932871751786413`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.593286838180911*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.5932868163094053`*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.593286787892886*^9, 3.593286789206229*^9}}],
+
+Cell[BoxData["\[AliasDelimiter]"], "Input",
+ CellChangeTimes->{{3.592582206617014*^9, 3.592582207957955*^9}}]
+},
+WindowSize->{740, 752},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2454, 58, 216, "Input"],
+Cell[3036, 82, 2616, 56, 564, "Output"]
+}, Open  ]],
+Cell[5667, 141, 68, 1, 28, "Input"],
+Cell[5738, 144, 70, 1, 28, "Input"],
+Cell[5811, 147, 92, 1, 28, "Input"],
+Cell[5906, 150, 109, 1, 28, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
