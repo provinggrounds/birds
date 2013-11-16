@@ -14,6 +14,7 @@ import matplotlib.colors as colors
 import matplotlib.cm as cmx
 import numpy as np
 
+
 # parameters for plotting figures
 mpl.rcParams['xtick.major.size'] = 6
 mpl.rcParams['ytick.major.size'] = 6
@@ -37,9 +38,27 @@ def my_circle_scatter(axes, x_array, y_array, radius=0.5, **kwargs):
         axes.add_patch(circle)
     return True
 
+def min(a,b):
+    if (a < b):
+        return a
+    else:
+        return b
+
 # returns distance between pos1 and pos2
+#     (taking into account PBC, assuming boxlength 1)
 def GetDist(pos1, pos2):
-    return ((pos1[0] - pos2[0])**2 + (pos1[1] - pos2[1])**2)**0.5
+    
+    boxlen = 1
+    
+    [x_1, y_1] = pos1
+    [x_2, y_2] = pos2
+    
+    x_distsq = min( (x_1 - x_2)**2 , boxlen**2 - 2 * boxlen * (x_1 - x_2) + (x_1 - x_2)**2 )
+    y_distsq = min( (y_1 - y_2)**2 , boxlen**2 - 2 * boxlen * (y_1 - y_2) + (y_1 - y_2)**2 )
+    
+    return (x_distsq + y_distsq)**0.5
+
+
 
 # plots nearest neighbor distribution, with statistics
 def GetNN(curr_id, n_s, n_c, r_c, coords):
@@ -227,7 +246,7 @@ def PlotSk(curr_id, n_s):
     ensure_dir(fout)
 
     plt.suptitle('structure factor, S(k)', fontsize=12)
-    plt.savefig(fout, bbox_inches=0, dpi = 300)
+    plt.savefig(fout, bbox_inches=0, dpi = 900)
 
 def PlotBands(curr_id, res, n_s):
     
@@ -312,8 +331,8 @@ def PlotSomeBands(curr_id, res, n_s, subbands):
     ensure_dir(fname_band)
     
     min = 0.1
-    max = 0.65
-
+    max = 0.6
+    dpi_in = 400
 
     jet = cm = plt.get_cmap('jet')
     cNorm  = colors.Normalize(vmin=0, vmax=len(subbands))
@@ -329,7 +348,7 @@ def PlotSomeBands(curr_id, res, n_s, subbands):
             curr_fout += '_r{:0.4f}'.format(float(r[i]))
             curr_fband += '_r{:0.4f}'.format(float(r[i]))
         curr_fout += '.OUT'
-        curr_fband += '.png'
+        curr_fband = curr_fband + '_dpi' + str(dpi_in) + '.png'
         print 'plotting bands for ' + curr_fout
         
         tmp_bands = 'tmp_bands.del'
@@ -374,13 +393,12 @@ def PlotSomeBands(curr_id, res, n_s, subbands):
         plt.axis([-0.1,0.1,min,max])
         ax.yaxis.labelpad = -1
 
-        
         ax.text(0.5,0.97,r,
                 horizontalalignment='center',
                 transform=ax.transAxes)
         
         #        plt.text(0,5.05,fname_out,size='8',horizontalalignment='center')
-        plt.savefig(curr_fband, format='png', dpi=300, bbox_inches='tight')
+        plt.savefig(curr_fband, format='png', dpi=dpi_in, bbox_inches='tight')
 
 def CalcBands(curr_id, res, n_s):
     
@@ -586,13 +604,11 @@ def CalcBandsMin(curr_id, min, n_s):
 
 def GridPlots(curr_id, res, n_s):
 
-    out_img = './dat/' + curr_id + '/Plots/' + curr_id + 'grid.jpg'
-    
-    ensure_dir(out_img)
-    
     min = 0
     max = 0.5
     inc = 0.05
+    
+    dpi = 400
     
     rad = [i * inc for i in range(0, int(max/inc)+1)]
     
@@ -603,7 +619,8 @@ def GridPlots(curr_id, res, n_s):
     
     for i in rad:
         for j in rad:
-            curr_fband = fname_band + '_r{:0.4f}_r{:0.4f}.png'.format(i,j)
+            curr_fband = fname_band + '_r{:0.4f}_r{:0.4f}'.format(i,j)
+            curr_fband = curr_fband + '_dpi' + str(dpi) + '.png'
             cur_x = Image.open(curr_fband).size[0]
             cur_y = Image.open(curr_fband).size[1]
             if cur_x > max_x: max_x = cur_x
@@ -616,14 +633,19 @@ def GridPlots(curr_id, res, n_s):
         for j in range(len(rad)):
             cur_x = i * max_x
             cur_y = j * max_y
-            curr_fband = fname_band + '_r{:0.4f}_r{:0.4f}.png'.format(rad[i],rad[j])
+            curr_fband = fname_band + '_r{:0.4f}_r{:0.4f}'.format(rad[i],rad[j])
+            curr_fband = curr_fband + '_dpi' + str(dpi) + '.png'
             print 'pasting ' + curr_fband
             blank_img.paste(Image.open(curr_fband), (cur_x, cur_y))
+
+    out_img = './dat/' + curr_id + '/Plots/' + curr_id + 'grid_dpi' + str(dpi) + '.png'
+
+    ensure_dir(out_img)
 
     blank_img.save(out_img)
 
 
-def MakePlots(curr_id):
+def MakePlots(curr_id, opt):
 
     [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
 
@@ -631,13 +653,14 @@ def MakePlots(curr_id):
     for i in range(0,n_s):
         N += n_c[i]
 
-    subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]
-
-#    GetNN(curr_id, n_s, n_c, r_c, coords)
-#    PlotCenters(curr_id, n_s, n_c, r_c, coords)
-#    PlotSk(curr_id, n_s)
+#if opt==1:
+        #GetNN(curr_id, n_s, n_c, r_c, coords)
+        #PlotCenters(curr_id, n_s, n_c, r_c, coords)
+        #PlotSk(curr_id, n_s)
+        #       elif opt==2:
+        subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]
 #    PlotBands(curr_id, 1, n_s)
-#    PlotSomeBands(curr_id, 1, n_s, subbands)
+#PlotSomeBands(curr_id, 1, n_s, subbands)
 #    PlotSomeBands(curr_id, 2, n_s, subbands)
     GridPlots(curr_id, 2, n_s)
 #    PlotBands(curr_id, 2, n_s)

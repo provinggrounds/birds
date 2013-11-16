@@ -1,29 +1,56 @@
 #!/Users/ccl/Library/Enthought/Canopy_64bit/User/bin/python
 
-from lib import tm, readcenters
-from lib import birds
+from lib import tm, readcenters, birds, Sk
+
 import shutil
 import csv
+import ast
 import sys
 import os
 
 from subprocess import Popen, PIPE
 from numpy import *
 
-curr_id             = 'twospecies' #unique id to identify pattern and associated Sk
+num_args = len(sys.argv)
 
-# parameters for packing code
-num_species         = 2
-num_stagegrowth     = 100
-num_stagerelax      = 30
-num_cells           = [100, 100]   #[250, 120, 95, 90, 60]
-radii               = [0.01, 0.01]  #[0.012, 0.0095, 0.0085, 0.009, 0.008]
-growthrate          = 1
-transmod            = 0.0001
-start_quench        = 0.58
-start_config        = 0 # generate (0) or read (1)
-num_MC              = 200
-len_cell            = 0.08
+##### example of valid input:
+# twospecies1 2 100 30 [200,100] [0,0] 1 0.0001 0.58 0 200 0.08
+
+if num_args == 1:
+    
+    curr_id             = 'twospecies' #unique id to identify pattern and associated Sk
+
+    # parameters for packing code
+    num_species         = 2
+    num_stagegrowth     = 100
+    num_stagerelax      = 30
+    num_cells           = [100, 100]   #[250, 120, 95, 90, 60]
+    radii               = [0.01, 0.01]  #[0.012, 0.0095, 0.0085, 0.009, 0.008]
+    growthrate          = 1
+    transmod            = 0.0001
+    start_quench        = 0.58
+    start_config        = 0 # generate (0) or read (1)
+    num_MC              = 200
+    len_cell            = 0.08
+
+elif num_args == 13:
+    
+    curr_id             = sys.argv[1]
+    num_species         = int(sys.argv[2])
+    num_stagegrowth     = int(sys.argv[3])
+    num_stagerelax      = int(sys.argv[4])
+    num_cells           = ast.literal_eval(sys.argv[5])
+    radii               = ast.literal_eval(sys.argv[6])
+    growthrate          = float(sys.argv[7])
+    transmod            = float(sys.argv[8])
+    start_quench        = float(sys.argv[9])
+    start_config        = int(sys.argv[10])
+    num_MC              = int(sys.argv[11])
+    len_cell            = float(sys.argv[12])
+
+else:
+    
+    sys.exit('incorrect args')
 
 # parameters for Sk code
 maxx = 1
@@ -38,23 +65,17 @@ class SaveFile():
 filenames = SaveFile(curr_id)
 
 code_pack        = './bin/pack.out'
-code_Sk          = './bin/calc_Sk.out'
-
 out_pack         = 'centers.txt'
-out_Sk           = 'Sk_bin.txt'
-
-#ensures that folder for file [f] exists
-def ensure_dir(f):
-    d = os.path.dirname(f)
-    if not os.path.exists(d):
-        os.makedirs(d)
 
 ########  save parameters
 def SaveParams():
-    ensure_dir(filenames.params)
+    
+    readcenters.ensure_dir(filenames.params)
+
     args = ([num_species, num_stagegrowth, num_stagerelax] +
             num_cells + radii +
             [growthrate, transmod, start_quench, start_config, num_MC, len_cell])
+
     with open(filenames.params, 'w') as fout:
         for var in args:
             fout.write(str(var)+'\n')
@@ -67,69 +88,25 @@ def GetConfig():
         proc.wait()
     shutil.move(out_pack, filenames.centers)
 
-########  calculate Sk
-def CalcSk():
-    ensure_dir(filenames.Sk)
-
-    data = list(csv.reader(open(filenames.centers,'rb'),delimiter='\t'))
-    
-    n_s =  int(float(data[0][0]))
-    N = int(float(data[1][0]))
-    r_beg = 3
-    total_in = [maxx, maxy, N]
-
-    # calc Sk for each species
-
-    tot_x = []
-    tot_y = []
-
-    for i in range(0,n_s):
-        n_c = int(float(data[r_beg][0]))
-        print n_c
-        print r_beg
-        proc = Popen(code_Sk, stdin = PIPE)
-        inputs = [maxx, maxy, n_c]
-        x = []
-        y = []
-        
-        for j in range(3,n_c+3):
-            tmpx = data[r_beg+j][0]
-            tmpy = data[r_beg+j][1]
-            x.append(tmpx)
-            y.append(tmpy)
-            # print '(' + str(x) + ',' + str(y) + ')'
-            inputs.extend( [ tmpx, tmpy ] )
-            total_in.extend( [ tmpx, tmpy ] )
-        
-        tot_x.extend(x)
-        tot_y.extend(y)
-        
-        proc.communicate('\n '.join(str(input) for input in inputs) )
-        proc.wait()
-        
-        shutil.copyfile(out_Sk, filenames.Sk + str(i) + '.txt')
-        
-        # print "inputs were: "+ ', '.join(str(input) for input in inputs)
-        
-        r_beg = r_beg + n_c + 6 #the 3 includes one dummy line and two empty lines
-
-    # print "total inputs were: "+ ', '.join(str(input) for input in total_in)
-
-    # calc Sk for total
-    proc = Popen(code_Sk, stdin = PIPE)
-    proc.communicate('\n '.join(str(input) for input in total_in) )
-    proc.wait()
-
-    shutil.move(out_Sk, filenames.Sk + 'T' + '.txt')
-
 def main():
-    #SaveParams()
-    #GetConfig()
-    #CalcSk()
-    for i in sys.path:
-        print i
-    birds.MakePlots(curr_id)
-    #tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
+    
+    os.environ['PATH'] = os.environ['PATH'] + ':/usr/texbin'
+    
+    newconfig = 0
+    runSk = 0
+    
+    if(newconfig):
+    
+        SaveParams()
+        GetConfig()
+
+    if(runSk):
+
+        Sk.CalcSk(curr_id)
+        Sk.PlotSk(curr_id)
+
+    #birds.MakePlots(curr_id, 2)
+    #tm.Upload(1, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
     #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)
 

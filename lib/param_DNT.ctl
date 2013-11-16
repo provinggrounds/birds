@@ -92,5 +92,5 @@
 (define fname (string-append VAR_STRING_APPEND))
 
 ;; Run calculation
-;(run-tm);
+;;(run-tm)
 (run-tm (output-at-kpoint X  fix-efield-phase output-efield-z)) ; run simulation and output E-field at point X
