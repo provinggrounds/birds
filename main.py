@@ -3,7 +3,6 @@
 from lib import tm, readcenters, birds, Sk
 
 import shutil
-import csv
 import ast
 import sys
 import os
@@ -60,7 +59,6 @@ class SaveFile():
     def __init__(self, curr_id):
         self.params = './dat/' + curr_id + '/' + curr_id + '_params.txt'
         self.centers= './dat/' + curr_id + '/' + curr_id + '_centers.txt'
-        self.Sk     = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_'
 
 filenames = SaveFile(curr_id)
 
@@ -105,7 +103,8 @@ def main():
         Sk.CalcSk(curr_id)
         Sk.PlotSk(curr_id)
 
-    #birds.MakePlots(curr_id, 2)
+
+    birds.MakePlots(curr_id, 2)
     #tm.Upload(1, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
     #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)

@@ -1,12 +1,14 @@
 # birds.py
 #
 
+
 import readcenters
 import csv
 import sys
 import os
 from PIL import Image
-from lib import tm
+from lib import tm, delaunaymap
+
 import pylab as pyl
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -57,8 +59,6 @@ def GetDist(pos1, pos2):
     y_distsq = min( (y_1 - y_2)**2 , boxlen**2 - 2 * boxlen * (y_1 - y_2) + (y_1 - y_2)**2 )
     
     return (x_distsq + y_distsq)**0.5
-
-
 
 # plots nearest neighbor distribution, with statistics
 def GetNN(curr_id, n_s, n_c, r_c, coords):
@@ -190,9 +190,6 @@ def PlotCenters(curr_id, n_s, n_c, r_c, coords):
 
     plt.suptitle('centers', fontsize=12)
     plt.savefig(fout, bbox_inches=0, dpi = 300)
-
-def PlotG2():
-    print 'plotting g2...'
 
 def PlotSk(curr_id, n_s):
     
@@ -644,7 +641,6 @@ def GridPlots(curr_id, res, n_s):
 
     blank_img.save(out_img)
 
-
 def MakePlots(curr_id, opt):
 
     [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
@@ -652,17 +648,18 @@ def MakePlots(curr_id, opt):
     N = 0
     for i in range(0,n_s):
         N += n_c[i]
-
+        
+    delaunaymap.RunDelMap(curr_id, n_s, coords)
 #if opt==1:
         #GetNN(curr_id, n_s, n_c, r_c, coords)
         #PlotCenters(curr_id, n_s, n_c, r_c, coords)
         #PlotSk(curr_id, n_s)
         #       elif opt==2:
-        subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]
+#        subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]
 #    PlotBands(curr_id, 1, n_s)
 #PlotSomeBands(curr_id, 1, n_s, subbands)
 #    PlotSomeBands(curr_id, 2, n_s, subbands)
-    GridPlots(curr_id, 2, n_s)
+#GridPlots(curr_id, 2, n_s)
 #    PlotBands(curr_id, 2, n_s)
 #    CalcBands(curr_id, 2, n_s)
 #    CalcBandsMin(curr_id, 0.03, n_s)
