@@ -17,14 +17,14 @@ num_args = len(sys.argv)
 
 if num_args == 1:
     
-    curr_id             = 'twospecies' #unique id to identify pattern and associated Sk
+    curr_id             = 'twospecies46' #unique id to identify pattern and associated Sk
 
     # parameters for packing code
     num_species         = 2
-    num_stagegrowth     = 100
-    num_stagerelax      = 30
-    num_cells           = [100, 100]   #[250, 120, 95, 90, 60]
-    radii               = [0.01, 0.01]  #[0.012, 0.0095, 0.0085, 0.009, 0.008]
+    num_stagegrowth     = 10000
+    num_stagerelax      = 300
+    num_cells           = [200, 100]   #[250, 120, 95, 90, 60]
+    radii               = [0.025, 0.02]  #[0.012, 0.0095, 0.0085, 0.009, 0.008]
     growthrate          = 1
     transmod            = 0.0001
     start_quench        = 0.58
@@ -59,11 +59,13 @@ class SaveFile():
     def __init__(self, curr_id):
         self.params = './dat/' + curr_id + '/' + curr_id + '_params.txt'
         self.centers= './dat/' + curr_id + '/' + curr_id + '_centers.txt'
+        self.centers2= './dat/' + curr_id + '/' + curr_id + '_centers_hard.txt'
 
 filenames = SaveFile(curr_id)
 
 code_pack        = './bin/pack.out'
 out_pack         = 'centers.txt'
+out_pack2        = 'centers_hard.txt'
 
 ########  save parameters
 def SaveParams():
@@ -81,31 +83,36 @@ def SaveParams():
 
 ########  run packing code
 def GetConfig():
-    with open(filenames.params,'r') as fin:
-        proc = Popen([code_pack], stdin = fin)
-        proc.wait()
+    
+    fout = './dat/' + curr_id + '/log/' + curr_id + '.log'
+
+    readcenters.ensure_dir(fout)
+    
+    cmd = code_pack + ' < ' + filenames.params + ' | tee ' + fout
+    
+    os.system(cmd)
+    
     shutil.move(out_pack, filenames.centers)
+    shutil.move(out_pack2, filenames.centers2)
 
 def main():
     
     os.environ['PATH'] = os.environ['PATH'] + ':/usr/texbin'
     
-    newconfig = 0
-    runSk = 0
+    newconfig = 1
+    runSk = 1
     
     if(newconfig):
     
         SaveParams()
         GetConfig()
-
+        birds.MakePlots(curr_id, 2)
     if(runSk):
 
         Sk.CalcSk(curr_id)
         Sk.PlotSk(curr_id)
 
-
-    birds.MakePlots(curr_id, 2)
-    #tm.Upload(1, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
+#tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
     #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)
 

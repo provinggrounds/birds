@@ -12,6 +12,7 @@ import matplotlib.colors as colors
 import matplotlib.cm as cmx
 import numpy as np
 
+from readcenters import ensure_dir
 from subprocess import Popen, PIPE
 from scipy.optimize import curve_fit
 
@@ -26,17 +27,17 @@ mpl.rcParams['figure.subplot.wspace'] = 0.25
 mpl.rcParams['figure.subplot.wspace'] = 0.25
 mpl.rcParams['text.usetex'] = True
 
-
 maxx = 1
 maxy = 1
 
 code_Sk         = './bin/calc_Sk.out'
 out_Sk           = 'Sk_bin.txt'
 
-def ensure_dir(f):
-    d = os.path.dirname(f)
-    if not os.path.exists(d):
-        os.makedirs(d)
+def RunSk(inputs, outname):
+    proc = Popen(code_Sk, stdin = PIPE)
+    proc.communicate('\n '.join(str(input) for input in inputs) )
+    proc.wait()
+    shutil.move(out_Sk, outname)
 
 def CalcSk(curr_id):
     
@@ -50,45 +51,36 @@ def CalcSk(curr_id):
     for i in range(0,n_s):
         N += n_c[i]
     
-    r_beg = 3
-    
     total_in = [maxx, maxy, N]
     
-    # calc Sk for each species
-    
-    tot_x = []
-    tot_y = []
-    
     for i in range(0,n_s):
-
-        proc = Popen(code_Sk, stdin = PIPE)
         
         inputs = [maxx, maxy, n_c[i]]
-        
-        x = []
-        y = []
         
         for j in range(0,n_c[i]):
             tmpx = coords[i][j][0]
             tmpy = coords[i][j][1]
-            x.append(tmpx)
-            y.append(tmpy)
             inputs.extend( [ tmpx, tmpy ] )
             total_in.extend( [ tmpx, tmpy ] )
         
-        tot_x.extend(x)
-        tot_y.extend(y)
-        
-        proc.communicate('\n '.join(str(input) for input in inputs) )
-        proc.wait()
-        
-        shutil.copyfile(out_Sk, fout_Sk + str(i) + '.txt')
+        outname = fout_Sk + str(i) + '.txt'
+        RunSk(inputs, outname)
 
-    proc = Popen(code_Sk, stdin = PIPE)
-    proc.communicate('\n '.join(str(input) for input in total_in) )
-    proc.wait()
+    outname = fout_Sk + 'T.txt'
+    RunSk(total_in, outname)
     
-    shutil.move(out_Sk, fout_Sk + 'T' + '.txt')
+    del_fin = './dat/' + curr_id + '/Del/' + curr_id + '_del_T.txt'
+    del_data = list(csv.reader( open(del_fin, 'rb') , delimiter = ' ' ))
+    del_in = [maxx, maxy, len(del_data)]
+
+    for i in range( len(del_data) ):
+
+        tmpx = float(del_data[i][0])
+        tmpy = float(del_data[i][1])
+        del_in.extend( [tmpx, tmpy] )
+
+    outname = fout_Sk + 'del.txt'
+    RunSk(del_in,outname)
 
 def FitSk(k,Sk):
     
@@ -132,6 +124,27 @@ def PlotSkFit(popt, pcov, fit_k, fit_Sk, axes):
     plt.loglog(fit_k, fit_Sk)
 
 
+def ReadSk(fname):
+    
+    lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
+
+    k = []
+    Sk = []
+    
+    for i in range(len(lines)):
+        el = lines[i][0].split(' ')
+        k.append( float(el[0]) )
+        Sk.append( float(el[1]) )
+    
+    return [k, Sk]
+
+def FormatPlotSk(ax, title_in):
+    ax.grid()
+    plt.ylim([10**-5,10**1])
+    plt.xlabel('k')
+    plt.ylabel('S(k)')
+    plt.title(title_in)
+
 def PlotSk(curr_id):
     
     [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
@@ -142,51 +155,38 @@ def PlotSk(curr_id):
     
     for i in range(0,n_s):
         
-        axes_indiv = plt.subplot(1, n_s + 1, i+1)
-        axes_indiv.grid()
-        
-        plt.xlabel('k')
-        plt.ylabel('S(k)')
-        plt.title('species {:d}'.format(i))
-        #plt.tick_params(axis='y', which='major', labelsize=8)
-        #plt.tick_params(axis='x', which='major', labelsize=8)
-        #plt.tick_params(axis='both', which='minor', labelsize=4)
-        
         fname = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_' + str(i) + '.txt'
+        [k, Sk] = ReadSk(fname)
         
-        lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
-        k = []
-        Sk = []
-
-        for i in range(len(lines)):
-            el = lines[i][0].split(' ')
-            k.append( float(el[0]) )
-            Sk.append( float(el[1]) )
+        axes_indiv = plt.subplot(1, n_s + 2, i+1)
+        FormatPlotSk(axes_indiv, 'species {:d}'.format(i))
 
         [popt, pcov, fit_k, fit_Sk] = FitSk(k,Sk)
         PlotSkFit(popt, pcov, fit_k, fit_Sk, axes_indiv)
         plt.loglog(k,Sk)
     
+    # run for all
     fname = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_T.txt'
+    [k, Sk] = ReadSk(fname)
     
-    axes_combined = plt.subplot(1, n_s + 1, n_s+1)
-    axes_combined.grid()
-    plt.xlabel('k')
-    plt.ylabel('S(k)')
-    plt.title('all species')
-    
-    lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
-    k = []
-    Sk = []
-    for i in range(len(lines)):
-        el = lines[i][0].split(' ')
-        k.append( float(el[0]) )
-        Sk.append( float(el[1]) )
+    axes_combined = plt.subplot(1, n_s + 2, n_s+1)
+    FormatPlotSk(axes_combined, 'all species')
 
     [popt, pcov, fit_k, fit_Sk] = FitSk(k,Sk)
     PlotSkFit(popt, pcov, fit_k, fit_Sk, axes_combined)
     plt.loglog(k,Sk)
+
+    # run for delaunay
+    fname = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_del.txt'
+    [k, Sk] = ReadSk(fname)
     
+    axes_delaunay = plt.subplot(1, n_s + 2, n_s+2)
+    FormatPlotSk(axes_delaunay, 'delaunay')
+    
+    [popt, pcov, fit_k, fit_Sk] = FitSk(k,Sk)
+    PlotSkFit(popt, pcov, fit_k, fit_Sk, axes_delaunay)
+    plt.loglog(k,Sk)
+
     fname = curr_id + '_Sk.eps'
     fout = './dat/' + curr_id + '/Plots/' + fname
     

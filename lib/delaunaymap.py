@@ -57,7 +57,9 @@ def DelSave(curr_id, n_s, i, mapped_coords):
 
     with open(fout,'w') as f:
         for p in mapped_coords:
-            f.write(str(p))
+            f.write(str(p[0]))
+            f.write(' ')
+            f.write(str(p[1]))
             f.write('\n')
         f.close()
 
@@ -72,82 +74,75 @@ def AddPlotStuff(ax):
 # first row is original
 # second row shows simplices
 # third row just shows centers
-# radius is 0.02. no significance
+# radius is 0.01. no significance
 
 def RunDelMap(curr_id, n_s, coords):
     
     print 'Running delaunay...'
     
-    rad = 0.01
+    rad = 0.005
     
     # get color scheme
     jet = cm = plt.get_cmap('jet')
     cNorm  = colors.Normalize(vmin=0, vmax=n_s)
     scalarMap = cmx.ScalarMappable(norm=cNorm, cmap=jet)
     
-    plt.figure(figsize=(12.0,12.0))
+    fig = plt.figure(figsize=(12.0,4.0))
     
-    axes_combined1 = plt.subplot(3, n_s + 1, n_s+1)
-    plt.title('all species')
-    axes_combined2 = plt.subplot(3, n_s + 1, 2 * (n_s+1) )
-    axes_combined3 = plt.subplot(3, n_s + 1, 3 * (n_s+1) )
+    axes_origcombined = plt.subplot(1, 3, 1)
+    plt.title('all species, original')
+    axes_tesselation = plt.subplot(1, 3, 2)
+    plt.title('tesselation')
+    axes_mapped = plt.subplot(1, 3, 3)
+    plt.title('centroids')
     
-    AddPlotStuff(axes_combined1)
-    AddPlotStuff(axes_combined2)
-    AddPlotStuff(axes_combined3)
-    
-    all_mapped = []
+    all_coords = []
     
     for i in range(n_s):
         
-        print 'plotting species {:d} of {:d}'.format(i,n_s)
-        
+        all_coords.extend(coords[i])
+    
         colorVal = scalarMap.to_rgba(i)
         
-        axes_indiv1 = plt.subplot(3, n_s + 1, i+1)
         for p in coords[i]:
             x = p[0]
             y = p[1]
-            my_circle_scatter(axes_indiv1, [x], [y], radius=rad, alpha=0.5, color=colorVal)
-            my_circle_scatter(axes_combined1, [x], [y], radius=rad, alpha=0.5, color=colorVal)
+            my_circle_scatter(axes_origcombined, [x], [y], radius=rad, alpha=0.5, color=colorVal)
         
-        axes_indiv2 = plt.subplot(3, n_s + 1, (n_s + 1) + i+1)
-        
-        points = np.array(coords[i])
-        
-        tri = Delaunay(points)
-        plt.triplot( points[:,0], points[:,1], tri.vertices.copy() )
-        
-        mapped_coords = GetCentroids(points[tri.vertices])
+    points = np.array(all_coords)
+    
+    tri = Delaunay(points)
 
-        for p in mapped_coords:
+    axes_tesselation.triplot(points[:,0], points[:,1], tri.vertices.copy())
+    
+    # repeating this line because I don't know how to change the ordering of things on same plot
+    for i in range(n_s):
+        
+        colorVal = scalarMap.to_rgba(i)
+        
+        for p in coords[i]:
             x = p[0]
             y = p[1]
-            my_circle_scatter(axes_indiv2, [x], [y], radius=rad, alpha=0.5, color=colorVal)
-            my_circle_scatter(axes_combined2, [x], [y], radius=rad, alpha=0.5, color=colorVal)
+            my_circle_scatter(axes_tesselation, [x], [y], radius=rad, alpha=0.5, color=colorVal)
 
-        axes_indiv3 = plt.subplot(3, n_s + 1, 2*(n_s + 1) + i+1)
-        for p in mapped_coords:
-            x = p[0]
-            y = p[1]
-            my_circle_scatter(axes_indiv3, [x], [y], radius=rad, alpha=0.5, color=colorVal)
-            my_circle_scatter(axes_combined3, [x], [y], radius=rad, alpha=0.5, color=colorVal)
-        
-        AddPlotStuff(axes_indiv1)
-        plt.title('species' + str(i))
-        AddPlotStuff(axes_indiv2)
-        AddPlotStuff(axes_indiv3)
+    mapped_coords = GetCentroids(points[tri.vertices])
 
-        DelSave(curr_id, n_s, i, mapped_coords)
+    for p in mapped_coords:
+        x = p[0]
+        y = p[1]
+        my_circle_scatter(axes_tesselation, [x], [y], radius=rad, alpha=0.5, color='r')
+        my_circle_scatter(axes_mapped, [x], [y], radius=rad, alpha=0.5, color='r')
 
-        all_mapped.append(mapped_coords)
-
-    DelSave(curr_id, n_s, n_s, all_mapped)
+    AddPlotStuff(axes_origcombined)
+    AddPlotStuff(axes_tesselation)
+    AddPlotStuff(axes_mapped)
+    
+    DelSave(curr_id, n_s, n_s, mapped_coords)
 
     fname = curr_id + '_DelCenters.eps'
     fout = './dat/' + curr_id + '/Del/' + fname
     
     ensure_dir(fout)
     
-    plt.suptitle('Delaunay centroid map. Row 1 = orig, Row 2 = overlay, Row 3 = mapped', fontsize=12)
+    plt.suptitle('Delaunay centroid map', fontsize=12)
     plt.savefig(fout, bbox_inches=0, dpi = 400)

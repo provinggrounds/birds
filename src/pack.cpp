@@ -402,7 +402,7 @@ void get_config()
             }
             // end looping over all particles
             
-            while(overlap_flag == 1 && limit < 3000)
+            while(overlap_flag == 1 && limit < 15000)
             {
                 overlap_flag = 0;
                 
@@ -440,7 +440,7 @@ void get_config()
                 limit++;
             }
             
-            if(limit<3000)
+            if(limit<15000)
             {
                 coords[N_tot][0] = temp_center[0];
                 coords[N_tot][1] = temp_center[1];
@@ -908,7 +908,7 @@ double get_cost(int index, double center[SD], double center_old[SD])
     return get_energy(index, center) - get_energy(index, center_old);
 }
 
-main()
+int main()
 {
     srand(time(NULL));
     cout<<"Start packing"<<endl;
@@ -1075,4 +1075,6 @@ L1:
     //the final configuration is printed
     cout<<"Printing the final configuration now...."<<endl;
     print_config();
+    
+    return 0;
 }

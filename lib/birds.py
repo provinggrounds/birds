@@ -1,13 +1,14 @@
 # birds.py
 #
 
-
 import readcenters
 import csv
 import sys
 import os
+
 from PIL import Image
 from lib import tm, delaunaymap
+from readcenters import ensure_dir
 
 import pylab as pyl
 import matplotlib as mpl
@@ -28,10 +29,7 @@ mpl.rcParams['figure.subplot.wspace'] = 0.25
 mpl.rcParams['figure.subplot.wspace'] = 0.25
 
 # makes sure folder for file [f] exists
-def ensure_dir(f):
-    d = os.path.dirname(f)
-    if not os.path.exists(d):
-        os.makedirs(d)
+
 
 # draws circles on plots
 def my_circle_scatter(axes, x_array, y_array, radius=0.5, **kwargs):
@@ -40,16 +38,16 @@ def my_circle_scatter(axes, x_array, y_array, radius=0.5, **kwargs):
         axes.add_patch(circle)
     return True
 
-def min(a,b):
-    if (a < b):
-        return a
-    else:
-        return b
-
 # returns distance between pos1 and pos2
 #     (taking into account PBC, assuming boxlength 1)
 def GetDist(pos1, pos2):
     
+    def min(a,b):
+        if (a < b):
+            return a
+        else:
+            return b
+
     boxlen = 1
     
     [x_1, y_1] = pos1
@@ -141,7 +139,6 @@ def GetNN(curr_id, n_s, n_c, r_c, coords):
     plt.suptitle('nearest neighbor distribution', fontsize=12)
     plt.savefig(fout, bbox_inches=0, dpi = 300)
 
-
 # plots centers
 def PlotCenters(curr_id, n_s, n_c, r_c, coords):
     
@@ -190,60 +187,6 @@ def PlotCenters(curr_id, n_s, n_c, r_c, coords):
 
     plt.suptitle('centers', fontsize=12)
     plt.savefig(fout, bbox_inches=0, dpi = 300)
-
-def PlotSk(curr_id, n_s):
-    
-    print 'plotting Sk...'
-
-    plt.figure(figsize=(12.0,4.0))
-
-    for i in range(0,n_s):
-        
-        axes_indiv = plt.subplot(1, n_s + 1, i+1)
-        axes_indiv.grid()
-        
-        plt.xlabel('k')
-        plt.ylabel('S(k)')
-        plt.title('species {:d}'.format(i))
-        #plt.tick_params(axis='y', which='major', labelsize=8)
-        #plt.tick_params(axis='x', which='major', labelsize=8)
-        #plt.tick_params(axis='both', which='minor', labelsize=4)
-    
-        fname = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_' + str(i) + '.txt'
-
-        lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
-        k = []
-        Sk = []
-        for i in range(len(lines)):
-            el = lines[i][0].split(' ')
-            k.append( float(el[0]) )
-            Sk.append( float(el[1]) )
-        plt.loglog(k,Sk)
-        
-    fname = './dat/' + curr_id + '/Sk/' + curr_id + '_Sk_T.txt'
-
-    axes_combined = plt.subplot(1, n_s + 1, n_s+1)
-    axes_combined.grid()
-    plt.xlabel('k')
-    plt.ylabel('S(k)')
-    plt.title('all species')
-    
-    lines = list(csv.reader( open(fname, 'rb') , delimiter = '\t' ))
-    k = []
-    Sk = []
-    for i in range(len(lines)):
-        el = lines[i][0].split(' ')
-        k.append( float(el[0]) )
-        Sk.append( float(el[1]) )
-    plt.loglog(k,Sk)
-
-    fname = curr_id + '_Sk.eps'
-    fout = './dat/' + curr_id + '/Plots/' + fname
-
-    ensure_dir(fout)
-
-    plt.suptitle('structure factor, S(k)', fontsize=12)
-    plt.savefig(fout, bbox_inches=0, dpi = 900)
 
 def PlotBands(curr_id, res, n_s):
     
@@ -650,9 +593,9 @@ def MakePlots(curr_id, opt):
         N += n_c[i]
         
     delaunaymap.RunDelMap(curr_id, n_s, coords)
-#if opt==1:
-        #GetNN(curr_id, n_s, n_c, r_c, coords)
-        #PlotCenters(curr_id, n_s, n_c, r_c, coords)
+    if opt==2:
+        GetNN(curr_id, n_s, n_c, r_c, coords)
+        PlotCenters(curr_id, n_s, n_c, r_c, coords)
         #PlotSk(curr_id, n_s)
         #       elif opt==2:
 #        subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]

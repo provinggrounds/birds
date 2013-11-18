@@ -2,6 +2,12 @@
 # returns num species, num cells of each species, and (x,y)
 
 import csv
+import os
+
+def ensure_dir(f):
+    d = os.path.dirname(f)
+    if not os.path.exists(d):
+        os.makedirs(d)
 
 def read(curr_id):
     
