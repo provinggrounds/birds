@@ -7,7 +7,7 @@ import sys
 import os
 
 from PIL import Image
-from lib import tm, delaunaymap
+from lib import tm, delaunaymap, NN
 from readcenters import ensure_dir
 
 import pylab as pyl

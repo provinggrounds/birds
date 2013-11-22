@@ -1,6 +1,6 @@
 #!/Users/ccl/Library/Enthought/Canopy_64bit/User/bin/python
 
-from lib import tm, readcenters, birds, Sk
+from lib import tm, readcenters, birds, Sk, NN
 
 import shutil
 import ast
@@ -99,8 +99,11 @@ def main():
     
     os.environ['PATH'] = os.environ['PATH'] + ':/usr/texbin'
     
-    newconfig = 1
-    runSk = 1
+    newconfig =     0
+    runSk = 0
+    
+    #NN.GetNNStatsMany('onespecies',1,23)
+    NN.GetNNStatsDelMany('twospecies',1,97)
     
     if(newconfig):
     

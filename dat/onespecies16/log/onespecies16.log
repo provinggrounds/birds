@@ -1,0 +1,1348 @@
+Start packing
+Number of distinct species, n_s = 
+Number of growth stages, N_stage = 
+Number of relax stages, N_relax = 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Number of cells for species 0, N_c[0] = 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Radius of cells for species 0, Rad[0] = 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Interaction range for species 0, Range[0] = 0.0398942
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Growth rate [Rad -> (1+growth rate)*Rad], growth_rate = 
+Trans_mod (in terms of boxlength), trans_mod =
+Starting quench density, rho_start = 
+Generate (0) or read (1) initial config, flag_config = 
+Number of MC moves per particle at each stage, N_MC_particle = 
+Length of grid cell, d0_cell = 
+Generating initial configurations...
+N_c[0] = 100
+Reset interaction range for species 0, Range[0] = 0.18805
+The total number of cells Ncell = 100
+CellList(0,0) =  25 
+CellList(1,0) =  4 
+CellList(2,0) =  32 
+CellList(3,0) =  15 
+CellList(4,0) =  31 
+CellList(5,0) =  71 
+CellList(6,0) = 
+CellList(7,0) =  54 
+CellList(8,0) =  49 
+CellList(9,0) =  60 
+CellList(0,1) =  95  91 
+CellList(1,1) =  20 
+CellList(2,1) = 
+CellList(3,1) =  81  48 
+CellList(4,1) = 
+CellList(5,1) =  19 
+CellList(6,1) =  99  13 
+CellList(7,1) = 
+CellList(8,1) =  11 
+CellList(9,1) =  90 
+CellList(0,2) =  62 
+CellList(1,2) =  73  64 
+CellList(2,2) = 
+CellList(3,2) =  0 
+CellList(4,2) =  14 
+CellList(5,2) =  24 
+CellList(6,2) =  85 
+CellList(7,2) =  44 
+CellList(8,2) =  82 
+CellList(9,2) =  58 
+CellList(0,3) = 
+CellList(1,3) =  7  6 
+CellList(2,3) =  47 
+CellList(3,3) = 
+CellList(4,3) = 
+CellList(5,3) =  40 
+CellList(6,3) =  36 
+CellList(7,3) =  70  9 
+CellList(8,3) =  16 
+CellList(9,3) =  33 
+CellList(0,4) =  10 
+CellList(1,4) = 
+CellList(2,4) =  59 
+CellList(3,4) =  66 
+CellList(4,4) =  56  21 
+CellList(5,4) =  75 
+CellList(6,4) =  34 
+CellList(7,4) =  98  79 
+CellList(8,4) = 
+CellList(9,4) =  87  42 
+CellList(0,5) =  96 
+CellList(1,5) =  12 
+CellList(2,5) =  97  84 
+CellList(3,5) =  57 
+CellList(4,5) = 
+CellList(5,5) =  8 
+CellList(6,5) =  46 
+CellList(7,5) =  52  23 
+CellList(8,5) =  67 
+CellList(9,5) =  61 
+CellList(0,6) =  68 
+CellList(1,6) =  80  2 
+CellList(2,6) =  45 
+CellList(3,6) =  89 
+CellList(4,6) =  37 
+CellList(5,6) = 
+CellList(6,6) =  72 
+CellList(7,6) = 
+CellList(8,6) = 
+CellList(9,6) =  55 
+CellList(0,7) =  65  5 
+CellList(1,7) = 
+CellList(2,7) =  76 
+CellList(3,7) = 
+CellList(4,7) =  77  22 
+CellList(5,7) =  74 
+CellList(6,7) = 
+CellList(7,7) =  94  3 
+CellList(8,7) =  35 
+CellList(9,7) =  69 
+CellList(0,8) =  92 
+CellList(1,8) =  41 
+CellList(2,8) =  28 
+CellList(3,8) =  93 
+CellList(4,8) =  18 
+CellList(5,8) =  38 
+CellList(6,8) =  50  30 
+CellList(7,8) =  86  78 
+CellList(8,8) =  1 
+CellList(9,8) = 
+CellList(0,9) =  63 
+CellList(1,9) =  51 
+CellList(2,9) =  88  27 
+CellList(3,9) =  17 
+CellList(4,9) =  83 
+CellList(5,9) =  29 
+CellList(6,9) =  53 
+CellList(7,9) =  43 
+CellList(8,9) =  26 
+CellList(9,9) =  39 
+Initial energy of system E_init = 93.2377
+hard-particle MC p_acc = 1
+Rad[0] = 0.0380215
+rho_[0] = 0.454158
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99895
+Rad[0] = 0.0396291
+rho_[1] = 0.493377
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9995
+Rad[0] = 0.0396689
+rho_[2] = 0.494368
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9997
+Rad[0] = 0.0396742
+rho_[3] = 0.494501
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9942
+Rad[0] = 0.0398982
+rho_[4] = 0.500099
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99895
+Rad[0] = 0.0399282
+rho_[5] = 0.500852
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99745
+Rad[0] = 0.0399683
+rho_[6] = 0.501859
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99715
+Rad[0] = 0.0399706
+rho_[7] = 0.501916
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9978
+Rad[0] = 0.0400007
+rho_[8] = 0.502672
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9966
+Rad[0] = 0.0400079
+rho_[9] = 0.502852
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9963
+Rad[0] = 0.0400614
+rho_[10] = 0.5042
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99305
+Rad[0] = 0.040071
+rho_[11] = 0.504441
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9965
+Rad[0] = 0.0401664
+rho_[12] = 0.506846
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99685
+Rad[0] = 0.0401704
+rho_[13] = 0.506948
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99615
+Rad[0] = 0.0402108
+rho_[14] = 0.507967
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9953
+Rad[0] = 0.0402138
+rho_[15] = 0.508043
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99115
+Rad[0] = 0.0402161
+rho_[16] = 0.508101
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9975
+Rad[0] = 0.0402257
+rho_[17] = 0.508343
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9964
+Rad[0] = 0.0402353
+rho_[18] = 0.508585
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99615
+Rad[0] = 0.0402656
+rho_[19] = 0.509352
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99675
+Rad[0] = 0.0402883
+rho_[20] = 0.509928
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9954
+Rad[0] = 0.0403111
+rho_[21] = 0.510504
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99625
+Rad[0] = 0.0403516
+rho_[22] = 0.51153
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99565
+Rad[0] = 0.0404237
+rho_[23] = 0.513359
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99635
+Rad[0] = 0.0404465
+rho_[24] = 0.513939
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99575
+Rad[0] = 0.0404506
+rho_[25] = 0.514043
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.992
+Rad[0] = 0.0404578
+rho_[26] = 0.514226
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9935
+Rad[0] = 0.040465
+rho_[27] = 0.51441
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9981
+Rad[0] = 0.0404779
+rho_[28] = 0.514737
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99175
+Rad[0] = 0.0405084
+rho_[29] = 0.515513
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99665
+Rad[0] = 0.0405156
+rho_[30] = 0.515698
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99575
+Rad[0] = 0.0405462
+rho_[31] = 0.516475
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99825
+Rad[0] = 0.0405691
+rho_[32] = 0.517059
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9972
+Rad[0] = 0.0406415
+rho_[33] = 0.518907
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.997
+Rad[0] = 0.0406446
+rho_[34] = 0.518985
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.997
+Rad[0] = 0.0406854
+rho_[35] = 0.520029
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99265
+Rad[0] = 0.0407084
+rho_[36] = 0.520617
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9955
+Rad[0] = 0.0407257
+rho_[37] = 0.521058
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99615
+Rad[0] = 0.0407287
+rho_[38] = 0.521136
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9973
+Rad[0] = 0.0407594
+rho_[39] = 0.521922
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9968
+Rad[0] = 0.0408322
+rho_[40] = 0.523788
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9957
+Rad[0] = 0.0408495
+rho_[41] = 0.524232
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9972
+Rad[0] = 0.0408625
+rho_[42] = 0.524565
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9967
+Rad[0] = 0.0408856
+rho_[43] = 0.525158
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99725
+Rad[0] = 0.0409164
+rho_[44] = 0.52595
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9948
+Rad[0] = 0.0409575
+rho_[45] = 0.527007
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9938
+Rad[0] = 0.0409672
+rho_[46] = 0.527258
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9928
+Rad[0] = 0.0409846
+rho_[47] = 0.527705
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99355
+Rad[0] = 0.0410078
+rho_[48] = 0.528302
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9915
+Rad[0] = 0.0410251
+rho_[49] = 0.52875
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99505
+Rad[0] = 0.0410257
+rho_[50] = 0.528764
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.994
+Rad[0] = 0.0410806
+rho_[51] = 0.530181
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99455
+Rad[0] = 0.0411357
+rho_[52] = 0.531602
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9965
+Rad[0] = 0.0411531
+rho_[53] = 0.532053
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9922
+Rad[0] = 0.0411763
+rho_[54] = 0.532654
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99305
+Rad[0] = 0.0412074
+rho_[55] = 0.533457
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99375
+Rad[0] = 0.0412105
+rho_[56] = 0.533538
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9965
+Rad[0] = 0.0412657
+rho_[57] = 0.534968
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99445
+Rad[0] = 0.0413209
+rho_[58] = 0.536402
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99665
+Rad[0] = 0.0413341
+rho_[59] = 0.536743
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99415
+Rad[0] = 0.0413348
+rho_[60] = 0.536762
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99775
+Rad[0] = 0.0413582
+rho_[61] = 0.537369
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9957
+Rad[0] = 0.0414136
+rho_[62] = 0.538809
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9937
+Rad[0] = 0.0414267
+rho_[63] = 0.539152
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99195
+Rad[0] = 0.0414501
+rho_[64] = 0.539761
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99615
+Rad[0] = 0.0414814
+rho_[65] = 0.540575
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99435
+Rad[0] = 0.0414888
+rho_[66] = 0.540768
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99485
+Rad[0] = 0.041502
+rho_[67] = 0.541112
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99005
+Rad[0] = 0.0415196
+rho_[68] = 0.541571
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9898
+Rad[0] = 0.0415295
+rho_[69] = 0.541829
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99435
+Rad[0] = 0.0415394
+rho_[70] = 0.542087
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9941
+Rad[0] = 0.0415628
+rho_[71] = 0.5427
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9949
+Rad[0] = 0.0416185
+rho_[72] = 0.544155
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.996
+Rad[0] = 0.0416259
+rho_[73] = 0.544349
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99425
+Rad[0] = 0.0416334
+rho_[74] = 0.544544
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9932
+Rad[0] = 0.0417077
+rho_[75] = 0.546491
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9887
+Rad[0] = 0.041721
+rho_[76] = 0.546838
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9934
+Rad[0] = 0.0417387
+rho_[77] = 0.547302
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9971
+Rad[0] = 0.041741
+rho_[78] = 0.547364
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9941
+Rad[0] = 0.0417969
+rho_[79] = 0.548831
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99245
+Rad[0] = 0.0418205
+rho_[80] = 0.549451
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9907
+Rad[0] = 0.0418521
+rho_[81] = 0.55028
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99415
+Rad[0] = 0.0418563
+rho_[82] = 0.55039
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.995
+Rad[0] = 0.041874
+rho_[83] = 0.550857
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99105
+Rad[0] = 0.0418782
+rho_[84] = 0.550968
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99285
+Rad[0] = 0.04188
+rho_[85] = 0.551014
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9923
+Rad[0] = 0.0418977
+rho_[86] = 0.551482
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.992
+Rad[0] = 0.0419019
+rho_[87] = 0.551592
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99145
+Rad[0] = 0.0419119
+rho_[88] = 0.551855
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99305
+Rad[0] = 0.0419194
+rho_[89] = 0.552053
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9973
+Rad[0] = 0.0419294
+rho_[90] = 0.552316
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9934
+Rad[0] = 0.0419472
+rho_[91] = 0.552784
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9949
+Rad[0] = 0.0419572
+rho_[92] = 0.553048
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9971
+Rad[0] = 0.0419647
+rho_[93] = 0.553246
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99695
+Rad[0] = 0.0419884
+rho_[94] = 0.553871
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9959
+Rad[0] = 0.04202
+rho_[95] = 0.554706
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99445
+Rad[0] = 0.0420334
+rho_[96] = 0.555059
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99635
+Rad[0] = 0.042039
+rho_[97] = 0.555207
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.997
+Rad[0] = 0.0420568
+rho_[98] = 0.555678
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9968
+Rad[0] = 0.0421132
+rho_[99] = 0.557168
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9941
+Rad[0] = 0.0421696
+rho_[100] = 0.558661
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9929
+Rad[0] = 0.0421699
+rho_[101] = 0.55867
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99495
+Rad[0] = 0.04218
+rho_[102] = 0.558936
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.992
+Rad[0] = 0.0422364
+rho_[103] = 0.560434
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9924
+Rad[0] = 0.0422543
+rho_[104] = 0.560909
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99105
+Rad[0] = 0.0422723
+rho_[105] = 0.561385
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9937
+Rad[0] = 0.0422765
+rho_[106] = 0.561498
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9948
+Rad[0] = 0.0422944
+rho_[107] = 0.561974
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9957
+Rad[0] = 0.0422987
+rho_[108] = 0.562087
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99315
+Rad[0] = 0.0423062
+rho_[109] = 0.562288
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9896
+Rad[0] = 0.0423119
+rho_[110] = 0.562439
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9939
+Rad[0] = 0.0423151
+rho_[111] = 0.562523
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99275
+Rad[0] = 0.0423576
+rho_[112] = 0.563654
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9915
+Rad[0] = 0.0423711
+rho_[113] = 0.564012
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9914
+Rad[0] = 0.0423743
+rho_[114] = 0.564098
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99155
+Rad[0] = 0.0423767
+rho_[115] = 0.564161
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99145
+Rad[0] = 0.0423901
+rho_[116] = 0.56452
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.98875
+Rad[0] = 0.0424141
+rho_[117] = 0.565158
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9939
+Rad[0] = 0.042446
+rho_[118] = 0.56601
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99225
+Rad[0] = 0.0424536
+rho_[119] = 0.566212
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99475
+Rad[0] = 0.0424856
+rho_[120] = 0.567066
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9901
+Rad[0] = 0.0424957
+rho_[121] = 0.567336
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9953
+Rad[0] = 0.0425137
+rho_[122] = 0.567817
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99365
+Rad[0] = 0.0425458
+rho_[123] = 0.568673
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.997
+Rad[0] = 0.0425638
+rho_[124] = 0.569155
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99225
+Rad[0] = 0.0425879
+rho_[125] = 0.569799
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99185
+Rad[0] = 0.0426199
+rho_[126] = 0.570658
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.98825
+Rad[0] = 0.042644
+rho_[127] = 0.571303
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9905
+Rad[0] = 0.0426762
+rho_[128] = 0.572164
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9914
+Rad[0] = 0.0426897
+rho_[129] = 0.572528
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9906
+Rad[0] = 0.0426929
+rho_[130] = 0.572614
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9866
+Rad[0] = 0.0426954
+rho_[131] = 0.572679
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99105
+Rad[0] = 0.0426954
+rho_[132] = 0.572679
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9892
+Rad[0] = 0.0426957
+rho_[133] = 0.572687
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99165
+Rad[0] = 0.042697
+rho_[134] = 0.572724
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99405
+Rad[0] = 0.0426988
+rho_[135] = 0.572772
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9897
+Rad[0] = 0.042731
+rho_[136] = 0.573636
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9923
+Rad[0] = 0.0427387
+rho_[137] = 0.573841
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9907
+Rad[0] = 0.0427488
+rho_[138] = 0.574115
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99305
+Rad[0] = 0.042767
+rho_[139] = 0.574601
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9932
+Rad[0] = 0.0427674
+rho_[140] = 0.574613
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99375
+Rad[0] = 0.042781
+rho_[141] = 0.574978
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.98985
+Rad[0] = 0.0427912
+rho_[142] = 0.575252
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9934
+Rad[0] = 0.0428234
+rho_[143] = 0.576119
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9943
+Rad[0] = 0.042837
+rho_[144] = 0.576486
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99245
+Rad[0] = 0.0428552
+rho_[145] = 0.576974
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.993
+Rad[0] = 0.0428552
+rho_[146] = 0.576975
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99495
+Rad[0] = 0.0428688
+rho_[147] = 0.577342
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9924
+Rad[0] = 0.0428825
+rho_[148] = 0.577709
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9953
+Rad[0] = 0.0428901
+rho_[149] = 0.577916
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99535
+Rad[0] = 0.0428959
+rho_[150] = 0.578071
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9931
+Rad[0] = 0.0429016
+rho_[151] = 0.578226
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99165
+Rad[0] = 0.0429447
+rho_[152] = 0.579388
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99045
+Rad[0] = 0.0429629
+rho_[153] = 0.579879
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9883
+Soft-core quenching p_acc = 0.5037
+Final energy of stage 154  = 93.1351
+Rad[0] = 0.0429706
+rho_[154] = 0.580086
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9953
+Soft-core quenching p_acc = 0.502
+Final energy of stage 155  = 93.0542
+Rad[0] = 0.0429749
+rho_[155] = 0.580203
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9893
+Soft-core quenching p_acc = 0.51015
+Final energy of stage 156  = 92.9921
+Rad[0] = 0.0429792
+rho_[156] = 0.58032
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9869
+Soft-core quenching p_acc = 0.5056
+Final energy of stage 157  = 92.9452
+Rad[0] = 0.0429811
+rho_[157] = 0.580369
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.98805
+Soft-core quenching p_acc = 0.50555
+Final energy of stage 158  = 92.9117
+Rad[0] = 0.0429913
+rho_[158] = 0.580646
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99475
+Soft-core quenching p_acc = 0.49505
+Final energy of stage 159  = 92.8896
+Rad[0] = 0.0429916
+rho_[159] = 0.580655
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99455
+Soft-core quenching p_acc = 0.4879
+Final energy of stage 160  = 92.8751
+Rad[0] = 0.0429921
+rho_[160] = 0.580666
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99115
+Soft-core quenching p_acc = 0.4882
+Final energy of stage 161  = 92.8654
+Rad[0] = 0.0429998
+rho_[161] = 0.580874
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9921
+Soft-core quenching p_acc = 0.4797
+Final energy of stage 162  = 92.8588
+Rad[0] = 0.0429999
+rho_[162] = 0.580879
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99525
+Soft-core quenching p_acc = 0.46395
+Final energy of stage 163  = 92.854
+Rad[0] = 0.0430005
+rho_[163] = 0.580894
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99505
+Soft-core quenching p_acc = 0.463
+Final energy of stage 164  = 92.8504
+Rad[0] = 0.0430019
+rho_[164] = 0.580931
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9932
+Soft-core quenching p_acc = 0.4592
+Final energy of stage 165  = 92.847
+Rad[0] = 0.0430037
+rho_[165] = 0.580981
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99685
+Soft-core quenching p_acc = 0.44645
+Final energy of stage 166  = 92.844
+Rad[0] = 0.0430174
+rho_[166] = 0.58135
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9977
+Soft-core quenching p_acc = 0.44345
+Final energy of stage 167  = 92.8411
+Rad[0] = 0.0430187
+rho_[167] = 0.581387
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9984
+Soft-core quenching p_acc = 0.44085
+Final energy of stage 168  = 92.8384
+Rad[0] = 0.0430193
+rho_[168] = 0.581403
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99845
+Soft-core quenching p_acc = 0.44125
+Final energy of stage 169  = 92.8359
+Rad[0] = 0.0430211
+rho_[169] = 0.581452
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99535
+Soft-core quenching p_acc = 0.4358
+Final energy of stage 170  = 92.8337
+Rad[0] = 0.0430269
+rho_[170] = 0.581608
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9959
+Soft-core quenching p_acc = 0.4332
+Final energy of stage 171  = 92.8318
+Rad[0] = 0.0430512
+rho_[171] = 0.582265
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9952
+Soft-core quenching p_acc = 0.42535
+Final energy of stage 172  = 92.83
+Rad[0] = 0.0430649
+rho_[172] = 0.582636
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9983
+Soft-core quenching p_acc = 0.4093
+Final energy of stage 173  = 92.8284
+Rad[0] = 0.0430726
+rho_[173] = 0.582844
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9962
+Soft-core quenching p_acc = 0.3995
+Final energy of stage 174  = 92.827
+Rad[0] = 0.0430784
+rho_[174] = 0.583
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9947
+Soft-core quenching p_acc = 0.3936
+Final energy of stage 175  = 92.8257
+Rad[0] = 0.0430792
+rho_[175] = 0.583021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99435
+Soft-core quenching p_acc = 0.39495
+Final energy of stage 176  = 92.8244
+Rad[0] = 0.0430795
+rho_[176] = 0.58303
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9964
+Soft-core quenching p_acc = 0.3906
+Final energy of stage 177  = 92.8233
+Rad[0] = 0.0430813
+rho_[177] = 0.583079
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9964
+Soft-core quenching p_acc = 0.3817
+Final energy of stage 178  = 92.8221
+Rad[0] = 0.0430814
+rho_[178] = 0.583082
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99745
+Soft-core quenching p_acc = 0.37035
+Final energy of stage 179  = 92.8213
+Rad[0] = 0.0430815
+rho_[179] = 0.583085
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9973
+Soft-core quenching p_acc = 0.36605
+Final energy of stage 180  = 92.8203
+Rad[0] = 0.0430825
+rho_[180] = 0.583113
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9971
+Soft-core quenching p_acc = 0.3701
+Final energy of stage 181  = 92.8195
+Rad[0] = 0.0430839
+rho_[181] = 0.58315
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99735
+Soft-core quenching p_acc = 0.3725
+Final energy of stage 182  = 92.8188
+Rad[0] = 0.0430853
+rho_[182] = 0.583187
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9937
+Soft-core quenching p_acc = 0.37735
+Final energy of stage 183  = 92.8179
+Rad[0] = 0.0430863
+rho_[183] = 0.583215
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.996
+Soft-core quenching p_acc = 0.3705
+Final energy of stage 184  = 92.8172
+Rad[0] = 0.0430871
+rho_[184] = 0.583236
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9946
+Soft-core quenching p_acc = 0.38305
+Final energy of stage 185  = 92.8165
+Rad[0] = 0.0430879
+rho_[185] = 0.583257
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99445
+Soft-core quenching p_acc = 0.38055
+Final energy of stage 186  = 92.8157
+Rad[0] = 0.0430903
+rho_[186] = 0.583323
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99545
+Soft-core quenching p_acc = 0.38275
+Final energy of stage 187  = 92.8148
+Rad[0] = 0.0430917
+rho_[187] = 0.58336
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99345
+Soft-core quenching p_acc = 0.3957
+Final energy of stage 188  = 92.8139
+Rad[0] = 0.0430918
+rho_[188] = 0.583365
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9942
+Soft-core quenching p_acc = 0.3964
+Final energy of stage 189  = 92.8129
+Rad[0] = 0.0430926
+rho_[189] = 0.583386
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9954
+Soft-core quenching p_acc = 0.398
+Final energy of stage 190  = 92.8119
+Rad[0] = 0.0430959
+rho_[190] = 0.583474
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99665
+Soft-core quenching p_acc = 0.3894
+Final energy of stage 191  = 92.8107
+Rad[0] = 0.0430983
+rho_[191] = 0.58354
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99445
+Soft-core quenching p_acc = 0.3998
+Final energy of stage 192  = 92.8095
+Rad[0] = 0.0430997
+rho_[192] = 0.583577
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9993
+Soft-core quenching p_acc = 0.3921
+Final energy of stage 193  = 92.8082
+Rad[0] = 0.0431007
+rho_[193] = 0.583605
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9969
+Soft-core quenching p_acc = 0.40435
+Final energy of stage 194  = 92.8068
+Rad[0] = 0.043111
+rho_[194] = 0.583883
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99835
+Soft-core quenching p_acc = 0.3966
+Final energy of stage 195  = 92.8055
+Rad[0] = 0.0431247
+rho_[195] = 0.584254
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9982
+Soft-core quenching p_acc = 0.39275
+Final energy of stage 196  = 92.8042
+Rad[0] = 0.043135
+rho_[196] = 0.584533
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99945
+Soft-core quenching p_acc = 0.39005
+Final energy of stage 197  = 92.8028
+Rad[0] = 0.0431452
+rho_[197] = 0.584811
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9987
+Soft-core quenching p_acc = 0.3823
+Final energy of stage 198  = 92.8014
+Rad[0] = 0.0431496
+rho_[198] = 0.584929
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9986
+Soft-core quenching p_acc = 0.38055
+Final energy of stage 199  = 92.8
+Rad[0] = 0.0431502
+rho_[199] = 0.584945
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99955
+Soft-core quenching p_acc = 0.3635
+Final energy of stage 200  = 92.7988
+Rad[0] = 0.0431526
+rho_[200] = 0.585011
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99855
+Soft-core quenching p_acc = 0.37915
+Final energy of stage 201  = 92.7978
+Rad[0] = 0.0431559
+rho_[201] = 0.585099
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9964
+Soft-core quenching p_acc = 0.34825
+Final energy of stage 202  = 92.797
+Rad[0] = 0.0431661
+rho_[202] = 0.585378
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9988
+Soft-core quenching p_acc = 0.35025
+Final energy of stage 203  = 92.7964
+Rad[0] = 0.0431739
+rho_[203] = 0.585587
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9988
+Soft-core quenching p_acc = 0.34915
+Final energy of stage 204  = 92.7958
+Rad[0] = 0.0431842
+rho_[204] = 0.585867
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99875
+Soft-core quenching p_acc = 0.3457
+Final energy of stage 205  = 92.7952
+Rad[0] = 0.0431874
+rho_[205] = 0.585955
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9987
+Soft-core quenching p_acc = 0.3545
+Final energy of stage 206  = 92.7946
+Rad[0] = 0.0432011
+rho_[206] = 0.586328
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9993
+Soft-core quenching p_acc = 0.3612
+Final energy of stage 207  = 92.7939
+Rad[0] = 0.0432089
+rho_[207] = 0.586537
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99965
+Soft-core quenching p_acc = 0.34365
+Final energy of stage 208  = 92.7933
+Rad[0] = 0.0432121
+rho_[208] = 0.586626
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99855
+Soft-core quenching p_acc = 0.3354
+Final energy of stage 209  = 92.7928
+Rad[0] = 0.0432893
+rho_[209] = 0.588723
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99905
+Soft-core quenching p_acc = 0.31165
+Final energy of stage 210  = 92.7924
+Rad[0] = 0.0433666
+rho_[210] = 0.590827
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99945
+Soft-core quenching p_acc = 0.3307
+Final energy of stage 211  = 92.7919
+Rad[0] = 0.0433724
+rho_[211] = 0.590986
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9993
+Soft-core quenching p_acc = 0.33875
+Final energy of stage 212  = 92.7914
+Rad[0] = 0.0433743
+rho_[212] = 0.591036
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9988
+Soft-core quenching p_acc = 0.3215
+Final energy of stage 213  = 92.7909
+Rad[0] = 0.0433753
+rho_[213] = 0.591064
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9993
+Soft-core quenching p_acc = 0.32515
+Final energy of stage 214  = 92.7905
+Rad[0] = 0.0433753
+rho_[214] = 0.591066
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9995
+Soft-core quenching p_acc = 0.30515
+Final energy of stage 215  = 92.7901
+Rad[0] = 0.0433767
+rho_[215] = 0.591103
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9973
+Soft-core quenching p_acc = 0.29455
+Final energy of stage 216  = 92.7897
+Rad[0] = 0.0433778
+rho_[216] = 0.591132
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9983
+Soft-core quenching p_acc = 0.302
+Final energy of stage 217  = 92.7893
+Rad[0] = 0.0433791
+rho_[217] = 0.591169
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.998
+Soft-core quenching p_acc = 0.29925
+Final energy of stage 218  = 92.789
+Rad[0] = 0.0433835
+rho_[218] = 0.591288
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99925
+Soft-core quenching p_acc = 0.2722
+Final energy of stage 219  = 92.7887
+Rad[0] = 0.0433973
+rho_[219] = 0.591664
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99925
+Soft-core quenching p_acc = 0.26805
+Final energy of stage 220  = 92.7883
+Rad[0] = 0.0434076
+rho_[220] = 0.591946
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99985
+Soft-core quenching p_acc = 0.25055
+Final energy of stage 221  = 92.7881
+Rad[0] = 0.0434322
+rho_[221] = 0.592615
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99985
+Soft-core quenching p_acc = 0.2361
+Final energy of stage 222  = 92.7878
+Rad[0] = 0.0434365
+rho_[222] = 0.592734
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99815
+Soft-core quenching p_acc = 0.2228
+Final energy of stage 223  = 92.7875
+Rad[0] = 0.0434379
+rho_[223] = 0.592772
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9996
+Soft-core quenching p_acc = 0.2203
+Final energy of stage 224  = 92.7872
+Rad[0] = 0.0434437
+rho_[224] = 0.592931
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9993
+Soft-core quenching p_acc = 0.2129
+Final energy of stage 225  = 92.7869
+Rad[0] = 0.0434438
+rho_[225] = 0.592933
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99765
+Soft-core quenching p_acc = 0.20275
+Final energy of stage 226  = 92.7866
+Rad[0] = 0.0434463
+rho_[226] = 0.593
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99885
+Soft-core quenching p_acc = 0.1857
+Final energy of stage 227  = 92.7864
+Rad[0] = 0.0434463
+rho_[227] = 0.593002
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9996
+Soft-core quenching p_acc = 0.20325
+Final energy of stage 228  = 92.7862
+Rad[0] = 0.0434471
+rho_[228] = 0.593023
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99995
+Soft-core quenching p_acc = 0.194
+Final energy of stage 229  = 92.7859
+Rad[0] = 0.0434475
+rho_[229] = 0.593035
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.999
+Soft-core quenching p_acc = 0.2022
+Final energy of stage 230  = 92.7856
+Rad[0] = 0.0434486
+rho_[230] = 0.593063
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99935
+Soft-core quenching p_acc = 0.1887
+Final energy of stage 231  = 92.7854
+Rad[0] = 0.0434488
+rho_[231] = 0.59307
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9997
+Soft-core quenching p_acc = 0.1923
+Final energy of stage 232  = 92.7852
+Rad[0] = 0.0434494
+rho_[232] = 0.593086
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9982
+Soft-core quenching p_acc = 0.17245
+Final energy of stage 233  = 92.785
+Rad[0] = 0.0434495
+rho_[233] = 0.593089
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99955
+Soft-core quenching p_acc = 0.18975
+Final energy of stage 234  = 92.7847
+Rad[0] = 0.04345
+rho_[234] = 0.593101
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9971
+Soft-core quenching p_acc = 0.1736
+Final energy of stage 235  = 92.7845
+Rad[0] = 0.04345
+rho_[235] = 0.593102
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99885
+Soft-core quenching p_acc = 0.1848
+Final energy of stage 236  = 92.7842
+Rad[0] = 0.0434506
+rho_[236] = 0.593118
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99915
+Soft-core quenching p_acc = 0.18965
+Final energy of stage 237  = 92.784
+Rad[0] = 0.0434507
+rho_[237] = 0.593121
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9992
+Soft-core quenching p_acc = 0.18275
+Final energy of stage 238  = 92.7837
+Rad[0] = 0.0434508
+rho_[238] = 0.593124
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99925
+Soft-core quenching p_acc = 0.186
+Final energy of stage 239  = 92.7835
+Rad[0] = 0.0434509
+rho_[239] = 0.593126
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9989
+Soft-core quenching p_acc = 0.19655
+Final energy of stage 240  = 92.7832
+Rad[0] = 0.0434512
+rho_[240] = 0.593135
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9985
+Soft-core quenching p_acc = 0.18225
+Final energy of stage 241  = 92.783
+Rad[0] = 0.0434518
+rho_[241] = 0.593151
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99935
+Soft-core quenching p_acc = 0.1706
+Final energy of stage 242  = 92.7828
+Rad[0] = 0.0434522
+rho_[242] = 0.593163
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9994
+Soft-core quenching p_acc = 0.1819
+Final energy of stage 243  = 92.7825
+Rad[0] = 0.0434524
+rho_[243] = 0.593166
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9987
+Soft-core quenching p_acc = 0.18465
+Final energy of stage 244  = 92.7823
+Rad[0] = 0.0434534
+rho_[244] = 0.593195
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 1
+Soft-core quenching p_acc = 0.1873
+Final energy of stage 245  = 92.782
+Rad[0] = 0.043454
+rho_[245] = 0.593211
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99935
+Soft-core quenching p_acc = 0.17135
+Final energy of stage 246  = 92.7818
+Rad[0] = 0.0434548
+rho_[246] = 0.593232
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99965
+Soft-core quenching p_acc = 0.1907
+Final energy of stage 247  = 92.7815
+Rad[0] = 0.0434548
+rho_[247] = 0.593234
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.9998
+Soft-core quenching p_acc = 0.2025
+Final energy of stage 248  = 92.7812
+Rad[0] = 0.0434554
+rho_[248] = 0.59325
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99905
+Soft-core quenching p_acc = 0.19515
+Final energy of stage 249  = 92.7809
+Rad[0] = 0.0434557
+rho_[249] = 0.593257
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99865
+Soft-core quenching p_acc = 0.18125
+Final energy of stage 250  = 92.7807
+Rad[0] = 0.0434557
+rho_[250] = 0.593258
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99965
+Soft-core quenching p_acc = 0.19715
+Final energy of stage 251  = 92.7804
+Rad[0] = 0.0434563
+rho_[251] = 0.593274
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99855
+Soft-core quenching p_acc = 0.1891
+Final energy of stage 252  = 92.7801
+Rad[0] = 0.0434573
+rho_[252] = 0.593302
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99905
+Soft-core quenching p_acc = 0.19825
+Final energy of stage 253  = 92.7799
+Rad[0] = 0.0434577
+rho_[253] = 0.593311
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99935
+Soft-core quenching p_acc = 0.19315
+Final energy of stage 254  = 92.7796
+Rad[0] = 0.043458
+rho_[254] = 0.59332
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hard-particle MC p_acc = 0.99995
+rad[0] = 0.0434582
+packing density rho = 0.593327
+Printing the final configuration now....

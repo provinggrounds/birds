@@ -9,10 +9,29 @@ def ensure_dir(f):
     if not os.path.exists(d):
         os.makedirs(d)
 
+def readdel(curr_id):
+
+    print 'reading del for curr_id = ' + curr_id + '...'
+
+    fin_path = './dat/' + curr_id + '/Del/' + curr_id + '_del' + '_T.txt'
+
+    data = list(csv.reader(open(fin_path,'rb'),delimiter=' '))
+
+    N = len(data)
+
+    coords = []
+
+    for i in range(N):
+        x = float( data[i][0] )
+        y = float( data[i][1] )
+        coords.append([x,y])
+
+    return [N, coords]
+
 def read(curr_id):
     
     print 'reading curr_id = ' + curr_id + '...'
-
+    
     fin_path = './dat/' + curr_id + '/' + curr_id + '_centers.txt'
     
     data = list(csv.reader(open(fin_path,'rb'),delimiter='\t'))
