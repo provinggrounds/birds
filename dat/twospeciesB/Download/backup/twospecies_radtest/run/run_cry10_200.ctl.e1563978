@@ -1,0 +1,30 @@
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+--------------------------------------------------------------------------
+mpiexec has exited due to process rank 31 with PID 24993 on
+node della-034 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpiexec (as reported here).
+--------------------------------------------------------------------------
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file
+ERROR: In procedure list:
+ERROR: twospecies_N200_cyl_make.ctl:202:1: end of file

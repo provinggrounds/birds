@@ -1,0 +1,8 @@
+export LDFLAGS=-L/home/florescu/Exec/MPI_MFT/lib;
+export CPPFLAGS="-I/home/florescu/Exec/MPI_MFT/include -DH5_USE_16_API=1";
+export LD_LIBRARY_PATH=/home/florescu/Exec/MPI_MFT/lib;
+export LD_RUN_PATH=/home/florescu/Exec/MPI_MFT/lib;
+export PATH=$PATH:/home/florescu/Exec/MPI_MFT/bin
+module avail;
+module load openmpi/gcc/1.4.5/64;
+module load hdf5/gcc/openmpi-1.4.5/1.8.8;

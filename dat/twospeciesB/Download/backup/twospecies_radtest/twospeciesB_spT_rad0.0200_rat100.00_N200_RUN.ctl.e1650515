@@ -1,0 +1,7 @@
+mpiexec: killing job...
+
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 10379 on node della-011 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpiexec: clean termination accomplished
+

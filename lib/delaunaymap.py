@@ -17,9 +17,9 @@ mpl.rcParams['ytick.major.size'] = 6
 mpl.rcParams['xtick.minor.size'] = 3
 mpl.rcParams['ytick.minor.size'] = 3
 mpl.rcParams['font.size'] = 8.0
-mpl.rcParams['figure.subplot.top'] = 0.9
-mpl.rcParams['figure.subplot.wspace'] = 0.25
-mpl.rcParams['figure.subplot.hspace'] = 0.25
+mpl.rcParams['figure.subplot.top'] = 0.8
+mpl.rcParams['figure.subplot.wspace'] = 0.1
+mpl.rcParams['figure.subplot.hspace'] = 0.1
 
 
 # makes sure folder for file [f] exists
@@ -27,6 +27,10 @@ def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
+
+def unique_rows(data):
+    uniq = np.unique(data.view(data.dtype.descr * data.shape[1]))
+    return uniq.view(data.dtype).reshape(-1, data.shape[1])
 
 # draws circles on plots
 def my_circle_scatter(axes, x_array, y_array, radius=0.5, **kwargs):
@@ -44,31 +48,80 @@ def GetCentroids(tri):
         mapped_coords.append( centroid )
     return mapped_coords
 
-def DelSave(curr_id, n_s, i, mapped_coords):
-
-    fout = './dat/' + curr_id + '/Del/' + curr_id + '_del' + '_'
+def GetWalls(tri, mapped_coords):
     
-    if i == n_s:
-        fout = fout + 'T.txt'
-    else:
-        fout = fout + str(i) + '.txt'
+    # each triangle correspondings to a centroid, the indices match based
+    # on construction of GetCentroids.
+    # Go through each triangle, get neighbors. walls connect neighboring centroids
+    # After done, remove duplicates
+    
+    indices = []
+    walls = []
+    
+    # get neighboring indices
+    
+    num_tri = len(tri.vertices)
+    print 'number of simplices = ' + str(num_tri)
+    
+    for i in range(num_tri):
+        for j in tri.neighbors[i]:
+            if (j != -1):
+                if (i < j):
+                    indices.append([i,j])
+                else:
+                    indices.append([j,i])
+
+    # remove duplicates
+    unique_indices = unique_rows(np.array(indices))
+
+    N = len(unique_indices)
+
+    print 'number of walls = ' + str(N)
+
+    # get coords [for some reason, can't get the indices to work easily]
+
+    for i in range(N):
+        wall = [mapped_coords[unique_indices[i][0]], mapped_coords[unique_indices[i][1]]]
+        walls.append(wall)
+
+    return walls
+
+def DelSaveCentroids(curr_id, mapped_coords):
+
+    fout = './dat/' + curr_id + '/Del/' + curr_id + '_del' + '_T.txt'
 
     ensure_dir(fout)
 
     with open(fout,'w') as f:
         for p in mapped_coords:
             f.write(str(p[0]))
-            f.write(' ')
+            f.write('\t')
             f.write(str(p[1]))
             f.write('\n')
         f.close()
 
+def DelSaveWalls(curr_id, walls):
+
+    fout = './dat/' + curr_id + '/Del/' + curr_id + '_del_walls.txt'
+
+    N = len(walls)
+
+    with open(fout,'w') as f:
+        for w in walls:
+            xL = str(w[0][0])
+            yL = str(w[0][1])
+            xR = str(w[1][0])
+            yR = str(w[1][1])
+            f.write(xL + '\t' + yL + '\t' + xR + '\t' + yR + '\n')
+        f.close()
+
 def AddPlotStuff(ax):
     ax.grid()
-    plt.axis('equal')
-    plt.axis([0,1,0,1])
-    plt.xlabel('x')
-    plt.ylabel('y')
+    ax.set_aspect('equal')
+    ax.set_xlim(0,1)
+    ax.set_ylim(0,1)
+    ax.set_xticklabels([],visible='false')
+    ax.set_yticklabels([],visible='false')
 
 ####### runs delauney map, outputs centroids (and plots)
 # first row is original
@@ -87,14 +140,20 @@ def RunDelMap(curr_id, n_s, coords):
     cNorm  = colors.Normalize(vmin=0, vmax=n_s)
     scalarMap = cmx.ScalarMappable(norm=cNorm, cmap=jet)
     
-    fig = plt.figure(figsize=(12.0,4.0))
+    fig = plt.figure(figsize=(12.0,12.0))
     
-    axes_origcombined = plt.subplot(1, 3, 1)
+    axes_origcombined = fig.add_subplot(2,2,1)
     plt.title('all species, original')
-    axes_tesselation = plt.subplot(1, 3, 2)
+    axes_tesselation = fig.add_subplot(2,2,2)
     plt.title('tesselation')
-    axes_mapped = plt.subplot(1, 3, 3)
+    axes_mapped = fig.add_subplot(2,2,3)
     plt.title('centroids')
+    axes_walls = fig.add_subplot(2,2,4)
+    plt.title('centroids, connected')
+    AddPlotStuff(axes_origcombined)
+    AddPlotStuff(axes_tesselation)
+    AddPlotStuff(axes_mapped)
+    AddPlotStuff(axes_walls)
     
     all_coords = []
     
@@ -132,12 +191,22 @@ def RunDelMap(curr_id, n_s, coords):
         y = p[1]
         my_circle_scatter(axes_tesselation, [x], [y], radius=rad, alpha=0.5, color='r')
         my_circle_scatter(axes_mapped, [x], [y], radius=rad, alpha=0.5, color='r')
-
-    AddPlotStuff(axes_origcombined)
-    AddPlotStuff(axes_tesselation)
-    AddPlotStuff(axes_mapped)
+        my_circle_scatter(axes_walls, [x], [y], radius=rad, alpha=0.5, color='r')
     
-    DelSave(curr_id, n_s, n_s, mapped_coords)
+    walls = GetWalls(tri, mapped_coords)
+
+    print 'length of walls = ',
+    print len(walls)
+    for w in walls:
+        x0 = w[0][0]
+        y0 = w[0][1]
+        x1 = w[1][0]
+        y1 = w[1][1]
+        plt.plot([x0,x1],[y0,y1], color = 'b')
+
+    DelSaveCentroids(curr_id, mapped_coords)
+
+    DelSaveWalls(curr_id, walls)
 
     fname = curr_id + '_DelCenters.eps'
     fout = './dat/' + curr_id + '/Del/' + fname

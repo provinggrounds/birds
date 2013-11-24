@@ -1,0 +1,36 @@
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+--------------------------------------------------------------------------
+mpiexec has exited due to process rank 30 with PID 5550 on
+node della-109 exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpiexec (as reported here).
+--------------------------------------------------------------------------
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"
+ERROR: In procedure open-file:
+ERROR: No such file or directory: "cry0.5.ctl"

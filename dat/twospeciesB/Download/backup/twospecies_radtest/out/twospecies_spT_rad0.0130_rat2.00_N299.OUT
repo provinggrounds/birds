@@ -1,0 +1,2619 @@
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: k-interp=3
+command-line param: CylinderVerticalRadius=0.189
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsAir=1
+command-line param: k-interp=3
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: CylinderVerticalRadius=0.189
+command-line param: res=24
+command-line param: CylinderVerticalRadius=0.189
+command-line param: epsAir=1
+command-line param: num-bands=250
+command-line param: epsAir=1
+command-line param: num-bands=250
+command-line param: res=24
+command-line param: res_x=12
+command-line param: k-interp=3
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: k-interp=3
+command-line param: res_y=12
+command-line param: res=24
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: res=24
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: CylinderVerticalRadius=0.189
+command-line param: res_x=12
+command-line param: num-bands=250
+command-line param: res_x=12
+command-line param: num-bands=250
+command-line param: epsAir=1
+command-line param: k-interp=3
+command-line param: res_y=12
+command-line param: k-interp=3
+command-line param: res_y=12
+command-line param: res=24
+command-line param: epsSi=11.56
+command-line param: res=24
+command-line param: CylinderVerticalRadius=0.189
+command-line param: res_x=12
+command-line param: num-bands=250
+command-line param: res_x=12
+command-line param: k-interp=3
+command-line param: res_y=12
+command-line param: res=24
+command-line param: res_y=12
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: epsSi=11.56
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: mesh-size=7
+command-line param: mesh-size=7
+command-line param: CylinderVerticalRadius=0.189
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: res_y=12
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: res_y=12
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: num-bands=250
+command-line param: epsSi=11.56
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: k-interp=3
+command-line param: mesh-size=7
+command-line param: res=24
+command-line param: epsAir=1
+command-line param: res_x=12
+command-line param: epsSi=11.56
+command-line param: res_y=12
+command-line param: CylinderVerticalRadius=0.189
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: num-bands=250
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: mesh-size=7
+command-line param: epsAir=1
+command-line param: epsSi=11.56
+command-line param: CylinderVerticalRadius=0.189
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+init-params: initializing eigensolver data
+Computing 250 bands with 1.000000e-06 tolerance.
+Working in 2 dimensions.
+Grid size is 288 x 288 x 1.
+Solving for 11 bands at a time.
+Creating Maxwell data...
+command-line param: num-bands=250
+command-line param: k-interp=3
+command-line param: res=24
+command-line param: res_x=12
+command-line param: res_y=12
+Allocating fields...
+Mesh size is 7.
+Lattice vectors:
+     (1, 0, 0)
+     (0, 1, 0)
+     (0, 0, 1)
+Cell volume = 1
+Reciprocal lattice vectors (/ 2 pi):
+     (1, -0, 0)
+     (-0, 1, -0)
+     (0, -0, 1)
+Geometric objects:
+     cylinder, center = (0.61336,0.162346,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.588899,0.984562,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.11219,0.108507,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.207457,0.642889,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.393698,0.631631,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.506666,0.943077,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.447737,0.778049,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.592824,0.836875,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.150505,0.632306,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.81891,0.042558,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.809316,0.802057,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.254567,0.435749,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.793739,0.953795,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.886398,0.148009,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.381592,0.521211,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.588645,0.088376,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.266197,0.09749,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.336791,0.97077,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.673237,0.483203,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.557334,0.405404,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.030153,0.890406,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.440652,0.353265,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.672147,0.778789,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.994299,0.797004,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.007919,0.22965,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.377077,0.778106,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.594339,0.74696,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.221646,0.761927,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.456459,0.216246,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.789054,0.503522,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.384696,0.031429,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.408576,0.921582,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.297447,0.337308,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.881924,0.99725,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.80909,0.406561,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.382296,0.859368,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.979249,0.667727,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.841693,0.62246,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.041114,0.042907,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.34429,0.126127,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.254256,0.293227,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.79373,0.191591,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.995001,0.996152,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.524193,0.815966,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.345855,0.422973,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.78726,0.584854,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.631878,0.259257,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.909108,0.525488,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.373577,0.694207,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.627616,0.634584,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.995669,0.094784,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.573089,0.566969,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.652339,0.910301,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.28049,0.730614,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.821041,0.276052,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.317359,0.066529,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.461094,0.140453,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.028128,0.328479,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.521915,0.175134,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.561325,0.219598,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.828366,0.74548,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.078967,0.488194,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.716597,0.351841,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.060096,0.568914,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.640019,0.104127,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.073002,0.390162,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.957297,0.207802,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.845373,0.220303,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.560079,0.276734,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.993273,0.572665,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.126295,0.452338,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.699729,0.018269,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.898081,0.375546,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.92007,0.430345,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.306148,0.240029,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.769107,0.131484,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.530909,0.32502,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.955682,0.902429,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.237304,0.586717,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.878561,0.92315,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.40171,0.401013,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.512946,0.755979,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.198581,0.098604,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.660501,0.570141,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.029749,0.951743,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.538016,0.000401,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.743287,0.897678,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.134668,0.32673,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.743142,0.444509,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.352893,0.268612,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.15702,0.803495,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.309323,0.501827,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.270918,0.83587,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.530689,0.880485,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.035384,0.431808,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.232332,0.236538,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.757776,0.694595,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.087292,0.785124,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.286755,0.921427,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.507074,0.054924,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.916967,0.086405,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.539918,0.689082,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.878431,0.471333,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.920973,0.843954,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.427303,0.082273,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.228708,0.982591,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.513779,0.53208,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.57654,0.470666,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.65107,0.196293,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.951407,0.270923,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.935825,0.724598,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.48763,0.639925,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.087984,0.246604,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.457951,0.896302,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.140595,0.196711,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.893137,0.771904,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.849801,0.866699,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.066172,0.173041,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.690399,0.282338,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.743944,0.539214,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.595524,0.315887,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.810086,0.668508,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.984879,0.501198,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.668852,0.41587,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.08445,0.679841,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.199599,0.482085,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.091666,0.919315,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.913657,0.320989,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.447169,0.839976,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.72659,0.764351,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.464568,0.467445,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.158184,0.573048,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.450069,0.020799,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.191053,0.337543,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.08905,0.009406,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.460557,0.298575,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.27723,0.174662,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.349373,0.188764,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.652282,0.030956,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.442561,0.96273,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.921941,0.588804,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.143769,0.869607,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.698793,0.623165,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.561688,0.620342,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.349289,0.597028,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.232588,0.887959,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.186876,0.426405,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.394578,0.313363,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.140128,0.731567,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.832666,0.143544,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.924915,0.644845,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.007957,0.737238,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.266794,0.664408,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.713955,0.162412,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.688371,0.957612,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.20194,0.166115,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.997286,0.14607,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.169803,0.034316,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.8436,0.543535,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.471391,0.581454,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.526357,0.481175,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.839902,0.343186,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.24704,0.037667,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.168551,0.9592,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.708338,0.822845,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.964201,0.36052,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.942434,0.029501,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.871961,0.703836,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.693517,0.712087,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.738052,0.268606,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.704195,0.11028,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.753446,0.04749,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.133457,0.519867,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.888844,0.25193,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.652681,0.34415,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.188674,0.712243,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.44366,0.675516,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.172623,0.244201,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.256113,0.509661,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.943407,0.97124,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.020412,0.612225,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.395421,0.219013,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.32247,0.829293,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.856109,0.086193,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.075063,0.85578,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.511264,0.382543,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.405372,0.581332,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.406907,0.127472,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.334752,0.648713,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.575182,0.912925,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.779948,0.316967,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.347056,0.348629,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.200731,0.834636,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.621135,0.694549,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.627472,0.527026,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.139578,0.377318,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.535109,0.121822,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.651354,0.839032,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.054762,0.104299,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.406247,0.45036,0)
+          radius 0.013, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.718096,0.230341,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.273891,0.251249,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.114231,0.389354,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.333946,0.51512,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.587497,0.04929,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.53753,0.596924,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.524502,0.712997,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.184758,0.748066,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.34452,0.910319,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.09077,0.296715,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.593583,0.875598,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.696303,0.981065,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.937756,0.102269,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.504155,0.881059,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.398985,0.69231,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.170162,0.143804,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.114684,0.600309,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.813199,0.501857,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.466325,0.411643,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.904826,0.981007,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.637799,0.596277,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.784045,0.40243,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.486163,0.245988,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.518949,0.508401,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.001716,0.020176,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.982411,0.527349,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.081329,0.120939,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.434821,0.534691,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.781833,0.717893,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.214447,0.016049,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.935204,0.672338,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.089099,0.723795,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.960297,0.851529,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.87963,0.886723,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.66526,0.136138,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.981242,0.378846,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.362751,0.020612,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.18563,0.94085,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.228989,0.631214,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.582906,0.419415,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.10663,0.896056,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.299376,0.836885,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.866116,0.236643,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.440307,0.813636,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.888068,0.612222,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.36987,0.113478,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.207901,0.506055,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.102058,0.502109,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.274694,0.704007,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.353047,0.787734,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.855196,0.747848,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.667597,0.32367,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.055083,0.203759,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.261339,0.411699,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.773702,0.833248,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.501321,0.327822,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.748095,0.300038,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.740133,0.102953,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.933398,0.28904,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.338733,0.211627,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.74794,0.612599,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.193738,0.308139,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.482488,0.999402,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.588352,0.263165,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.175346,0.83077,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.631639,0.716934,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.784664,0.168974,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.884196,0.350191,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.01514,0.931976,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.697932,0.434715,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.441556,0.182206,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.53343,0.153617,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.021301,0.770316,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.556995,0.798666,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.377198,0.346025,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.825894,0.018342,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.683675,0.863535,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.719212,0.533266,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.321991,0.627828,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.006983,0.646718,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.288522,0.124429,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.90447,0.474631,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.147121,0.054557,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.600225,0.518903,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.099843,0.813516,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.08232,0.983687,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.584539,0.958323,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.695816,0.761883,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.805348,0.930683,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.281681,0.972095,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.503755,0.07951,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.947065,0.180771,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.432111,0.930523,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.435377,0.629649,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.860063,0.111674,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.149977,0.233157,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.017041,0.447795,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.37657,0.432738,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+     cylinder, center = (0.403655,0.270111,0)
+          radius 0.0065, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon = 11.56
+Geometric object tree has depth 10 and 377 object nodes (vs. 299 actual objects)
+Initializing dielectric function...
+17 k-points:
+     (0,0,0)
+     (0.125,0,0)
+     (0.25,0,0)
+     (0.375,0,0)
+     (0.5,0,0)
+     (0.5,0.125,0)
+     (0.5,0.25,0)
+     (0.5,0.375,0)
+     (0.5,0.5,0)
+     (0.375,0.5,0)
+     (0.25,0.5,0)
+     (0.125,0.5,0)
+     (0,0.5,0)
+     (0,0.375,0)
+     (0,0.25,0)
+     (0,0.125,0)
+     (0,0,0)
+Solving for band polarization: tm.
+Initializing fields to random numbers...
+elapsed time for initialization: 1 seconds.
+epsilon: 1-11.56, mean 2.25989, harm. mean 1.15843, 16.7872% > 1, 11.9307% "fill"
+Outputting epsilon...
+solve_kpoint (0,0,0):
+tmfreqs:, k index, k1, k2, k3, kmag/2pi, tm band 1, tm band 2, tm band 3, tm band 4, tm band 5, tm band 6, tm band 7, tm band 8, tm band 9, tm band 10, tm band 11, tm band 12, tm band 13, tm band 14, tm band 15, tm band 16, tm band 17, tm band 18, tm band 19, tm band 20, tm band 21, tm band 22, tm band 23, tm band 24, tm band 25, tm band 26, tm band 27, tm band 28, tm band 29, tm band 30, tm band 31, tm band 32, tm band 33, tm band 34, tm band 35, tm band 36, tm band 37, tm band 38, tm band 39, tm band 40, tm band 41, tm band 42, tm band 43, tm band 44, tm band 45, tm band 46, tm band 47, tm band 48, tm band 49, tm band 50, tm band 51, tm band 52, tm band 53, tm band 54, tm band 55, tm band 56, tm band 57, tm band 58, tm band 59, tm band 60, tm band 61, tm band 62, tm band 63, tm band 64, tm band 65, tm band 66, tm band 67, tm band 68, tm band 69, tm band 70, tm band 71, tm band 72, tm band 73, tm band 74, tm band 75, tm band 76, tm band 77, tm band 78, tm band 79, tm band 80, tm band 81, tm band 82, tm band 83, tm band 84, tm band 85, tm band 86, tm band 87, tm band 88, tm band 89, tm band 90, tm band 91, tm band 92, tm band 93, tm band 94, tm band 95, tm band 96, tm band 97, tm band 98, tm band 99, tm band 100, tm band 101, tm band 102, tm band 103, tm band 104, tm band 105, tm band 106, tm band 107, tm band 108, tm band 109, tm band 110, tm band 111, tm band 112, tm band 113, tm band 114, tm band 115, tm band 116, tm band 117, tm band 118, tm band 119, tm band 120, tm band 121, tm band 122, tm band 123, tm band 124, tm band 125, tm band 126, tm band 127, tm band 128, tm band 129, tm band 130, tm band 131, tm band 132, tm band 133, tm band 134, tm band 135, tm band 136, tm band 137, tm band 138, tm band 139, tm band 140, tm band 141, tm band 142, tm band 143, tm band 144, tm band 145, tm band 146, tm band 147, tm band 148, tm band 149, tm band 150, tm band 151, tm band 152, tm band 153, tm band 154, tm band 155, tm band 156, tm band 157, tm band 158, tm band 159, tm band 160, tm band 161, tm band 162, tm band 163, tm band 164, tm band 165, tm band 166, tm band 167, tm band 168, tm band 169, tm band 170, tm band 171, tm band 172, tm band 173, tm band 174, tm band 175, tm band 176, tm band 177, tm band 178, tm band 179, tm band 180, tm band 181, tm band 182, tm band 183, tm band 184, tm band 185, tm band 186, tm band 187, tm band 188, tm band 189, tm band 190, tm band 191, tm band 192, tm band 193, tm band 194, tm band 195, tm band 196, tm band 197, tm band 198, tm band 199, tm band 200, tm band 201, tm band 202, tm band 203, tm band 204, tm band 205, tm band 206, tm band 207, tm band 208, tm band 209, tm band 210, tm band 211, tm band 212, tm band 213, tm band 214, tm band 215, tm band 216, tm band 217, tm band 218, tm band 219, tm band 220, tm band 221, tm band 222, tm band 223, tm band 224, tm band 225, tm band 226, tm band 227, tm band 228, tm band 229, tm band 230, tm band 231, tm band 232, tm band 233, tm band 234, tm band 235, tm band 236, tm band 237, tm band 238, tm band 239, tm band 240, tm band 241, tm band 242, tm band 243, tm band 244, tm band 245, tm band 246, tm band 247, tm band 248, tm band 249, tm band 250
+Solving for bands 2 to 12...
+    iteration    1: trace = 58.31649166801369 (199.824% change)
+    iteration    2: trace = 12.7129995334084 (128.407% change)
+    iteration    3: trace = 10.97773064405695 (14.6493% change)
+    iteration    5: trace = 10.58340326824407 (1.17351% change)
+    iteration    7: trace = 10.43278615112392 (0.308337% change)
+    iteration    9: trace = 10.42095014289984 (0.0446682% change)
+    iteration   11: trace = 10.40803001388407 (0.0700526% change)
+    iteration   13: trace = 10.36757095817836 (0.224955% change)
+    iteration   15: trace = 10.3497190056636 (0.0776597% change)
+    iteration   17: trace = 10.34663000678067 (0.00858167% change)
+    iteration   19: trace = 10.34531073105474 (0.00478697% change)
+    iteration   21: trace = 10.34461953736719 (0.00270673% change)
+    iteration   23: trace = 10.34450324908476 (0.000390112% change)
+    iteration   25: trace = 10.34448638440847 (2.46436e-05% change)
+Finished solving for bands 2 to 12 after 25 iterations.
+Solving for bands 13 to 23...
+Finished solving for bands 13 to 23 after 36 iterations.
+Solving for bands 24 to 34...
+Finished solving for bands 24 to 34 after 44 iterations.
+Solving for bands 35 to 45...
+Finished solving for bands 35 to 45 after 21 iterations.
+Solving for bands 46 to 56...
+Finished solving for bands 46 to 56 after 36 iterations.
+Solving for bands 57 to 67...
+Finished solving for bands 57 to 67 after 39 iterations.
+Solving for bands 68 to 78...
+Finished solving for bands 68 to 78 after 47 iterations.
+Solving for bands 79 to 89...
+Finished solving for bands 79 to 89 after 41 iterations.
+Solving for bands 90 to 100...
+    iteration   42: trace = 117.120691040516 (9.90401e-05% change)
+Finished solving for bands 90 to 100 after 42 iterations.
+Solving for bands 101 to 111...
+    iteration   39: trace = 128.7950596437348 (0.000250979% change)
+Finished solving for bands 101 to 111 after 48 iterations.
+Solving for bands 112 to 122...
+    iteration   37: trace = 137.0286680648373 (0.000909909% change)
+Finished solving for bands 112 to 122 after 54 iterations.
+Solving for bands 123 to 133...
+    iteration   40: trace = 145.9340173335081 (0.00191029% change)
+Finished solving for bands 123 to 133 after 53 iterations.
+Solving for bands 134 to 144...
+    iteration   38: trace = 154.8107405883357 (0.000801423% change)
+Finished solving for bands 134 to 144 after 49 iterations.
+Solving for bands 145 to 155...
+    iteration   36: trace = 163.0899833339358 (0.00034416% change)
+Finished solving for bands 145 to 155 after 40 iterations.
+Solving for bands 156 to 166...
+    iteration   34: trace = 172.4352913298901 (0.00276727% change)
+    iteration   68: trace = 172.353406277114 (0.000159702% change)
+Finished solving for bands 156 to 166 after 70 iterations.
+Solving for bands 167 to 177...
+    iteration   32: trace = 179.6511377647772 (0.00261519% change)
+Finished solving for bands 167 to 177 after 53 iterations.
+Solving for bands 178 to 188...
+    iteration   34: trace = 185.5286189508629 (0.00423188% change)
+Finished solving for bands 178 to 188 after 52 iterations.
+Solving for bands 189 to 199...
+    iteration   33: trace = 193.8762441160003 (0.000359061% change)
+Finished solving for bands 189 to 199 after 36 iterations.
+Solving for bands 200 to 210...
+    iteration   30: trace = 284.7492052579224 (0.00210512% change)
+    iteration   61: trace = 284.6546670499357 (8.8933e-05% change)
+Finished solving for bands 200 to 210 after 61 iterations.
+Solving for bands 211 to 221...
+    iteration   30: trace = 325.0147037542776 (0.00145762% change)
+Finished solving for bands 211 to 221 after 58 iterations.
+Solving for bands 222 to 232...
+    iteration   29: trace = 344.5817188592923 (0.0012891% change)
+Finished solving for bands 222 to 232 after 38 iterations.
+Solving for bands 233 to 243...
+    iteration   31: trace = 365.5947765045241 (0.00085002% change)
+Finished solving for bands 233 to 243 after 42 iterations.
+Solving for bands 244 to 250...
+    iteration   40: trace = 242.0608847959033 (0.0007273% change)
+Finished solving for bands 244 to 250 after 60 iterations.
+Finished k-point with 45.02 mean iterations/band.
+tmfreqs:, 1, 0, 0, 0, 0, 0, 0.65936, 0.660126, 0.665324, 0.667107, 0.92389, 0.930744, 0.9361, 0.949017, 1.29794, 1.30133, 1.3082, 1.33868, 1.43993, 1.44923, 1.45439, 1.46057, 1.46742, 1.47317, 1.47783, 1.49437, 1.80445, 1.82766, 1.8376, 1.8459, 1.91845, 1.92345, 1.94284, 1.95796, 1.99614, 2.01168, 2.02571, 2.03822, 2.04795, 2.05497, 2.06923, 2.08862, 2.2396, 2.26088, 2.28438, 2.29065, 2.29827, 2.31009, 2.33789, 2.35476, 2.48124, 2.49672, 2.51743, 2.52965, 2.54181, 2.55713, 2.56403, 2.57803, 2.58741, 2.60151, 2.61025, 2.63627, 2.6399, 2.65409, 2.67307, 2.69541, 2.72562, 2.75334, 2.76997, 2.77643, 2.79077, 2.81934, 2.82856, 2.85398, 2.95435, 2.96452, 2.98001, 2.99433, 3.00663, 3.01452, 3.02619, 3.03975, 3.04726, 3.05395, 3.06583, 3.0697, 3.08124, 3.09578, 3.09723, 3.1182, 3.1294, 3.14488, 3.149, 3.17101, 3.19257, 3.20309, 3.21529, 3.22667, 3.24956, 3.26002, 3.26665, 3.27881, 3.31526, 3.33277, 3.34838, 3.37495, 3.37873, 3.39217, 3.40383, 3.41151, 3.42104, 3.42861, 3.43284, 3.45229, 3.46394, 3.47784, 3.4849, 3.492, 3.50122, 3.50719, 3.51568, 3.52962, 3.53547, 3.54441, 3.55133, 3.57613, 3.58308, 3.58976, 3.60049, 3.61071, 3.62103, 3.63516, 3.63773, 3.66284, 3.66347, 3.67407, 3.67872, 3.68882, 3.70563, 3.71087, 3.71443, 3.73164, 3.73597, 3.75604, 3.76014, 3.77471, 3.77831, 3.79296, 3.80344, 3.80778, 3.8157, 3.82955, 3.83575, 3.84274, 3.85596, 3.85963, 3.86231, 3.87024, 3.88147, 3.89335, 3.91636, 3.92074, 3.93075, 3.94563, 3.9524, 3.95694, 3.96533, 3.97924, 3.98604, 3.99331, 3.99399, 4.00122, 4.00605, 4.02253, 4.03124, 4.03764, 4.04444, 4.05144, 4.05711, 4.06146, 4.06495, 4.07049, 4.07868, 4.08177, 4.08852, 4.09391, 4.10381, 4.10492, 4.11413, 4.11699, 4.12049, 4.12556, 4.13414, 4.15297, 4.15528, 4.1625, 4.17361, 4.17859, 4.1937, 4.19931, 4.21769, 4.23674, 4.25185, 4.25643, 4.27524, 4.9182, 5.01754, 5.07434, 5.13708, 5.13898, 5.17719, 5.22761, 5.25303, 5.30719, 5.34539, 5.35307, 5.35504, 5.36958, 5.41435, 5.42332, 5.45345, 5.4629, 5.47902, 5.48069, 5.49399, 5.50162, 5.50362, 5.54761, 5.56101, 5.56632, 5.58362, 5.58842, 5.59225, 5.64134, 5.6433, 5.66618, 5.66906, 5.69848, 5.709, 5.7271, 5.73759, 5.75067, 5.77337, 5.79225, 5.79711, 5.8046, 5.80559, 5.81742, 5.82964, 5.84291, 5.85732, 5.86968, 5.90613, 5.92325, 5.93209
+elapsed time for k point: 3 minutes, 24 seconds.
+solve_kpoint (0.125,0,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 16 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 14 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 19 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 20 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 24 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 15 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 31 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 21 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 13 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 17 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 22 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 23 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 16 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 28 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 17 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 14 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 11 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 9 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 11 iterations.
+Solving for bands 243 to 250...
+    iteration    1: trace = 275.935112300405 (0.0332015% change)
+    iteration    3: trace = 275.9018612885595 (0.0037899% change)
+    iteration    5: trace = 275.8911489852848 (0.00125224% change)
+    iteration    7: trace = 275.8880647611323 (0.000441121% change)
+Finished solving for bands 243 to 250 after 12 iterations.
+Finished k-point with 16.708 mean iterations/band.
+tmfreqs:, 2, 0.125, 0, 0, 0.125, 0.0831464, 0.580514, 0.664961, 0.671258, 0.745124, 0.874701, 0.882632, 0.989878, 0.999484, 1.23028, 1.30678, 1.31819, 1.38172, 1.392, 1.40645, 1.42473, 1.43541, 1.49604, 1.50819, 1.52949, 1.54536, 1.76771, 1.78524, 1.84799, 1.88405, 1.89224, 1.92276, 1.94185, 1.96045, 1.97277, 1.9984, 2.02465, 2.03238, 2.05635, 2.07286, 2.10848, 2.12905, 2.21038, 2.23238, 2.25748, 2.27282, 2.31736, 2.33629, 2.37108, 2.37896, 2.44863, 2.48349, 2.50729, 2.51603, 2.52602, 2.55319, 2.56606, 2.57816, 2.58858, 2.60238, 2.61515, 2.63342, 2.65927, 2.66581, 2.68878, 2.70198, 2.723, 2.73595, 2.75141, 2.78541, 2.80141, 2.8324, 2.84638, 2.86791, 2.94276, 2.95746, 2.96878, 2.97491, 2.99489, 3.00282, 3.02165, 3.03527, 3.04586, 3.05294, 3.06522, 3.07665, 3.08729, 3.09837, 3.1093, 3.12329, 3.13347, 3.14858, 3.15698, 3.17112, 3.19134, 3.20171, 3.21265, 3.22419, 3.24789, 3.26503, 3.2776, 3.2849, 3.31531, 3.32999, 3.34439, 3.36732, 3.37909, 3.39073, 3.39885, 3.41139, 3.42325, 3.42572, 3.43292, 3.45244, 3.46188, 3.47528, 3.48614, 3.4943, 3.50203, 3.50415, 3.51684, 3.5297, 3.53312, 3.54655, 3.55481, 3.57298, 3.58479, 3.5923, 3.60199, 3.61147, 3.62038, 3.63407, 3.63952, 3.66147, 3.66446, 3.67215, 3.67939, 3.68971, 3.70465, 3.71279, 3.71723, 3.72875, 3.73678, 3.75438, 3.76016, 3.77432, 3.77855, 3.79312, 3.80394, 3.80806, 3.81393, 3.8281, 3.8358, 3.84373, 3.85569, 3.85849, 3.86355, 3.87018, 3.88128, 3.894, 3.91653, 3.92142, 3.93075, 3.94397, 3.95246, 3.95878, 3.96528, 3.97726, 3.98729, 3.99207, 3.9954, 4.00141, 4.00642, 4.02158, 4.03078, 4.03849, 4.04546, 4.05145, 4.05712, 4.06175, 4.06465, 4.0702, 4.07793, 4.08176, 4.08723, 4.09385, 4.10332, 4.10534, 4.11411, 4.11727, 4.12067, 4.1266, 4.13484, 4.15211, 4.15581, 4.16227, 4.17242, 4.17956, 4.19379, 4.19917, 4.21766, 4.23675, 4.25186, 4.25642, 4.27523, 4.9182, 5.01754, 5.07434, 5.13708, 5.13898, 5.17718, 5.22761, 5.25303, 5.30719, 5.34534, 5.35312, 5.35505, 5.36956, 5.41433, 5.42332, 5.45346, 5.46294, 5.47908, 5.48072, 5.49398, 5.50126, 5.50383, 5.54764, 5.56096, 5.56638, 5.58371, 5.58832, 5.59224, 5.64131, 5.64332, 5.66623, 5.66896, 5.69851, 5.709, 5.72708, 5.7376, 5.75067, 5.77344, 5.79202, 5.79757, 5.80439, 5.80564, 5.81719, 5.82973, 5.84281, 5.85747, 5.86964, 5.90612, 5.92331, 5.9322
+elapsed time for k point: 1 minute, 6 seconds.
+solve_kpoint (0.25,0,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 14 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 7 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 15 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 18 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 20 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 12 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 20 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 20 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 19 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 18 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 16 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 21 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 18 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 21 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 20 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 14 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 17 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 9 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 14 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 14 iterations.
+Finished k-point with 15.54 mean iterations/band.
+tmfreqs:, 3, 0.25, 0, 0, 0.25, 0.166266, 0.497966, 0.680009, 0.686417, 0.821391, 0.826241, 0.834259, 1.05141, 1.0612, 1.15148, 1.30762, 1.31648, 1.32401, 1.33955, 1.39576, 1.40572, 1.47356, 1.53517, 1.54729, 1.59826, 1.61356, 1.71898, 1.73556, 1.78384, 1.87738, 1.89294, 1.92445, 1.9399, 1.94827, 1.96436, 1.99447, 2.01163, 2.06958, 2.09223, 2.10073, 2.15683, 2.1708, 2.18195, 2.19537, 2.22228, 2.24112, 2.35414, 2.36316, 2.39313, 2.41864, 2.42433, 2.45017, 2.46252, 2.49895, 2.52196, 2.53333, 2.54925, 2.56991, 2.58325, 2.59903, 2.62792, 2.64879, 2.66346, 2.68281, 2.70008, 2.71074, 2.72072, 2.75451, 2.76198, 2.78863, 2.82098, 2.85454, 2.87337, 2.88641, 2.92207, 2.93347, 2.94002, 2.95886, 2.96817, 2.97805, 3.00117, 3.02015, 3.03742, 3.06118, 3.06875, 3.08133, 3.0906, 3.11295, 3.12209, 3.13352, 3.14155, 3.14911, 3.16325, 3.17993, 3.19511, 3.20179, 3.21487, 3.23578, 3.24729, 3.26425, 3.28931, 3.3042, 3.31307, 3.32386, 3.33599, 3.35808, 3.3755, 3.38211, 3.39326, 3.4023, 3.41531, 3.42708, 3.43851, 3.45129, 3.46145, 3.47443, 3.48613, 3.49138, 3.50166, 3.50672, 3.51616, 3.52806, 3.53504, 3.54866, 3.55905, 3.56813, 3.58913, 3.59582, 3.60456, 3.61315, 3.62094, 3.63368, 3.64059, 3.6605, 3.66581, 3.66958, 3.68123, 3.69127, 3.70271, 3.71501, 3.72317, 3.72608, 3.7349, 3.75193, 3.75841, 3.77268, 3.78025, 3.79344, 3.8046, 3.80855, 3.81158, 3.82563, 3.83461, 3.84525, 3.85524, 3.85698, 3.86507, 3.87026, 3.88052, 3.89561, 3.91734, 3.92293, 3.93079, 3.94123, 3.95248, 3.96118, 3.96556, 3.97466, 3.98738, 3.99133, 3.99746, 4.00189, 4.00747, 4.01966, 4.03005, 4.03949, 4.04797, 4.05204, 4.05712, 4.06213, 4.06412, 4.06977, 4.07624, 4.08137, 4.08404, 4.09359, 4.10301, 4.1057, 4.11438, 4.11759, 4.12083, 4.12925, 4.13681, 4.15042, 4.15658, 4.16147, 4.17041, 4.18108, 4.19403, 4.19881, 4.21757, 4.23678, 4.25188, 4.25643, 4.27523, 4.9182, 5.01754, 5.07434, 5.13708, 5.13899, 5.17718, 5.22762, 5.25303, 5.3072, 5.34536, 5.3531, 5.35506, 5.36951, 5.4143, 5.42331, 5.45347, 5.46305, 5.47911, 5.48075, 5.49386, 5.50139, 5.50367, 5.54768, 5.56084, 5.56654, 5.58395, 5.58806, 5.59224, 5.64126, 5.64339, 5.66641, 5.66874, 5.69852, 5.709, 5.72704, 5.73763, 5.75067, 5.77359, 5.79149, 5.79864, 5.80383, 5.80571, 5.81695, 5.82979, 5.84258, 5.8578, 5.86955, 5.90612, 5.92345, 5.93243
+elapsed time for k point: 39 seconds.
+solve_kpoint (0.375,0,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 14 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 17 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 21 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 22 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 18 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 18 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 18 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 17 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 24 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 19 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 15 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 25 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 19 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 18 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 20 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 14 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 11 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 10 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 14 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 15 iterations.
+Finished k-point with 16.496 mean iterations/band.
+tmfreqs:, 4, 0.375, 0, 0, 0.375, 0.249327, 0.415232, 0.704303, 0.710855, 0.77739, 0.784704, 0.909012, 1.07083, 1.1157, 1.12536, 1.24857, 1.25811, 1.32685, 1.34056, 1.37218, 1.38091, 1.54902, 1.57732, 1.58925, 1.65991, 1.66769, 1.67954, 1.69397, 1.71792, 1.81376, 1.82829, 1.93128, 1.96119, 1.9735, 1.98, 2.00144, 2.0183, 2.09407, 2.10461, 2.12317, 2.13079, 2.16368, 2.1837, 2.19995, 2.24735, 2.25989, 2.31124, 2.37507, 2.38465, 2.40886, 2.43078, 2.46247, 2.46957, 2.49402, 2.50759, 2.52667, 2.53307, 2.55306, 2.57704, 2.58513, 2.60427, 2.63518, 2.67179, 2.69024, 2.70663, 2.72805, 2.75724, 2.78473, 2.80311, 2.81076, 2.83363, 2.85056, 2.86781, 2.8832, 2.90228, 2.91515, 2.92541, 2.94149, 2.95271, 2.97148, 2.9851, 3.0111, 3.0283, 3.05205, 3.06308, 3.08238, 3.09427, 3.11692, 3.12899, 3.13627, 3.1502, 3.15328, 3.1739, 3.19102, 3.19748, 3.21111, 3.22311, 3.24306, 3.25812, 3.26662, 3.29707, 3.30171, 3.30784, 3.32426, 3.33578, 3.35377, 3.36271, 3.37208, 3.38543, 3.39701, 3.40928, 3.42871, 3.44197, 3.45023, 3.46218, 3.47335, 3.48218, 3.48956, 3.50477, 3.51013, 3.51445, 3.5259, 3.53976, 3.54872, 3.5585, 3.5661, 3.59328, 3.5997, 3.6046, 3.61273, 3.62327, 3.63435, 3.64251, 3.66195, 3.66563, 3.66803, 3.68477, 3.69254, 3.70034, 3.71416, 3.72438, 3.72954, 3.73238, 3.75037, 3.7545, 3.77152, 3.78352, 3.79191, 3.80347, 3.80872, 3.81338, 3.82402, 3.83242, 3.84494, 3.85535, 3.85665, 3.86489, 3.87113, 3.87944, 3.8971, 3.91819, 3.92491, 3.93084, 3.9395, 3.95193, 3.96183, 3.96598, 3.97432, 3.98569, 3.99128, 3.99891, 4.00263, 4.00875, 4.01812, 4.02932, 4.03989, 4.04975, 4.05407, 4.057, 4.06132, 4.06528, 4.06895, 4.07478, 4.07886, 4.08224, 4.09325, 4.10328, 4.10568, 4.11496, 4.11745, 4.12107, 4.13203, 4.13894, 4.14867, 4.15721, 4.16027, 4.16894, 4.18217, 4.1943, 4.19842, 4.21748, 4.2368, 4.25191, 4.25645, 4.27523, 4.91821, 5.01754, 5.07434, 5.13707, 5.13899, 5.17717, 5.22762, 5.25303, 5.30722, 5.34537, 5.35308, 5.35507, 5.36946, 5.41426, 5.4233, 5.45348, 5.46315, 5.47923, 5.48082, 5.49381, 5.50146, 5.50337, 5.54773, 5.56073, 5.56669, 5.58421, 5.58776, 5.59223, 5.6412, 5.64344, 5.66669, 5.66841, 5.69854, 5.709, 5.72701, 5.73766, 5.75066, 5.77375, 5.79106, 5.79988, 5.80305, 5.80575, 5.81672, 5.82984, 5.84235, 5.85812, 5.86947, 5.90613, 5.9236, 5.93266
+elapsed time for k point: 40 seconds.
+solve_kpoint (0.5,0,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 13 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 11 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 21 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 11 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 23 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 31 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 26 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 23 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 18 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 18 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 14 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 26 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 18 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 12 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 15 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 20 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 18 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 17 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 10 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 15 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 18 iterations.
+Finished k-point with 17.12 mean iterations/band.
+tmfreqs:, 5, 0.5, 0, 0, 0.5, 0.330694, 0.333974, 0.733527, 0.739657, 0.740668, 0.748912, 0.986891, 0.993543, 1.17638, 1.18536, 1.18621, 1.19783, 1.33435, 1.35084, 1.36015, 1.3654, 1.60574, 1.61636, 1.62805, 1.63318, 1.6379, 1.64711, 1.7282, 1.74845, 1.76174, 1.76825, 1.93371, 1.96838, 1.97157, 1.97665, 2.04355, 2.05421, 2.0596, 2.07236, 2.13637, 2.14173, 2.15348, 2.17222, 2.23397, 2.24921, 2.29895, 2.30368, 2.33161, 2.34904, 2.42994, 2.4515, 2.45528, 2.47242, 2.4969, 2.51142, 2.53334, 2.53863, 2.54663, 2.56024, 2.57704, 2.57553, 2.63291, 2.67913, 2.69048, 2.69684, 2.76474, 2.77709, 2.79799, 2.81539, 2.8273, 2.83686, 2.84908, 2.85527, 2.86887, 2.88671, 2.9004, 2.9166, 2.94275, 2.94689, 2.97483, 2.99811, 3.01009, 3.02093, 3.02969, 3.06307, 3.08105, 3.09833, 3.11424, 3.13161, 3.13747, 3.15479, 3.15767, 3.17818, 3.18962, 3.2044, 3.21775, 3.23118, 3.23459, 3.26694, 3.27791, 3.2903, 3.29631, 3.3068, 3.32734, 3.3408, 3.34853, 3.35524, 3.3661, 3.37952, 3.39843, 3.41076, 3.42886, 3.44115, 3.44896, 3.46171, 3.47252, 3.4826, 3.48848, 3.50755, 3.509, 3.51565, 3.525, 3.54102, 3.54911, 3.5571, 3.56551, 3.59545, 3.60265, 3.60347, 3.61114, 3.62365, 3.63464, 3.64538, 3.66238, 3.66577, 3.6671, 3.68642, 3.69509, 3.69781, 3.71257, 3.72364, 3.73074, 3.73346, 3.74959, 3.75232, 3.77126, 3.78752, 3.78816, 3.80295, 3.80908, 3.81475, 3.82358, 3.83128, 3.84415, 3.85597, 3.85645, 3.86455, 3.87154, 3.87895, 3.89766, 3.91845, 3.92607, 3.93073, 3.93908, 3.95139, 3.96195, 3.96584, 3.975, 3.98465, 3.9912, 3.99936, 4.00311, 4.0093, 4.0176, 4.02897, 4.03997, 4.05026, 4.05591, 4.05648, 4.06057, 4.06729, 4.06769, 4.07426, 4.07671, 4.08208, 4.09309, 4.10353, 4.10557, 4.11532, 4.11722, 4.12121, 4.13322, 4.13996, 4.14779, 4.15757, 4.15952, 4.16845, 4.18255, 4.19443, 4.19824, 4.21745, 4.23681, 4.25192, 4.25644, 4.27523, 4.91821, 5.01754, 5.07434, 5.13707, 5.13899, 5.17717, 5.22763, 5.25303, 5.30723, 5.34538, 5.35307, 5.35508, 5.36944, 5.41425, 5.4233, 5.45348, 5.4632, 5.47922, 5.48081, 5.49372, 5.5016, 5.50331, 5.54775, 5.56068, 5.56675, 5.58434, 5.58763, 5.59222, 5.64118, 5.64347, 5.66705, 5.66803, 5.69855, 5.70899, 5.72699, 5.73767, 5.75066, 5.77381, 5.7909, 5.80061, 5.80248, 5.80575, 5.81664, 5.82985, 5.84226, 5.85824, 5.86943, 5.90612, 5.92365, 5.93274
+elapsed time for k point: 41 seconds.
+solve_kpoint (0.5,0.125,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 15 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 12 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 18 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 10 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 24 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 29 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 27 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 25 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 17 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 20 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 14 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 23 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 18 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 13 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 15 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 16 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 11 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 7 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 10 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 12 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 16 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 13 iterations.
+Finished k-point with 16.256 mean iterations/band.
+tmfreqs:, 6, 0.5, 0.125, 0, 0.515388, 0.340853, 0.344233, 0.664839, 0.671352, 0.810922, 0.818899, 0.990248, 0.996887, 1.13952, 1.14776, 1.22695, 1.23673, 1.26995, 1.28339, 1.42201, 1.43643, 1.56077, 1.5712, 1.62572, 1.63286, 1.6848, 1.6947, 1.71634, 1.73095, 1.78144, 1.78651, 1.88126, 1.89996, 2.0027, 2.00893, 2.03566, 2.04794, 2.06608, 2.08132, 2.11591, 2.12262, 2.20557, 2.20765, 2.23817, 2.25397, 2.28839, 2.30575, 2.3357, 2.35678, 2.39993, 2.42001, 2.45386, 2.45967, 2.47465, 2.49468, 2.5383, 2.54724, 2.5557, 2.57828, 2.58347, 2.6053, 2.61577, 2.66442, 2.71186, 2.73346, 2.76238, 2.77469, 2.78822, 2.8007, 2.82651, 2.83894, 2.84753, 2.85347, 2.86405, 2.88177, 2.90409, 2.92359, 2.93774, 2.9596, 2.97292, 2.99055, 3.00676, 3.01942, 3.03098, 3.06426, 3.07415, 3.09113, 3.11325, 3.12388, 3.13725, 3.15128, 3.17138, 3.18335, 3.19559, 3.20314, 3.22178, 3.22782, 3.24116, 3.26326, 3.2786, 3.28965, 3.29978, 3.30973, 3.32568, 3.33892, 3.35005, 3.35922, 3.36824, 3.38197, 3.39902, 3.41196, 3.4259, 3.43725, 3.44767, 3.46042, 3.46701, 3.47671, 3.48979, 3.49689, 3.50313, 3.518, 3.52851, 3.53922, 3.55227, 3.56124, 3.57033, 3.59835, 3.60112, 3.60525, 3.61159, 3.62396, 3.63574, 3.64748, 3.66206, 3.66613, 3.66697, 3.68605, 3.69291, 3.70091, 3.71322, 3.72466, 3.72845, 3.73284, 3.74932, 3.7528, 3.77006, 3.7857, 3.78772, 3.80438, 3.80882, 3.81496, 3.8223, 3.83225, 3.84393, 3.85433, 3.85746, 3.86542, 3.87157, 3.87908, 3.89636, 3.91823, 3.9267, 3.93166, 3.93915, 3.95106, 3.9613, 3.96575, 3.97598, 3.98479, 3.99086, 3.99956, 4.00325, 4.00921, 4.0172, 4.02882, 4.04004, 4.05046, 4.05476, 4.0573, 4.06084, 4.06518, 4.06999, 4.07483, 4.07655, 4.08155, 4.09383, 4.10267, 4.10582, 4.11431, 4.11735, 4.12242, 4.13303, 4.13953, 4.14803, 4.15744, 4.15955, 4.16861, 4.18251, 4.19438, 4.19815, 4.21747, 4.23686, 4.252, 4.25636, 4.27524, 4.91821, 5.01753, 5.07434, 5.13707, 5.13899, 5.17717, 5.22763, 5.25304, 5.30721, 5.34538, 5.35306, 5.35502, 5.36957, 5.41418, 5.4233, 5.45347, 5.46309, 5.47927, 5.48089, 5.49385, 5.50152, 5.50331, 5.54734, 5.56118, 5.56688, 5.58448, 5.58763, 5.5918, 5.64112, 5.64332, 5.66699, 5.66834, 5.69853, 5.70898, 5.72702, 5.73768, 5.7508, 5.7737, 5.79087, 5.80059, 5.80227, 5.80544, 5.8168, 5.83067, 5.84217, 5.85764, 5.86962, 5.90612, 5.92369, 5.93264
+elapsed time for k point: 39 seconds.
+solve_kpoint (0.5,0.25,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 16 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 15 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 13 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 25 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 23 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 24 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 17 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 21 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 17 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 31 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 17 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 25 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 16 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 18 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 17 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 14 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 7 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 11 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 14 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 16 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 15 iterations.
+Finished k-point with 17.156 mean iterations/band.
+tmfreqs:, 7, 0.5, 0.25, 0, 0.559017, 0.369645, 0.373308, 0.595102, 0.600972, 0.885737, 0.894287, 1.00023, 1.0068, 1.10154, 1.1098, 1.19105, 1.20333, 1.28014, 1.28779, 1.48756, 1.50194, 1.511, 1.52321, 1.63049, 1.63776, 1.693, 1.70241, 1.74838, 1.75702, 1.79893, 1.81151, 1.82556, 1.8365, 1.96491, 1.97108, 2.01164, 2.02061, 2.10139, 2.11871, 2.15426, 2.16009, 2.22804, 2.24387, 2.26093, 2.27156, 2.29087, 2.30176, 2.34296, 2.35435, 2.36478, 2.38748, 2.40482, 2.414, 2.44881, 2.47616, 2.52847, 2.54105, 2.57636, 2.58943, 2.60365, 2.61847, 2.6613, 2.69522, 2.73588, 2.74389, 2.75684, 2.77053, 2.77878, 2.78853, 2.81451, 2.82889, 2.8421, 2.85465, 2.87011, 2.88307, 2.9036, 2.92136, 2.92983, 2.95775, 2.96938, 2.99352, 3.0123, 3.02007, 3.03366, 3.05135, 3.06404, 3.07504, 3.09912, 3.13188, 3.14136, 3.15574, 3.1722, 3.18105, 3.19958, 3.21109, 3.22412, 3.24109, 3.24943, 3.26099, 3.27706, 3.29593, 3.30562, 3.31537, 3.32697, 3.33914, 3.35054, 3.36265, 3.36961, 3.3871, 3.39819, 3.4135, 3.42298, 3.42789, 3.44007, 3.45499, 3.46156, 3.46747, 3.48135, 3.49042, 3.49838, 3.51043, 3.52825, 3.53887, 3.557, 3.57203, 3.57996, 3.59627, 3.6041, 3.60785, 3.61676, 3.62317, 3.63923, 3.65052, 3.66105, 3.66744, 3.6696, 3.68386, 3.69158, 3.70451, 3.71511, 3.72339, 3.72755, 3.73111, 3.74553, 3.75692, 3.76585, 3.78121, 3.78766, 3.80561, 3.80816, 3.81678, 3.82061, 3.83345, 3.84319, 3.85184, 3.85877, 3.86708, 3.87181, 3.87943, 3.89339, 3.91788, 3.92776, 3.93371, 3.93939, 3.9505, 3.95974, 3.96557, 3.97821, 3.98512, 3.98993, 4.00041, 4.00367, 4.00874, 4.01585, 4.02893, 4.03971, 4.05134, 4.05403, 4.05725, 4.06062, 4.06506, 4.07112, 4.07473, 4.07772, 4.08052, 4.09556, 4.10109, 4.10599, 4.11235, 4.11778, 4.12462, 4.13261, 4.13836, 4.14871, 4.15695, 4.15975, 4.16899, 4.18241, 4.19424, 4.19794, 4.21753, 4.237, 4.25216, 4.25615, 4.27524, 4.9182, 5.01754, 5.07434, 5.13707, 5.13897, 5.17716, 5.22765, 5.25307, 5.30717, 5.34536, 5.35304, 5.35489, 5.36987, 5.41403, 5.4233, 5.45343, 5.46283, 5.47938, 5.48107, 5.49425, 5.5012, 5.50337, 5.54644, 5.56222, 5.56729, 5.58493, 5.58764, 5.59065, 5.64093, 5.643, 5.66691, 5.66903, 5.69844, 5.70895, 5.72709, 5.73771, 5.75117, 5.77341, 5.79078, 5.80052, 5.80182, 5.80479, 5.81706, 5.83282, 5.84183, 5.85619, 5.87, 5.90611, 5.9238, 5.93256
+elapsed time for k point: 42 seconds.
+solve_kpoint (0.5,0.375,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 9 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 9 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 12 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 34 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 16 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 22 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 30 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 17 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 23 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 22 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 26 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 18 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 14 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 16 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 17 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 14 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 12 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 13 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 14 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 15 iterations.
+Finished k-point with 16.672 mean iterations/band.
+tmfreqs:, 8, 0.5, 0.375, 0, 0.625, 0.413149, 0.417234, 0.528762, 0.534001, 0.961103, 0.969926, 1.01654, 1.02283, 1.06829, 1.07688, 1.11527, 1.12722, 1.33132, 1.33954, 1.44333, 1.45095, 1.57364, 1.58676, 1.63789, 1.64517, 1.67568, 1.6861, 1.7292, 1.74828, 1.81477, 1.82374, 1.85194, 1.85479, 1.9236, 1.93056, 1.95234, 1.96168, 2.16653, 2.18233, 2.19491, 2.20657, 2.237, 2.2464, 2.26437, 2.27928, 2.29492, 2.30856, 2.32157, 2.33997, 2.34514, 2.35847, 2.38885, 2.41547, 2.42467, 2.44769, 2.47967, 2.49721, 2.61286, 2.62486, 2.63023, 2.65008, 2.7001, 2.70985, 2.72637, 2.7331, 2.75758, 2.76293, 2.77969, 2.78672, 2.80898, 2.83082, 2.84675, 2.8515, 2.86669, 2.87972, 2.88913, 2.91836, 2.93663, 2.9489, 2.97378, 2.98821, 3.00206, 3.01812, 3.03237, 3.04726, 3.06416, 3.08472, 3.09197, 3.12992, 3.13716, 3.15124, 3.16483, 3.17561, 3.20676, 3.21626, 3.22778, 3.25361, 3.26211, 3.26563, 3.28147, 3.30284, 3.30894, 3.31946, 3.329, 3.3437, 3.35349, 3.36149, 3.3701, 3.38489, 3.39436, 3.40735, 3.41759, 3.42598, 3.43637, 3.44568, 3.45902, 3.46078, 3.47801, 3.48729, 3.4935, 3.50616, 3.52627, 3.53225, 3.56212, 3.58079, 3.58757, 3.59567, 3.60426, 3.61131, 3.61963, 3.62593, 3.64336, 3.6503, 3.66057, 3.67036, 3.67353, 3.68148, 3.69278, 3.70562, 3.71638, 3.71949, 3.72717, 3.73166, 3.74393, 3.75858, 3.76137, 3.77682, 3.78768, 3.80463, 3.8084, 3.81935, 3.82, 3.83386, 3.84231, 3.84996, 3.85935, 3.86902, 3.87214, 3.87968, 3.8906, 3.91759, 3.92845, 3.93551, 3.93972, 3.95054, 3.9578, 3.96539, 3.9801, 3.98583, 3.98904, 4.00177, 4.00403, 4.00794, 4.01378, 4.02997, 4.03861, 4.05184, 4.05466, 4.0566, 4.06078, 4.06542, 4.07057, 4.07493, 4.07843, 4.08048, 4.09733, 4.09992, 4.10583, 4.11061, 4.11819, 4.12657, 4.13222, 4.13706, 4.1494, 4.15627, 4.16007, 4.16936, 4.18228, 4.1941, 4.19774, 4.21759, 4.23713, 4.25236, 4.25588, 4.27525, 4.9182, 5.01754, 5.07434, 5.13707, 5.13896, 5.17716, 5.22767, 5.25309, 5.30712, 5.34533, 5.35303, 5.35477, 5.37016, 5.41387, 5.4233, 5.4534, 5.46259, 5.47945, 5.48125, 5.4948, 5.5007, 5.50348, 5.54565, 5.56303, 5.56786, 5.58577, 5.58765, 5.58906, 5.64071, 5.64274, 5.66679, 5.66975, 5.69836, 5.70891, 5.72717, 5.73774, 5.75156, 5.77309, 5.79069, 5.80041, 5.80132, 5.80442, 5.81719, 5.83545, 5.84108, 5.85467, 5.87033, 5.9061, 5.92389, 5.93247
+elapsed time for k point: 41 seconds.
+solve_kpoint (0.5,0.5,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 24 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 20 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 20 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 16 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 20 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 24 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 23 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 15 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 19 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 25 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 26 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 20 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 13 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 17 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 16 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 20 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 18 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 21 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 12 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 14 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 14 iterations.
+Finished k-point with 18.004 mean iterations/band.
+tmfreqs:, 9, 0.5, 0.5, 0, 0.707107, 0.46492, 0.469105, 0.469856, 0.474624, 1.02598, 1.03043, 1.03803, 1.0386, 1.04491, 1.05019, 1.058, 1.06008, 1.37995, 1.38444, 1.39665, 1.40068, 1.62504, 1.63884, 1.64222, 1.65329, 1.66589, 1.66901, 1.68652, 1.69946, 1.85383, 1.86793, 1.88135, 1.88677, 1.8887, 1.89592, 1.91098, 1.91991, 2.20685, 2.21916, 2.22742, 2.23124, 2.24341, 2.25102, 2.25583, 2.26668, 2.2721, 2.29044, 2.29709, 2.30217, 2.36924, 2.38606, 2.39131, 2.41681, 2.42187, 2.43895, 2.45404, 2.45663, 2.63061, 2.64385, 2.65395, 2.67002, 2.68844, 2.70419, 2.71087, 2.72205, 2.76793, 2.78431, 2.78767, 2.80147, 2.80369, 2.81188, 2.82488, 2.84267, 2.87624, 2.88257, 2.89238, 2.92708, 2.93325, 2.95137, 2.95988, 2.98036, 3.00465, 3.01522, 3.02745, 3.04509, 3.07331, 3.08516, 3.11271, 3.12002, 3.12857, 3.14082, 3.16373, 3.17107, 3.21124, 3.21689, 3.2359, 3.25543, 3.26659, 3.26946, 3.28391, 3.30796, 3.31243, 3.31804, 3.32794, 3.35084, 3.35352, 3.35849, 3.37166, 3.3841, 3.38838, 3.40342, 3.41384, 3.42773, 3.43266, 3.44521, 3.45476, 3.46157, 3.47611, 3.48668, 3.49284, 3.50594, 3.52522, 3.52746, 3.56351, 3.58375, 3.5898, 3.59792, 3.60291, 3.61546, 3.61672, 3.62845, 3.64537, 3.65027, 3.65998, 3.67119, 3.67595, 3.68015, 3.6952, 3.70534, 3.71438, 3.71958, 3.72534, 3.73303, 3.74635, 3.75293, 3.76336, 3.77474, 3.78766, 3.80409, 3.80851, 3.81994, 3.82049, 3.83383, 3.84192, 3.84936, 3.8593, 3.87018, 3.87218, 3.87959, 3.88958, 3.91745, 3.92865, 3.93621, 3.93985, 3.95093, 3.9567, 3.96533, 3.98067, 3.98638, 3.98872, 4.00249, 4.00418, 4.0075, 4.01263, 4.03086, 4.03773, 4.05178, 4.05542, 4.05634, 4.061, 4.0654, 4.07, 4.07525, 4.07829, 4.08086, 4.09795, 4.09976, 4.10561, 4.10989, 4.11836, 4.1273, 4.13206, 4.13655, 4.14971, 4.15593, 4.16022, 4.16951, 4.18223, 4.19404, 4.19767, 4.21762, 4.2372, 4.25259, 4.25561, 4.27526, 4.9182, 5.01754, 5.07434, 5.13707, 5.13896, 5.17716, 5.22767, 5.25311, 5.3071, 5.34532, 5.35302, 5.35473, 5.37029, 5.4138, 5.42331, 5.45338, 5.46249, 5.47948, 5.48133, 5.49487, 5.50056, 5.50362, 5.54535, 5.56331, 5.56815, 5.58664, 5.5876, 5.58792, 5.64062, 5.64266, 5.66666, 5.67012, 5.69832, 5.7089, 5.7272, 5.73776, 5.75172, 5.77296, 5.79064, 5.80034, 5.80113, 5.80431, 5.81723, 5.83697, 5.84037, 5.85401, 5.87045, 5.9061, 5.92393, 5.93243
+elapsed time for k point: 43 seconds.
+solve_kpoint (0.375,0.5,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 15 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 15 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 21 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 20 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 23 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 38 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 29 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 16 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 18 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 21 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 21 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 16 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 16 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 11 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 18 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 17 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 18 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 16 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 9 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 11 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 14 iterations.
+Finished k-point with 17.388 mean iterations/band.
+tmfreqs:, 10, 0.375, 0.5, 0, 0.625, 0.412988, 0.417412, 0.528527, 0.534217, 0.960489, 0.97099, 1.01619, 1.02224, 1.07096, 1.07427, 1.11629, 1.12668, 1.33301, 1.33759, 1.44482, 1.44964, 1.57504, 1.58433, 1.63804, 1.64641, 1.67729, 1.68538, 1.72696, 1.74889, 1.81703, 1.8258, 1.84478, 1.85809, 1.91957, 1.93369, 1.95131, 1.96331, 2.16664, 2.18156, 2.19744, 2.2098, 2.23445, 2.24262, 2.26514, 2.27555, 2.30365, 2.30842, 2.32416, 2.3332, 2.34226, 2.36674, 2.38087, 2.40524, 2.43777, 2.44915, 2.48182, 2.49338, 2.60659, 2.62482, 2.63738, 2.65136, 2.69893, 2.71209, 2.72507, 2.73235, 2.7515, 2.76128, 2.78751, 2.80066, 2.8085, 2.82479, 2.8292, 2.85214, 2.86256, 2.88011, 2.89599, 2.92553, 2.93789, 2.9488, 2.9693, 2.99174, 3.00214, 3.01495, 3.03045, 3.05259, 3.06075, 3.08477, 3.10172, 3.13148, 3.13293, 3.13946, 3.16385, 3.18151, 3.20618, 3.21247, 3.23393, 3.24731, 3.26291, 3.2686, 3.28039, 3.30017, 3.31437, 3.3185, 3.32926, 3.3457, 3.35208, 3.36194, 3.37869, 3.38423, 3.38684, 3.40482, 3.41716, 3.42848, 3.43472, 3.45005, 3.45348, 3.46527, 3.47879, 3.48792, 3.49106, 3.50667, 3.52395, 3.53025, 3.56332, 3.58193, 3.58923, 3.59543, 3.60119, 3.61404, 3.61774, 3.62623, 3.6396, 3.65259, 3.65937, 3.66974, 3.67626, 3.68359, 3.69502, 3.70469, 3.71453, 3.71915, 3.72491, 3.73412, 3.74703, 3.7543, 3.76296, 3.77507, 3.78881, 3.80203, 3.81048, 3.81975, 3.82125, 3.83373, 3.84252, 3.8498, 3.85949, 3.8681, 3.87301, 3.87994, 3.88895, 3.91761, 3.92862, 3.93337, 3.94123, 3.95114, 3.95763, 3.96553, 3.97904, 3.98731, 3.98901, 4.0021, 4.00369, 4.00697, 4.01421, 4.0312, 4.03753, 4.05012, 4.05475, 4.05602, 4.0611, 4.06627, 4.07035, 4.07562, 4.07846, 4.08249, 4.09776, 4.09989, 4.10576, 4.10965, 4.11801, 4.12629, 4.13181, 4.13652, 4.14959, 4.15539, 4.16122, 4.17001, 4.18198, 4.19376, 4.19788, 4.21767, 4.23718, 4.25244, 4.25576, 4.27526, 4.9182, 5.01754, 5.07434, 5.13707, 5.13895, 5.17717, 5.22767, 5.2531, 5.30709, 5.34532, 5.35302, 5.35474, 5.3703, 5.41382, 5.42331, 5.45338, 5.46244, 5.47942, 5.48133, 5.4949, 5.50055, 5.50371, 5.54533, 5.56338, 5.56805, 5.58661, 5.58748, 5.58807, 5.64068, 5.64264, 5.66652, 5.67025, 5.69832, 5.70889, 5.72721, 5.73774, 5.75172, 5.77291, 5.79081, 5.79996, 5.80094, 5.80467, 5.81734, 5.83698, 5.84043, 5.8539, 5.87045, 5.9061, 5.92396, 5.93238
+elapsed time for k point: 41 seconds.
+solve_kpoint (0.25,0.5,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 6 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 9 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 12 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 26 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 13 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 25 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 34 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 22 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 20 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 38 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 27 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 23 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 21 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 18 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 24 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 22 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 12 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 11 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 12 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 16 iterations.
+Finished k-point with 18.332 mean iterations/band.
+tmfreqs:, 11, 0.25, 0.5, 0, 0.559017, 0.3695, 0.373462, 0.594825, 0.601231, 0.885369, 0.894847, 1.00068, 1.00589, 1.10365, 1.10761, 1.19195, 1.20341, 1.28127, 1.28584, 1.48731, 1.50385, 1.51247, 1.51952, 1.62928, 1.63956, 1.69376, 1.70351, 1.74765, 1.75921, 1.79631, 1.8103, 1.82759, 1.83506, 1.96033, 1.97184, 2.01323, 2.02126, 2.10156, 2.12258, 2.1506, 2.16532, 2.22815, 2.23658, 2.26532, 2.28154, 2.28341, 2.30251, 2.3446, 2.35101, 2.35681, 2.38745, 2.40292, 2.41047, 2.46745, 2.47159, 2.52535, 2.54163, 2.56824, 2.58553, 2.61115, 2.62431, 2.66219, 2.69607, 2.73263, 2.74558, 2.75568, 2.77504, 2.78566, 2.80113, 2.81297, 2.81721, 2.82659, 2.83972, 2.86318, 2.88761, 2.91374, 2.92948, 2.93774, 2.94978, 2.97213, 2.99693, 3.00949, 3.01796, 3.04132, 3.05318, 3.0656, 3.07988, 3.09702, 3.13012, 3.13818, 3.14535, 3.15816, 3.1898, 3.20303, 3.21309, 3.22772, 3.22979, 3.25442, 3.26369, 3.27467, 3.29302, 3.30469, 3.32242, 3.32534, 3.34266, 3.35082, 3.36783, 3.37978, 3.38208, 3.39864, 3.40485, 3.42183, 3.42918, 3.4427, 3.45435, 3.45941, 3.47367, 3.47873, 3.48996, 3.49699, 3.50932, 3.52364, 3.53283, 3.56061, 3.57412, 3.58839, 3.58955, 3.59844, 3.61055, 3.61597, 3.62636, 3.63169, 3.64901, 3.66155, 3.66775, 3.67783, 3.68856, 3.69446, 3.70299, 3.71448, 3.7172, 3.72683, 3.73658, 3.74757, 3.75632, 3.76188, 3.77683, 3.7903, 3.80111, 3.81155, 3.8203, 3.82326, 3.83398, 3.84308, 3.85081, 3.85984, 3.86532, 3.8732, 3.88052, 3.88741, 3.91793, 3.92762, 3.92984, 3.9428, 3.95131, 3.95935, 3.966, 3.97728, 3.98724, 3.98952, 4.00177, 4.00308, 4.00577, 4.01772, 4.03174, 4.03705, 4.04612, 4.05384, 4.05532, 4.06147, 4.06754, 4.07132, 4.07658, 4.07866, 4.08638, 4.09736, 4.10029, 4.10615, 4.10899, 4.11713, 4.12367, 4.13078, 4.13708, 4.14897, 4.15496, 4.16275, 4.17146, 4.18123, 4.19315, 4.1983, 4.21776, 4.23716, 4.25229, 4.25587, 4.27525, 4.9182, 5.01754, 5.07434, 5.13707, 5.13895, 5.17717, 5.22767, 5.2531, 5.30708, 5.34531, 5.35301, 5.35475, 5.37033, 5.41388, 5.42331, 5.45337, 5.46232, 5.4793, 5.4814, 5.49504, 5.5004, 5.50386, 5.54528, 5.56356, 5.56781, 5.58655, 5.58735, 5.58831, 5.64082, 5.64255, 5.66642, 5.67029, 5.69835, 5.70889, 5.72726, 5.73773, 5.75172, 5.77279, 5.79122, 5.79893, 5.80081, 5.80545, 5.81743, 5.837, 5.84059, 5.85363, 5.87046, 5.9061, 5.92398, 5.93227
+elapsed time for k point: 45 seconds.
+solve_kpoint (0.125,0.5,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 27 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 20 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 21 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 17 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 21 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 35 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 18 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 27 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 18 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 21 iterations.
+Solving for bands 111 to 121...
+    iteration   37: trace = 136.1988349004924 (0.000125902% change)
+Finished solving for bands 111 to 121 after 39 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 28 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 18 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 18 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 24 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 15 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 17 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 10 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 16 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 15 iterations.
+Finished k-point with 19.84 mean iterations/band.
+tmfreqs:, 12, 0.125, 0.5, 0, 0.515388, 0.340719, 0.344374, 0.664475, 0.671665, 0.810705, 0.819286, 0.990927, 0.995859, 1.14099, 1.14571, 1.23214, 1.23531, 1.26924, 1.28045, 1.42203, 1.43727, 1.56278, 1.56696, 1.62379, 1.63491, 1.68979, 1.69418, 1.72225, 1.72752, 1.77594, 1.78697, 1.88208, 1.89812, 1.99701, 2.00874, 2.03003, 2.05078, 2.07429, 2.08707, 2.11177, 2.12603, 2.20497, 2.21393, 2.23435, 2.25069, 2.2919, 2.30507, 2.33824, 2.34396, 2.39784, 2.41532, 2.45759, 2.46219, 2.4869, 2.49739, 2.52777, 2.54378, 2.55401, 2.57099, 2.58794, 2.60565, 2.62867, 2.66219, 2.72306, 2.73723, 2.75667, 2.77609, 2.7885, 2.80737, 2.81642, 2.83034, 2.83447, 2.84907, 2.85715, 2.89087, 2.90103, 2.92256, 2.94197, 2.96076, 2.9817, 2.99205, 3.02431, 3.01858, 3.04534, 3.05955, 3.07905, 3.09148, 3.09479, 3.11382, 3.13278, 3.14623, 3.16383, 3.1899, 3.19815, 3.20672, 3.21432, 3.22958, 3.25332, 3.25981, 3.26801, 3.29005, 3.29533, 3.32015, 3.3244, 3.34334, 3.34821, 3.36396, 3.37852, 3.38516, 3.39973, 3.41428, 3.42547, 3.4334, 3.44527, 3.45349, 3.47035, 3.47798, 3.48946, 3.49367, 3.50229, 3.51565, 3.52335, 3.5325, 3.55369, 3.56377, 3.58178, 3.58861, 3.59778, 3.60473, 3.61395, 3.62418, 3.63171, 3.64317, 3.66333, 3.66702, 3.68083, 3.6883, 3.69459, 3.70261, 3.71439, 3.71619, 3.7294, 3.73873, 3.7471, 3.75728, 3.76035, 3.7793, 3.79069, 3.80177, 3.81206, 3.82196, 3.82507, 3.83499, 3.84299, 3.85017, 3.86091, 3.86387, 3.87278, 3.8807, 3.88582, 3.91852, 3.92336, 3.9305, 3.94349, 3.95158, 3.96003, 3.9664, 3.978, 3.9849, 3.98976, 4.00212, 4.00304, 4.00451, 4.02181, 4.03139, 4.03663, 4.04231, 4.05293, 4.05494, 4.06187, 4.06795, 4.0725, 4.07773, 4.07919, 4.08954, 4.0974, 4.10133, 4.1059, 4.10861, 4.11609, 4.12058, 4.12983, 4.13783, 4.14808, 4.15504, 4.16371, 4.1734, 4.18011, 4.19261, 4.19865, 4.21786, 4.23715, 4.25217, 4.25595, 4.27526, 4.9182, 5.01754, 5.07434, 5.13707, 5.13895, 5.17718, 5.22766, 5.2531, 5.30707, 5.3453, 5.35301, 5.35477, 5.37037, 5.41393, 5.42331, 5.45335, 5.4622, 5.47914, 5.48138, 5.49514, 5.50038, 5.50406, 5.54524, 5.56377, 5.56755, 5.58648, 5.58729, 5.58849, 5.64099, 5.64246, 5.66641, 5.67024, 5.69838, 5.70888, 5.7273, 5.73771, 5.75172, 5.77268, 5.79171, 5.79791, 5.80073, 5.806, 5.81763, 5.83703, 5.84076, 5.85335, 5.87047, 5.90611, 5.92401, 5.93219
+elapsed time for k point: 48 seconds.
+solve_kpoint (0,0.5,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 18 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 8 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 16 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 8 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 17 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 21 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 24 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 19 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 17 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 15 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 15 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 15 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 14 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 17 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 16 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 13 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 15 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 11 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 11 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 11 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 16 iterations.
+Finished k-point with 14.46 mean iterations/band.
+tmfreqs:, 13, 0, 0.5, 0, 0.5, 0.330564, 0.33411, 0.731535, 0.739089, 0.743936, 0.748313, 0.987627, 0.992487, 1.17292, 1.18327, 1.19205, 1.19924, 1.33619, 1.34129, 1.35681, 1.37518, 1.60577, 1.60948, 1.61936, 1.6367, 1.64785, 1.65196, 1.73786, 1.74578, 1.75178, 1.76844, 1.93633, 1.95415, 1.9711, 1.98464, 2.03774, 2.04762, 2.06208, 2.09143, 2.12967, 2.14282, 2.15899, 2.17654, 2.23122, 2.24392, 2.29911, 2.313, 2.33048, 2.33343, 2.43117, 2.43518, 2.46276, 2.49559, 2.50368, 2.51075, 2.51525, 2.54157, 2.55057, 2.55118, 2.56097, 2.58851, 2.64565, 2.66971, 2.70237, 2.70697, 2.75798, 2.77798, 2.80145, 2.80599, 2.82196, 2.837, 2.8418, 2.8505, 2.8615, 2.88898, 2.89766, 2.91489, 2.9359, 2.95199, 2.9884, 3.0118, 3.01702, 3.03837, 3.04194, 3.06278, 3.07279, 3.08235, 3.10682, 3.11332, 3.13175, 3.15062, 3.16537, 3.17696, 3.19769, 3.20236, 3.20958, 3.23256, 3.25558, 3.25949, 3.2646, 3.28545, 3.29505, 3.32063, 3.32324, 3.34349, 3.34782, 3.36015, 3.37776, 3.38403, 3.39992, 3.4224, 3.42602, 3.43624, 3.44463, 3.44959, 3.47667, 3.48153, 3.49449, 3.49962, 3.50492, 3.51511, 3.52077, 3.53462, 3.54854, 3.55939, 3.57853, 3.5882, 3.5983, 3.60157, 3.61305, 3.62237, 3.63396, 3.63999, 3.66368, 3.66714, 3.68401, 3.68545, 3.6943, 3.70322, 3.71449, 3.71616, 3.73041, 3.73954, 3.7466, 3.75734, 3.75978, 3.78031, 3.79095, 3.80168, 3.81281, 3.8227, 3.82595, 3.83566, 3.84285, 3.84904, 3.86163, 3.86373, 3.8724, 3.88067, 3.88517, 3.91969, 3.92063, 3.93105, 3.94357, 3.95179, 3.95997, 3.96658, 3.9802, 3.98216, 3.98986, 4.00238, 4.00324, 4.00385, 4.0243, 4.03034, 4.03652, 4.0408, 4.05256, 4.05483, 4.06203, 4.06817, 4.07273, 4.07829, 4.07957, 4.09036, 4.09768, 4.1031, 4.10435, 4.10891, 4.11544, 4.11917, 4.12941, 4.13826, 4.14764, 4.15513, 4.16401, 4.17449, 4.17939, 4.19239, 4.19878, 4.21791, 4.23715, 4.25209, 4.25601, 4.27526, 4.9182, 5.01754, 5.07434, 5.13707, 5.13895, 5.17718, 5.22766, 5.2531, 5.30707, 5.34529, 5.35301, 5.35477, 5.37038, 5.41395, 5.42331, 5.45335, 5.46215, 5.47911, 5.48145, 5.49526, 5.50025, 5.50408, 5.54522, 5.56386, 5.56743, 5.58644, 5.58727, 5.58856, 5.64107, 5.64242, 5.66646, 5.67016, 5.69841, 5.70888, 5.72732, 5.7377, 5.75172, 5.77263, 5.79195, 5.7975, 5.80072, 5.8063, 5.81756, 5.83703, 5.84084, 5.85323, 5.87048, 5.90611, 5.92401, 5.93217
+elapsed time for k point: 35 seconds.
+solve_kpoint (0,0.375,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 12 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 25 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 17 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 14 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 18 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 28 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 25 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 20 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 22 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 16 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 22 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 22 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 16 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 15 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 17 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 14 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 7 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 14 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 10 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 16 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 13 iterations.
+Finished k-point with 16.784 mean iterations/band.
+tmfreqs:, 14, 0, 0.375, 0, 0.375, 0.249327, 0.415241, 0.703982, 0.710984, 0.777614, 0.784823, 0.908851, 1.07051, 1.11537, 1.12584, 1.24866, 1.26035, 1.3238, 1.34142, 1.36501, 1.38828, 1.54878, 1.57084, 1.59688, 1.65467, 1.67208, 1.67882, 1.69261, 1.72384, 1.81047, 1.82764, 1.93151, 1.95896, 1.96461, 1.98784, 1.99287, 2.02757, 2.09064, 2.10935, 2.12622, 2.13874, 2.15954, 2.17819, 2.20672, 2.24325, 2.25847, 2.31241, 2.37213, 2.37943, 2.40941, 2.42541, 2.45828, 2.47872, 2.50074, 2.51263, 2.52069, 2.54026, 2.54973, 2.56409, 2.58674, 2.60664, 2.63792, 2.67026, 2.70386, 2.71033, 2.72862, 2.76245, 2.77797, 2.79435, 2.80404, 2.83726, 2.84728, 2.8613, 2.8792, 2.89185, 2.91225, 2.92948, 2.93998, 2.95959, 2.97336, 3.01017, 3.02179, 3.03482, 3.05039, 3.06582, 3.07711, 3.09521, 3.10368, 3.11256, 3.12844, 3.1471, 3.16279, 3.17176, 3.18845, 3.1934, 3.21172, 3.23348, 3.2452, 3.26148, 3.26485, 3.2898, 3.29668, 3.31096, 3.32533, 3.33963, 3.34898, 3.37129, 3.37862, 3.38588, 3.40674, 3.41792, 3.42847, 3.4369, 3.44618, 3.45058, 3.47907, 3.48219, 3.49179, 3.49609, 3.50405, 3.51417, 3.52531, 3.53364, 3.54948, 3.55999, 3.5787, 3.59007, 3.59203, 3.60284, 3.61319, 3.62149, 3.63337, 3.64169, 3.66296, 3.66752, 3.6785, 3.68497, 3.69326, 3.70593, 3.71079, 3.71813, 3.73165, 3.74014, 3.74635, 3.75874, 3.76102, 3.78039, 3.79114, 3.80142, 3.81216, 3.82193, 3.82622, 3.83626, 3.84248, 3.85051, 3.86075, 3.86385, 3.87208, 3.88088, 3.88606, 3.91906, 3.92113, 3.93078, 3.94419, 3.95143, 3.95992, 3.96621, 3.97992, 3.98265, 3.99053, 4.00106, 4.0022, 4.00484, 4.0242, 4.03141, 4.03516, 4.04218, 4.05246, 4.05468, 4.06191, 4.06708, 4.07361, 4.07808, 4.08034, 4.08926, 4.09704, 4.10275, 4.10557, 4.10941, 4.11568, 4.11913, 4.12908, 4.13746, 4.14853, 4.15517, 4.16384, 4.17436, 4.17925, 4.1926, 4.19885, 4.21787, 4.2371, 4.25197, 4.25617, 4.27525, 4.9182, 5.01754, 5.07434, 5.13707, 5.13895, 5.17718, 5.22765, 5.25309, 5.30708, 5.3453, 5.35303, 5.35481, 5.37027, 5.41401, 5.42331, 5.45336, 5.46225, 5.47909, 5.48131, 5.49502, 5.50055, 5.50401, 5.54552, 5.56356, 5.56717, 5.58532, 5.58827, 5.589, 5.64116, 5.64248, 5.66633, 5.6701, 5.69842, 5.7089, 5.72728, 5.73769, 5.75155, 5.77275, 5.79199, 5.79739, 5.80122, 5.80617, 5.81766, 5.83546, 5.84161, 5.85386, 5.87038, 5.90611, 5.92389, 5.93212
+elapsed time for k point: 40 seconds.
+solve_kpoint (0,0.25,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 15 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 12 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 19 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 25 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 18 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 16 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 16 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 19 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 27 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 16 iterations.
+Solving for bands 111 to 121...
+Finished solving for bands 111 to 121 after 19 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 17 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 19 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 22 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 16 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 19 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 15 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 7 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 18 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 11 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 14 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 14 iterations.
+Finished k-point with 16.64 mean iterations/band.
+tmfreqs:, 15, 0, 0.25, 0, 0.25, 0.166266, 0.497977, 0.679815, 0.686514, 0.82258, 0.826586, 0.832801, 1.05107, 1.06151, 1.15144, 1.30702, 1.3193, 1.32827, 1.33398, 1.38821, 1.41213, 1.47437, 1.52912, 1.55448, 1.5986, 1.61147, 1.71518, 1.73924, 1.7884, 1.87424, 1.88996, 1.9223, 1.93358, 1.95538, 1.96994, 1.98364, 2.01771, 2.07315, 2.08712, 2.1112, 2.15149, 2.16589, 2.18813, 2.19757, 2.21513, 2.24571, 2.35206, 2.36631, 2.39029, 2.40967, 2.42848, 2.44634, 2.46259, 2.50738, 2.52597, 2.53237, 2.54852, 2.56876, 2.57803, 2.60939, 2.62925, 2.6358, 2.66319, 2.67642, 2.70473, 2.72185, 2.73716, 2.74894, 2.76368, 2.7768, 2.81565, 2.84466, 2.87634, 2.89198, 2.90789, 2.92421, 2.94658, 2.96534, 2.97685, 2.98574, 3.00655, 3.02545, 3.037, 3.05905, 3.06672, 3.08196, 3.09531, 3.10901, 3.11572, 3.12946, 3.13705, 3.14816, 3.15799, 3.18082, 3.18576, 3.20579, 3.22478, 3.23396, 3.25753, 3.26761, 3.28807, 3.29441, 3.30487, 3.32895, 3.34015, 3.35403, 3.37598, 3.38952, 3.39251, 3.41239, 3.41991, 3.42509, 3.4386, 3.45148, 3.45547, 3.47663, 3.48521, 3.48912, 3.49521, 3.50282, 3.51219, 3.52909, 3.53375, 3.55025, 3.56105, 3.58017, 3.58103, 3.59663, 3.5992, 3.6096, 3.62356, 3.63187, 3.64228, 3.66191, 3.66776, 3.67268, 3.68333, 3.69094, 3.70594, 3.71038, 3.71685, 3.73282, 3.73885, 3.75076, 3.75925, 3.76544, 3.78048, 3.79165, 3.80152, 3.81044, 3.81987, 3.82714, 3.83706, 3.84212, 3.85334, 3.85972, 3.86334, 3.87124, 3.88097, 3.88891, 3.91815, 3.92134, 3.93037, 3.94551, 3.95086, 3.95938, 3.9656, 3.97952, 3.98383, 3.99197, 3.9979, 4.0017, 4.00546, 4.02376, 4.03236, 4.03472, 4.04393, 4.05188, 4.05517, 4.0617, 4.06529, 4.07438, 4.07772, 4.08172, 4.08737, 4.09604, 4.10283, 4.10598, 4.11145, 4.11621, 4.11919, 4.12813, 4.13581, 4.15042, 4.15525, 4.16337, 4.17407, 4.17895, 4.19308, 4.19903, 4.2178, 4.23698, 4.25192, 4.25624, 4.27524, 4.9182, 5.01754, 5.07434, 5.13707, 5.13896, 5.17719, 5.22764, 5.25306, 5.30713, 5.34531, 5.35307, 5.35489, 5.36999, 5.41415, 5.42331, 5.4534, 5.46251, 5.47906, 5.48105, 5.49453, 5.50092, 5.504, 5.54631, 5.56267, 5.56671, 5.58434, 5.5884, 5.59058, 5.64129, 5.64277, 5.66627, 5.66963, 5.69847, 5.70894, 5.72721, 5.73765, 5.75117, 5.77302, 5.7921, 5.79724, 5.80247, 5.80603, 5.81757, 5.83275, 5.84244, 5.85534, 5.87012, 5.90611, 5.92364, 5.93209
+elapsed time for k point: 41 seconds.
+solve_kpoint (0,0.125,0):
+Solving for bands 1 to 11...
+Finished solving for bands 1 to 11 after 12 iterations.
+Solving for bands 12 to 22...
+Finished solving for bands 12 to 22 after 7 iterations.
+Solving for bands 23 to 33...
+Finished solving for bands 23 to 33 after 17 iterations.
+Solving for bands 34 to 44...
+Finished solving for bands 34 to 44 after 17 iterations.
+Solving for bands 45 to 55...
+Finished solving for bands 45 to 55 after 19 iterations.
+Solving for bands 56 to 66...
+Finished solving for bands 56 to 66 after 12 iterations.
+Solving for bands 67 to 77...
+Finished solving for bands 67 to 77 after 26 iterations.
+Solving for bands 78 to 88...
+Finished solving for bands 78 to 88 after 22 iterations.
+Solving for bands 89 to 99...
+Finished solving for bands 89 to 99 after 20 iterations.
+Solving for bands 100 to 110...
+Finished solving for bands 100 to 110 after 26 iterations.
+Solving for bands 111 to 121...
+    iteration   37: trace = 136.2485788765187 (0.000239202% change)
+Finished solving for bands 111 to 121 after 42 iterations.
+Solving for bands 122 to 132...
+Finished solving for bands 122 to 132 after 25 iterations.
+Solving for bands 133 to 143...
+Finished solving for bands 133 to 143 after 16 iterations.
+Solving for bands 144 to 154...
+Finished solving for bands 144 to 154 after 14 iterations.
+Solving for bands 155 to 165...
+Finished solving for bands 155 to 165 after 21 iterations.
+Solving for bands 166 to 176...
+Finished solving for bands 166 to 176 after 13 iterations.
+Solving for bands 177 to 187...
+Finished solving for bands 177 to 187 after 18 iterations.
+Solving for bands 188 to 198...
+Finished solving for bands 188 to 198 after 8 iterations.
+Solving for bands 199 to 209...
+Finished solving for bands 199 to 209 after 8 iterations.
+Solving for bands 210 to 220...
+Finished solving for bands 210 to 220 after 10 iterations.
+Solving for bands 221 to 231...
+Finished solving for bands 221 to 231 after 13 iterations.
+Solving for bands 232 to 242...
+Finished solving for bands 232 to 242 after 16 iterations.
+Solving for bands 243 to 250...
+Finished solving for bands 243 to 250 after 15 iterations.
+Finished k-point with 17.288 mean iterations/band.
+tmfreqs:, 16, 0, 0.125, 0, 0.125, 0.0831465, 0.580534, 0.664805, 0.671343, 0.745207, 0.874627, 0.88268, 0.989679, 0.999675, 1.23027, 1.30362, 1.32321, 1.38111, 1.39178, 1.40195, 1.42322, 1.44162, 1.4903, 1.51454, 1.53038, 1.54264, 1.76435, 1.78932, 1.85839, 1.87148, 1.88928, 1.92222, 1.94575, 1.96287, 1.97096, 1.99909, 2.02275, 2.03159, 2.05507, 2.08003, 2.10908, 2.12511, 2.21032, 2.23046, 2.25762, 2.27744, 2.3155, 2.3376, 2.36339, 2.38425, 2.44638, 2.48204, 2.50911, 2.51649, 2.5321, 2.55282, 2.55619, 2.58123, 2.59247, 2.60066, 2.62422, 2.63263, 2.64564, 2.67602, 2.67835, 2.69644, 2.73756, 2.74016, 2.76128, 2.77556, 2.79154, 2.82991, 2.84745, 2.87063, 2.93977, 2.95166, 2.96625, 2.99281, 2.99543, 3.00687, 3.01786, 3.03213, 3.04069, 3.05761, 3.06651, 3.07653, 3.08527, 3.10371, 3.10786, 3.12344, 3.13063, 3.14157, 3.15715, 3.17132, 3.19, 3.19769, 3.21891, 3.22783, 3.25094, 3.26407, 3.2773, 3.28199, 3.31476, 3.32853, 3.34494, 3.3657, 3.38185, 3.39121, 3.40254, 3.41196, 3.4185, 3.42772, 3.43425, 3.45473, 3.46398, 3.47535, 3.48336, 3.49131, 3.49946, 3.50497, 3.51214, 3.5286, 3.53583, 3.54786, 3.55718, 3.57581, 3.58223, 3.59181, 3.60174, 3.6082, 3.62284, 3.63294, 3.6399, 3.66244, 3.66453, 3.67381, 3.68025, 3.68911, 3.70531, 3.71216, 3.71377, 3.73266, 3.73662, 3.7549, 3.75977, 3.77105, 3.77973, 3.79253, 3.80253, 3.80858, 3.81722, 3.82865, 3.83649, 3.84244, 3.85534, 3.85965, 3.8625, 3.8705, 3.8814, 3.89185, 3.91705, 3.92096, 3.9305, 3.94591, 3.95146, 3.95796, 3.96534, 3.97931, 3.98526, 3.99304, 3.99508, 4.00136, 4.0059, 4.02298, 4.0315, 4.03675, 4.0445, 4.05147, 4.05644, 4.06177, 4.06429, 4.07243, 4.07821, 4.08201, 4.08762, 4.09477, 4.10334, 4.10541, 4.11347, 4.11674, 4.11979, 4.1266, 4.13454, 4.15219, 4.1553, 4.16281, 4.17375, 4.1787, 4.19353, 4.19922, 4.21772, 4.23684, 4.25194, 4.25627, 4.27523, 4.9182, 5.01754, 5.07434, 5.13708, 5.13898, 5.17719, 5.22762, 5.25304, 5.30718, 5.34532, 5.35311, 5.35499, 5.3697, 5.41429, 5.42332, 5.45344, 5.46278, 5.47903, 5.48081, 5.49422, 5.50116, 5.50389, 5.5472, 5.56155, 5.56641, 5.5838, 5.58842, 5.59181, 5.64133, 5.64315, 5.66625, 5.66912, 5.6985, 5.70899, 5.72713, 5.73761, 5.75082, 5.77328, 5.79221, 5.79714, 5.80389, 5.80579, 5.81741, 5.83055, 5.84282, 5.85675, 5.86982, 5.90612, 5.92338, 5.93207
+elapsed time for k point: 42 seconds.
+solve_kpoint (0,0,0):
+Solving for bands 2 to 12...
+Finished solving for bands 2 to 12 after 14 iterations.
+Solving for bands 13 to 23...
+Finished solving for bands 13 to 23 after 31 iterations.
+Solving for bands 24 to 34...
+Finished solving for bands 24 to 34 after 36 iterations.
+Solving for bands 35 to 45...
+Finished solving for bands 35 to 45 after 8 iterations.
+Solving for bands 46 to 56...
+Finished solving for bands 46 to 56 after 25 iterations.
+Solving for bands 57 to 67...
+Finished solving for bands 57 to 67 after 18 iterations.
+Solving for bands 68 to 78...
+Finished solving for bands 68 to 78 after 35 iterations.
+Solving for bands 79 to 89...
+Finished solving for bands 79 to 89 after 19 iterations.
+Solving for bands 90 to 100...
+Finished solving for bands 90 to 100 after 18 iterations.
+Solving for bands 101 to 111...
+Finished solving for bands 101 to 111 after 34 iterations.
+Solving for bands 112 to 122...
+Finished solving for bands 112 to 122 after 25 iterations.
+Solving for bands 123 to 133...
+Finished solving for bands 123 to 133 after 16 iterations.
+Solving for bands 134 to 144...
+Finished solving for bands 134 to 144 after 31 iterations.
+Solving for bands 145 to 155...
+Finished solving for bands 145 to 155 after 15 iterations.
+Solving for bands 156 to 166...
+Finished solving for bands 156 to 166 after 17 iterations.
+Solving for bands 167 to 177...
+Finished solving for bands 167 to 177 after 18 iterations.
+Solving for bands 178 to 188...
+Finished solving for bands 178 to 188 after 11 iterations.
+Solving for bands 189 to 199...
+Finished solving for bands 189 to 199 after 8 iterations.
+Solving for bands 200 to 210...
+Finished solving for bands 200 to 210 after 8 iterations.
+Solving for bands 211 to 221...
+Finished solving for bands 211 to 221 after 12 iterations.
+Solving for bands 222 to 232...
+Finished solving for bands 222 to 232 after 10 iterations.
+Solving for bands 233 to 243...
+Finished solving for bands 233 to 243 after 15 iterations.
+Solving for bands 244 to 250...
+Finished solving for bands 244 to 250 after 16 iterations.
+Finished k-point with 19.104 mean iterations/band.
+tmfreqs:, 17, 0, 0, 0, 0, 0, 0.65936, 0.660126, 0.665324, 0.667107, 0.92389, 0.930744, 0.9361, 0.949017, 1.29794, 1.30133, 1.3082, 1.33868, 1.43993, 1.44923, 1.45439, 1.46057, 1.46742, 1.47317, 1.47783, 1.49437, 1.80445, 1.82765, 1.8376, 1.8459, 1.91845, 1.92345, 1.94284, 1.95796, 1.99614, 2.01168, 2.02571, 2.03821, 2.04795, 2.05497, 2.06923, 2.08862, 2.2396, 2.26088, 2.28438, 2.29065, 2.29827, 2.31009, 2.33789, 2.35476, 2.48124, 2.49672, 2.51743, 2.52965, 2.54181, 2.55713, 2.56403, 2.57803, 2.58741, 2.6015, 2.61024, 2.63628, 2.63989, 2.6541, 2.67307, 2.69541, 2.72562, 2.75334, 2.76997, 2.77643, 2.79077, 2.81939, 2.82851, 2.85398, 2.95435, 2.96452, 2.98001, 2.99433, 3.00663, 3.01451, 3.02619, 3.03978, 3.04726, 3.05393, 3.06584, 3.06969, 3.08124, 3.09578, 3.09723, 3.11821, 3.1294, 3.14488, 3.149, 3.17102, 3.19255, 3.2031, 3.21529, 3.22667, 3.24956, 3.26002, 3.26665, 3.27881, 3.31525, 3.33277, 3.34837, 3.37496, 3.37874, 3.39217, 3.40383, 3.41151, 3.42104, 3.42861, 3.43284, 3.45229, 3.46393, 3.47783, 3.48495, 3.49198, 3.50123, 3.50719, 3.51568, 3.52962, 3.53547, 3.54441, 3.55133, 3.57609, 3.58317, 3.58971, 3.60048, 3.6107, 3.62103, 3.63516, 3.63774, 3.66284, 3.66348, 3.67407, 3.67873, 3.68883, 3.7056, 3.71087, 3.71444, 3.73164, 3.73597, 3.75604, 3.76014, 3.77471, 3.77831, 3.79297, 3.80331, 3.8079, 3.8157, 3.82956, 3.83575, 3.84274, 3.85596, 3.85963, 3.86231, 3.87024, 3.88146, 3.89336, 3.91635, 3.92074, 3.93076, 3.94563, 3.9524, 3.95694, 3.96533, 3.97924, 3.98604, 3.99334, 3.99397, 4.00118, 4.00608, 4.02253, 4.03124, 4.03763, 4.04443, 4.05143, 4.05711, 4.06144, 4.06495, 4.07048, 4.07872, 4.08175, 4.08852, 4.09392, 4.10381, 4.10492, 4.11412, 4.11698, 4.12048, 4.12557, 4.13411, 4.15296, 4.15529, 4.16253, 4.17361, 4.17859, 4.1937, 4.19931, 4.21769, 4.23675, 4.25185, 4.25643, 4.27523, 4.9182, 5.01754, 5.07434, 5.13708, 5.13898, 5.17719, 5.22761, 5.25303, 5.30721, 5.34534, 5.35312, 5.35501, 5.36959, 5.41434, 5.42332, 5.45345, 5.46289, 5.47901, 5.48071, 5.49399, 5.50141, 5.5038, 5.54761, 5.56101, 5.56632, 5.58363, 5.58842, 5.59225, 5.64134, 5.64329, 5.66618, 5.66906, 5.69849, 5.709, 5.7271, 5.7376, 5.75067, 5.77338, 5.79225, 5.79711, 5.8046, 5.80561, 5.81735, 5.82968, 5.84291, 5.85732, 5.86968, 5.90612, 5.92327, 5.93206
+elapsed time for k point: 45 seconds.
+Band 1 range: 0.0 at #(0 0 0) to 0.46492038672407 at #(0.5 0.5 0)
+Band 2 range: 0.333973776957778 at #(0.5 0 0) to 0.659360136911107 at #(0 0 0)
+Band 3 range: 0.469856472014534 at #(0.5 0.5 0) to 0.73352695330506 at #(0.5 0 0)
+Band 4 range: 0.474623638976783 at #(0.5 0.5 0) to 0.739657424682994 at #(0.5 0 0)
+Band 5 range: 0.667107164958724 at #(0 0 0) to 1.02598114931343 at #(0.5 0.5 0)
+Band 6 range: 0.748312643140497 at #(0 0.5 0) to 1.03043444890961 at #(0.5 0.5 0)
+Band 7 range: 0.832800870345984 at #(0 0.25 0) to 1.03803390228449 at #(0.5 0.5 0)
+Band 8 range: 0.936100282085035 at #(0 0 0) to 1.07083135726823 at #(0.375 0 0)
+Band 9 range: 0.949016903896884 at #(0 0 0) to 1.17638073639826 at #(0.5 0 0)
+Band 10 range: 1.05019370120198 at #(0.5 0.5 0) to 1.29794197388747 at #(0 0 0)
+Band 11 range: 1.0579966120099 at #(0.5 0.5 0) to 1.30762313361164 at #(0.25 0 0)
+Band 12 range: 1.06008067225259 at #(0.5 0.5 0) to 1.3232083850526 at #(0 0.125 0)
+Band 13 range: 1.26924257163141 at #(0.125 0.5 0) to 1.38171949060401 at #(0.125 0 0)
+Band 14 range: 1.28044928673046 at #(0.125 0.5 0) to 1.43992511465874 at #(0 0 0)
+Band 15 range: 1.35681429041028 at #(0 0.5 0) to 1.48756114178435 at #(0.5 0.25 0)
+Band 16 range: 1.36539932439222 at #(0.5 0 0) to 1.50385233336923 at #(0.25 0.5 0)
+Band 17 range: 1.43541120476878 at #(0.125 0 0) to 1.62503881440265 at #(0.5 0.5 0)
+Band 18 range: 1.46742099138875 at #(0 0 0) to 1.63884082744402 at #(0.5 0.5 0)
+Band 19 range: 1.47317124064692 at #(0 0 0) to 1.64222278430272 at #(0.5 0.5 0)
+Band 20 range: 1.47783040915693 at #(0 0 0) to 1.6599087770411 at #(0.375 0 0)
+Band 21 range: 1.49436875559643 at #(0 0 0) to 1.69376226988136 at #(0.25 0.5 0)
+Band 22 range: 1.64711472216862 at #(0.5 0 0) to 1.80444881407726 at #(0 0 0)
+Band 23 range: 1.68651500191963 at #(0.5 0.5 0) to 1.82765798486101 at #(0 0 0)
+Band 24 range: 1.69945708259134 at #(0.5 0.5 0) to 1.85838649120158 at #(0 0.125 0)
+Band 25 range: 1.75177995009636 at #(0 0.5 0) to 1.88405330864651 at #(0.125 0 0)
+Band 26 range: 1.76825225604085 at #(0.5 0 0) to 1.91845261426857 at #(0 0 0)
+Band 27 range: 1.82556414354174 at #(0.5 0.25 0) to 1.9363308600285 at #(0 0.5 0)
+Band 28 range: 1.83505916846749 at #(0.25 0.5 0) to 1.96838001120568 at #(0.5 0 0)
+Band 29 range: 1.88869878810969 at #(0.5 0.5 0) to 2.00270227096659 at #(0.5 0.125 0)
+Band 30 range: 1.89591504252327 at #(0.5 0.5 0) to 2.00893297315751 at #(0.5 0.125 0)
+Band 31 range: 1.91097587036815 at #(0.5 0.5 0) to 2.04355288217523 at #(0.5 0 0)
+Band 32 range: 1.91991286544217 at #(0.5 0.5 0) to 2.05421434084464 at #(0.5 0 0)
+Band 33 range: 2.03159346680794 at #(0 0.125 0) to 2.20685214896563 at #(0.5 0.5 0)
+Band 34 range: 2.04794860618407 at #(0 0 0) to 2.21915570050069 at #(0.5 0.5 0)
+Band 35 range: 2.0549686693419 at #(0 0 0) to 2.22741866373908 at #(0.5 0.5 0)
+Band 36 range: 2.0692276154601 at #(0 0 0) to 2.23123783882341 at #(0.5 0.5 0)
+Band 37 range: 2.08862380190828 at #(0 0 0) to 2.24341157642021 at #(0.5 0.5 0)
+Band 38 range: 2.17222162998807 at #(0.5 0 0) to 2.25101692581406 at #(0.5 0.5 0)
+Band 39 range: 2.19537494487386 at #(0.25 0 0) to 2.26532205813666 at #(0.25 0.5 0)
+Band 40 range: 2.2151326701208 at #(0 0.25 0) to 2.28437843992533 at #(0 0 0)
+Band 41 range: 2.24112012171219 at #(0.25 0 0) to 2.3036458148108 at #(0.375 0.5 0)
+Band 42 range: 2.29044455002306 at #(0.5 0.5 0) to 2.35413915242181 at #(0.25 0 0)
+Band 43 range: 2.29709146120017 at #(0.5 0.5 0) to 2.37507011053507 at #(0.375 0 0)
+Band 44 range: 2.30217011251096 at #(0.5 0.5 0) to 2.39312504696465 at #(0.25 0 0)
+Band 45 range: 2.34226355979083 at #(0.375 0.5 0) to 2.43116532767921 at #(0 0.5 0)
+Band 46 range: 2.35846870417821 at #(0.5 0.375 0) to 2.48124477949984 at #(0 0 0)
+Band 47 range: 2.38086659039 at #(0.375 0.5 0) to 2.49671574668605 at #(0 0 0)
+Band 48 range: 2.40524400088728 at #(0.375 0.5 0) to 2.51742762634241 at #(0 0 0)
+Band 49 range: 2.42187022620049 at #(0.5 0.5 0) to 2.52965340696254 at #(0 0 0)
+Band 50 range: 2.43895252619471 at #(0.5 0.5 0) to 2.541806635621 at #(0 0 0)
+Band 51 range: 2.45404247875223 at #(0.5 0.5 0) to 2.55713143719087 at #(0 0 0)
+Band 52 range: 2.45662977902248 at #(0.5 0.5 0) to 2.56605957816885 at #(0.125 0 0)
+Band 53 range: 2.54663019961914 at #(0.5 0 0) to 2.6306056434243 at #(0.5 0.5 0)
+Band 54 range: 2.55117697048298 at #(0 0.5 0) to 2.64385264924258 at #(0.5 0.5 0)
+Band 55 range: 2.56097071948765 at #(0 0.5 0) to 2.65394600175167 at #(0.5 0.5 0)
+Band 56 range: 2.57552679309861 at #(0.5 0 0) to 2.67002447944363 at #(0.5 0.5 0)
+Band 57 range: 2.61577074575182 at #(0.5 0.125 0) to 2.70009853141275 at #(0.5 0.375 0)
+Band 58 range: 2.63989457607502 at #(0 0 0) to 2.71209471470255 at #(0.375 0.5 0)
+Band 59 range: 2.65409482821774 at #(0 0 0) to 2.73588454798812 at #(0.5 0.25 0)
+Band 60 range: 2.67306542061196 at #(0 0 0) to 2.74558328291279 at #(0.25 0.5 0)
+Band 61 range: 2.69541329996195 at #(0 0 0) to 2.76792673257082 at #(0.5 0.5 0)
+Band 62 range: 2.72072380265757 at #(0.25 0 0) to 2.78431147036759 at #(0.5 0.5 0)
+Band 63 range: 2.73594760321743 at #(0.125 0 0) to 2.80145015338921 at #(0 0.5 0)
+Band 64 range: 2.75141122199823 at #(0.125 0 0) to 2.81539214377306 at #(0.5 0 0)
+Band 65 range: 2.77555883380872 at #(0 0.125 0) to 2.82730384070183 at #(0.5 0 0)
+Band 66 range: 2.79077355824879 at #(0 0 0) to 2.83894257485977 at #(0.5 0.125 0)
+Band 67 range: 2.81933500574145 at #(0 0 0) to 2.85454006079194 at #(0.25 0 0)
+Band 68 range: 2.82850663561714 at #(0 0 0) to 2.87633827919138 at #(0 0.25 0)
+Band 69 range: 2.85397786488928 at #(0 0 0) to 2.89197893655018 at #(0 0.25 0)
+Band 70 range: 2.87972387317921 at #(0.5 0.375 0) to 2.95435110790138 at #(0 0 0)
+Band 71 range: 2.8891267245583 at #(0.5 0.375 0) to 2.96451834879798 at #(0 0 0)
+Band 72 range: 2.9148881340105 at #(0 0.5 0) to 2.9800117704255 at #(0 0 0)
+Band 73 range: 2.92983386880972 at #(0.5 0.25 0) to 2.99432744245547 at #(0 0 0)
+Band 74 range: 2.94689086864292 at #(0.5 0 0) to 3.00663297272173 at #(0 0 0)
+Band 75 range: 2.95987944030443 at #(0.5 0.5 0) to 3.01451514868022 at #(0 0 0)
+Band 76 range: 2.98035944399866 at #(0.5 0.5 0) to 3.02619002415217 at #(0 0 0)
+Band 77 range: 3.00205613600535 at #(0.5 0.375 0) to 3.03977659924495 at #(0 0 0)
+Band 78 range: 3.01495144165569 at #(0.375 0.5 0) to 3.04726255525495 at #(0 0 0)
+Band 79 range: 3.02744632885311 at #(0.5 0.5 0) to 3.06117812956996 at #(0.25 0 0)
+Band 80 range: 3.04508675233428 at #(0.5 0.5 0) to 3.06875278216963 at #(0.25 0 0)
+Band 81 range: 3.06074817376909 at #(0.375 0.5 0) to 3.08238000311318 at #(0.375 0 0)
+Band 82 range: 3.07503506053205 at #(0.5 0.25 0) to 3.09833018253486 at #(0.5 0 0)
+Band 83 range: 3.09196522257304 at #(0.5 0.375 0) to 3.1169175071435 at #(0.375 0 0)
+Band 84 range: 3.09722576762851 at #(0 0 0) to 3.13188025700424 at #(0.5 0.25 0)
+Band 85 range: 3.11820460848707 at #(0 0 0) to 3.14136418012312 at #(0.5 0.25 0)
+Band 86 range: 3.12939799733717 at #(0 0 0) to 3.15573500693795 at #(0.5 0.25 0)
+Band 87 range: 3.14156911429204 at #(0 0.125 0) to 3.17219892722665 at #(0.5 0.25 0)
+Band 88 range: 3.14899975589423 at #(0 0 0) to 3.1899045246235 at #(0.125 0.5 0)
+Band 89 range: 3.17101029034442 at #(0 0 0) to 3.21124480288399 at #(0.5 0.5 0)
+Band 90 range: 3.1857633731798 at #(0 0.25 0) to 3.21689304290269 at #(0.5 0.5 0)
+Band 91 range: 3.19768623110284 at #(0 0.125 0) to 3.23590168072084 at #(0.5 0.5 0)
+Band 92 range: 3.21265296321948 at #(0.125 0 0) to 3.25542708745956 at #(0.5 0.5 0)
+Band 93 range: 3.22418906344732 at #(0.125 0 0) to 3.26658965760138 at #(0.5 0.5 0)
+Band 94 range: 3.24729157909641 at #(0.25 0 0) to 3.26945562397916 at #(0.5 0.5 0)
+Band 95 range: 3.26002378231682 at #(0 0 0) to 3.28391121528165 at #(0.5 0.5 0)
+Band 96 range: 3.26664763325937 at #(0 0 0) to 3.30795914627337 at #(0.5 0.5 0)
+Band 97 range: 3.27880599242913 at #(0 0 0) to 3.31436880545209 at #(0.375 0.5 0)
+Band 98 range: 3.3048714864185 at #(0 0.25 0) to 3.32242353220078 at #(0.25 0.5 0)
+Band 99 range: 3.3232413075194 at #(0 0.5 0) to 3.33276949449775 at #(0 0 0)
+Band 100 range: 3.33577804041672 at #(0.375 0 0) to 3.35083765596592 at #(0.5 0.5 0)
+Band 101 range: 3.34781721849673 at #(0 0.5 0) to 3.37495681149661 at #(0 0 0)
+Band 102 range: 3.35523625655961 at #(0.5 0 0) to 3.38185234686835 at #(0 0.125 0)
+Band 103 range: 3.36609804093518 at #(0.5 0 0) to 3.39216978332869 at #(0 0 0)
+Band 104 range: 3.37951511028502 at #(0.5 0 0) to 3.4038262148729 at #(0 0 0)
+Band 105 range: 3.38683504300609 at #(0.375 0.5 0) to 3.41238522959283 at #(0 0.25 0)
+Band 106 range: 3.40342294179587 at #(0.5 0.5 0) to 3.42325464972907 at #(0.125 0 0)
+Band 107 range: 3.41384078619465 at #(0.5 0.5 0) to 3.42885830783686 at #(0.5 0 0)
+Band 108 range: 3.42598181859306 at #(0.5 0.375 0) to 3.4419699472638 at #(0.375 0 0)
+Band 109 range: 3.43265681120687 at #(0.5 0.5 0) to 3.45473146144059 at #(0 0.125 0)
+Band 110 range: 3.4452084758661 at #(0.5 0.5 0) to 3.46397794741079 at #(0 0.125 0)
+Band 111 range: 3.45347870568471 at #(0.375 0.5 0) to 3.47907144774163 at #(0 0.375 0)
+Band 112 range: 3.46078280054994 at #(0.5 0.375 0) to 3.48614176810917 at #(0.125 0 0)
+Band 113 range: 3.47611034747236 at #(0.5 0.5 0) to 3.49449337130833 at #(0 0.5 0)
+Band 114 range: 3.48667561501322 at #(0.5 0.5 0) to 3.50755413923711 at #(0.5 0 0)
+Band 115 range: 3.4910604735299 at #(0.375 0.5 0) to 3.51012772095599 at #(0.375 0 0)
+Band 116 range: 3.50594494487715 at #(0.5 0.5 0) to 3.51800006213448 at #(0.5 0.125 0)
+Band 117 range: 3.52076707874538 at #(0 0.5 0) to 3.5296974705892 at #(0.125 0 0)
+Band 118 range: 3.52746275640058 at #(0.5 0.5 0) to 3.54102265042145 at #(0.5 0 0)
+Band 119 range: 3.5444054578289 at #(0 0 0) to 3.56350988694451 at #(0.5 0.5 0)
+Band 120 range: 3.55132762269075 at #(0 0 0) to 3.58375273458273 at #(0.5 0.5 0)
+Band 121 range: 3.56551417158116 at #(0.5 0 0) to 3.5898034849071 at #(0.5 0.5 0)
+Band 122 range: 3.58103226805553 at #(0 0.25 0) to 3.59834600335791 at #(0.5 0.125 0)
+Band 123 range: 3.58971082430339 at #(0 0 0) to 3.60425980515383 at #(0.5 0.375 0)
+Band 124 range: 3.59920028856211 at #(0 0.25 0) to 3.6154578868099 at #(0.5 0.5 0)
+Band 125 range: 3.60820066560088 at #(0 0.125 0) to 3.61963386298704 at #(0.5 0.375 0)
+Band 126 range: 3.62038407264875 at #(0.125 0 0) to 3.62844524009471 at #(0.5 0.5 0)
+Band 127 range: 3.63168662735951 at #(0.25 0.5 0) to 3.64536522910284 at #(0.5 0.5 0)
+Band 128 range: 3.63773458511822 at #(0 0 0) to 3.65259182721517 at #(0.375 0.5 0)
+Band 129 range: 3.65936961349202 at #(0.375 0.5 0) to 3.66367664326212 at #(0 0.5 0)
+Band 130 range: 3.66347405445998 at #(0 0 0) to 3.67118569114555 at #(0.5 0.5 0)
+Band 131 range: 3.66697256542442 at #(0.5 0.125 0) to 3.68400717058304 at #(0 0.5 0)
+Band 132 range: 3.67872223176893 at #(0 0 0) to 3.68856217366976 at #(0.25 0.5 0)
+Band 133 range: 3.68881523583357 at #(0 0 0) to 3.69520273804254 at #(0.5 0.5 0)
+Band 134 range: 3.69780614470608 at #(0.5 0 0) to 3.70593921577533 at #(0 0.25 0)
+Band 135 range: 3.71037919834415 at #(0 0.25 0) to 3.7163769306372 at #(0.5 0.375 0)
+Band 136 range: 3.71377221570051 at #(0 0.125 0) to 3.72465561328605 at #(0.5 0.125 0)
+Band 137 range: 3.72490906914144 at #(0.375 0.5 0) to 3.7328236845196 at #(0 0.25 0)
+Band 138 range: 3.73110724288355 at #(0.5 0.25 0) to 3.74013885555945 at #(0 0.375 0)
+Band 139 range: 3.74392897607361 at #(0.5 0.375 0) to 3.75604171500729 at #(0 0 0)
+Band 140 range: 3.75231938171136 at #(0.5 0 0) to 3.7601579024735 at #(0.125 0 0)
+Band 141 range: 3.7597783060093 at #(0 0.5 0) to 3.77471010258638 at #(0 0 0)
+Band 142 range: 3.77473825106971 at #(0.5 0.5 0) to 3.78752016935053 at #(0.5 0 0)
+Band 143 range: 3.78765666561659 at #(0.5 0.5 0) to 3.79343583569058 at #(0.25 0 0)
+Band 144 range: 3.80111195302868 at #(0.25 0.5 0) to 3.80560591170981 at #(0.5 0.25 0)
+Band 145 range: 3.80778091454265 at #(0 0 0) to 3.81281478406483 at #(0 0.5 0)
+Band 146 range: 3.81158272806311 at #(0.25 0 0) to 3.82269620243551 at #(0 0.5 0)
+Band 147 range: 3.81999817092039 at #(0.5 0.375 0) to 3.8295570838405 at #(0 0 0)
+Band 148 range: 3.83127843338675 at #(0.5 0 0) to 3.83706112314756 at #(0 0.25 0)
+Band 149 range: 3.84192017915081 at #(0.5 0.5 0) to 3.84524719355383 at #(0.25 0 0)
+Band 150 range: 3.84903726303509 at #(0 0.5 0) to 3.85597435620808 at #(0.5 0 0)
+Band 151 range: 3.85645180236481 at #(0.5 0 0) to 3.86163042231839 at #(0 0.5 0)
+Band 152 range: 3.86231045919116 at #(0 0 0) to 3.87018493001457 at #(0.5 0.5 0)
+Band 153 range: 3.8701752450165 at #(0.125 0 0) to 3.87319850223277 at #(0.25 0.5 0)
+Band 154 range: 3.87895066474857 at #(0.5 0 0) to 3.88146546783584 at #(0 0 0)
+Band 155 range: 3.88517255420649 at #(0 0.5 0) to 3.89766317907009 at #(0.5 0 0)
+Band 156 range: 3.91634500049041 at #(0 0 0) to 3.91969130267332 at #(0 0.5 0)
+Band 157 range: 3.92063354545191 at #(0 0.5 0) to 3.92864910411544 at #(0.5 0.5 0)
+Band 158 range: 3.92984475627935 at #(0.25 0.5 0) to 3.93620929992703 at #(0.5 0.5 0)
+Band 159 range: 3.93907928147503 at #(0.5 0 0) to 3.94591144782268 at #(0 0.125 0)
+Band 160 range: 3.95050003442056 at #(0.5 0.25 0) to 3.95248023803395 at #(0.25 0 0)
+Band 161 range: 3.95670042051917 at #(0.5 0.5 0) to 3.96194837869807 at #(0.5 0 0)
+Band 162 range: 3.96527512344083 at #(0.125 0 0) to 3.96657586684422 at #(0 0.5 0)
+Band 163 range: 3.97431814441607 at #(0.375 0 0) to 3.98066669404383 at #(0.5 0.5 0)
+Band 164 range: 3.9821573636903 at #(0 0.5 0) to 3.98737561564424 at #(0.25 0 0)
+Band 165 range: 3.98872132024735 at #(0.5 0.5 0) to 3.99334181893859 at #(0 0 0)
+Band 166 range: 3.99397297854118 at #(0 0 0) to 4.00249302409327 at #(0.5 0.5 0)
+Band 167 range: 4.00117651272814 at #(0 0 0) to 4.00417915388562 at #(0.5 0.5 0)
+Band 168 range: 4.00384698068858 at #(0 0.5 0) to 4.00930279912445 at #(0.5 0 0)
+Band 169 range: 4.01263437281715 at #(0.5 0.5 0) to 4.02430337076635 at #(0 0.5 0)
+Band 170 range: 4.02881841581787 at #(0.5 0.125 0) to 4.03236437076135 at #(0 0.25 0)
+Band 171 range: 4.03472085005302 at #(0 0.25 0) to 4.04003751477884 at #(0.5 0.125 0)
+Band 172 range: 4.04079813013943 at #(0 0.5 0) to 4.051840468431 at #(0.5 0.375 0)
+Band 173 range: 4.05143063298751 at #(0 0 0) to 4.05590500884086 at #(0.5 0 0)
+Band 174 range: 4.05467955406257 at #(0 0.375 0) to 4.0573022747759 at #(0.5 0.125 0)
+Band 175 range: 4.06056521739145 at #(0.5 0 0) to 4.06213320543872 at #(0.25 0 0)
+Band 176 range: 4.0641162237313 at #(0.25 0 0) to 4.06816615586164 at #(0 0.5 0)
+Band 177 range: 4.06769198638788 at #(0.5 0 0) to 4.07438062012132 at #(0 0.25 0)
+Band 178 range: 4.07426336146519 at #(0.5 0 0) to 4.07872197763181 at #(0 0 0)
+Band 179 range: 4.07655302269183 at #(0.5 0.125 0) to 4.08200545240116 at #(0 0.125 0)
+Band 180 range: 4.08047760490699 at #(0.5 0.375 0) to 4.09035746809237 at #(0 0.5 0)
+Band 181 range: 4.09308679338491 at #(0.5 0 0) to 4.09794848376748 at #(0.5 0.5 0)
+Band 182 range: 4.09976046996151 at #(0.5 0.5 0) to 4.10380867198917 at #(0 0 0)
+Band 183 range: 4.10435228904672 at #(0 0.5 0) to 4.10615463321042 at #(0.25 0.5 0)
+Band 184 range: 4.10861326230695 at #(0.125 0.5 0) to 4.11532182981866 at #(0.5 0 0)
+Band 185 range: 4.115441711436 at #(0 0.5 0) to 4.11835637176218 at #(0.5 0.5 0)
+Band 186 range: 4.11912951863038 at #(0 0.375 0) to 4.12730105199969 at #(0.5 0.5 0)
+Band 187 range: 4.12556137800516 at #(0 0 0) to 4.13322469869786 at #(0.5 0 0)
+Band 188 range: 4.13411302827107 at #(0 0 0) to 4.13996245636259 at #(0.5 0 0)
+Band 189 range: 4.14763578299561 at #(0 0.5 0) to 4.15296594924447 at #(0 0 0)
+Band 190 range: 4.15496299670464 at #(0.25 0.5 0) to 4.15757417909568 at #(0.5 0 0)
+Band 191 range: 4.15952084429269 at #(0.5 0 0) to 4.16401090576449 at #(0 0.5 0)
+Band 192 range: 4.16844590946738 at #(0.5 0 0) to 4.17448673526204 at #(0 0.5 0)
+Band 193 range: 4.17859227551274 at #(0 0 0) to 4.18254851866138 at #(0.5 0 0)
+Band 194 range: 4.19239494653341 at #(0 0.5 0) to 4.19442741804657 at #(0.5 0 0)
+Band 195 range: 4.19766884427526 at #(0.5 0.5 0) to 4.19930691578944 at #(0 0 0)
+Band 196 range: 4.21744596996643 at #(0.5 0 0) to 4.21790594332974 at #(0 0.5 0)
+Band 197 range: 4.23673528876478 at #(0 0 0) to 4.23719561274574 at #(0.5 0.5 0)
+Band 198 range: 4.25184970423473 at #(0 0 0) to 4.25258910290973 at #(0.5 0.5 0)
+Band 199 range: 4.25561496016211 at #(0.5 0.5 0) to 4.25644541307805 at #(0.375 0 0)
+Band 200 range: 4.27522632197983 at #(0 0 0) to 4.2752578143197 at #(0.5 0.5 0)
+Band 201 range: 4.9182000043626 at #(0 0.25 0) to 4.9182051982258 at #(0.375 0 0)
+Band 202 range: 5.01753461869301 at #(0.5 0.125 0) to 5.01754382211617 at #(0 0.5 0)
+Band 203 range: 5.07434087197755 at #(0.5 0.125 0) to 5.0743432843052 at #(0 0 0)
+Band 204 range: 5.13706881354789 at #(0 0.5 0) to 5.13707831469911 at #(0 0 0)
+Band 205 range: 5.13894986223497 at #(0 0.5 0) to 5.13899346075285 at #(0.5 0 0)
+Band 206 range: 5.17716271802803 at #(0.5 0.5 0) to 5.17718772676213 at #(0 0 0)
+Band 207 range: 5.22761310892556 at #(0 0 0) to 5.22767237652744 at #(0.5 0.5 0)
+Band 208 range: 5.25302605125376 at #(0 0 0) to 5.25310567194451 at #(0.5 0.5 0)
+Band 209 range: 5.30706646169872 at #(0 0.5 0) to 5.30722545228081 at #(0.5 0 0)
+Band 210 range: 5.3452887023012 at #(0 0.5 0) to 5.34539388476172 at #(0 0 0)
+Band 211 range: 5.35300584170768 at #(0 0.5 0) to 5.35312137424243 at #(0 0 0)
+Band 212 range: 5.35473000569832 at #(0.5 0.5 0) to 5.35507691705502 at #(0.5 0 0)
+Band 213 range: 5.36944103737314 at #(0.5 0 0) to 5.37038208658647 at #(0 0.5 0)
+Band 214 range: 5.41380322299752 at #(0.5 0.5 0) to 5.41434652631281 at #(0 0 0)
+Band 215 range: 5.423302133439 at #(0.5 0.125 0) to 5.4233175541313 at #(0 0 0)
+Band 216 range: 5.45334516002387 at #(0 0.5 0) to 5.45348186004111 at #(0.5 0 0)
+Band 217 range: 5.46215304892373 at #(0 0.5 0) to 5.46319697656315 at #(0.5 0 0)
+Band 218 range: 5.47901342745465 at #(0 0 0) to 5.47947988477403 at #(0.5 0.5 0)
+Band 219 range: 5.48068529161793 at #(0 0 0) to 5.48144599817818 at #(0 0.5 0)
+Band 220 range: 5.49372065854753 at #(0.5 0 0) to 5.49526011691129 at #(0 0.5 0)
+Band 221 range: 5.50024633282835 at #(0 0.5 0) to 5.50162254639821 at #(0 0 0)
+Band 222 range: 5.50330627816202 at #(0.5 0.125 0) to 5.50408287653211 at #(0 0.5 0)
+Band 223 range: 5.54521782866714 at #(0 0.5 0) to 5.54775297953123 at #(0.5 0 0)
+Band 224 range: 5.56068115100879 at #(0.5 0 0) to 5.56386008352742 at #(0 0.5 0)
+Band 225 range: 5.56631616611684 at #(0 0 0) to 5.56814658166018 at #(0.5 0.5 0)
+Band 226 range: 5.58362487263569 at #(0 0 0) to 5.58663800164522 at #(0.5 0.5 0)
+Band 227 range: 5.58726995606902 at #(0 0.5 0) to 5.58842393762085 at #(0 0 0)
+Band 228 range: 5.58792112948997 at #(0.5 0.5 0) to 5.59224844321121 at #(0 0 0)
+Band 229 range: 5.64061546220286 at #(0.5 0.5 0) to 5.64134180671128 at #(0 0 0)
+Band 230 range: 5.64241512662289 at #(0 0.5 0) to 5.643467519125 at #(0.5 0 0)
+Band 231 range: 5.66617640832872 at #(0 0 0) to 5.66705010507398 at #(0.5 0 0)
+Band 232 range: 5.66803400141092 at #(0.5 0 0) to 5.67028940181677 at #(0.25 0.5 0)
+Band 233 range: 5.6983182476256 at #(0.375 0.5 0) to 5.69855366260692 at #(0.5 0 0)
+Band 234 range: 5.70887679167161 at #(0.125 0.5 0) to 5.70900400686099 at #(0 0 0)
+Band 235 range: 5.72698736225323 at #(0.5 0 0) to 5.7273179925719 at #(0 0.5 0)
+Band 236 range: 5.73758841766631 at #(0 0 0) to 5.73775641229837 at #(0.5 0.5 0)
+Band 237 range: 5.75065976637084 at #(0.5 0 0) to 5.7517235268488 at #(0.5 0.5 0)
+Band 238 range: 5.77262504677937 at #(0 0.5 0) to 5.77381039929306 at #(0.5 0 0)
+Band 239 range: 5.79064085947287 at #(0.5 0.5 0) to 5.79224973544954 at #(0 0 0)
+Band 240 range: 5.79711203541229 at #(0 0 0) to 5.80061043669641 at #(0.5 0 0)
+Band 241 range: 5.80072405764305 at #(0 0.5 0) to 5.80459750261272 at #(0 0 0)
+Band 242 range: 5.8043134145948 at #(0.5 0.5 0) to 5.80629622659407 at #(0 0.5 0)
+Band 243 range: 5.81664321555598 at #(0.5 0 0) to 5.81765671070933 at #(0 0.375 0)
+Band 244 range: 5.82964093025909 at #(0 0 0) to 5.83703329395146 at #(0 0.5 0)
+Band 245 range: 5.84037071056658 at #(0.5 0.5 0) to 5.84291455706822 at #(0 0 0)
+Band 246 range: 5.853230430077 at #(0 0.5 0) to 5.8582433787954 at #(0.5 0 0)
+Band 247 range: 5.86943387655744 at #(0.5 0 0) to 5.87047897540175 at #(0 0.5 0)
+Band 248 range: 5.90609811943065 at #(0.5 0.5 0) to 5.9061256779144 at #(0.375 0 0)
+Band 249 range: 5.92324930549251 at #(0 0 0) to 5.92401216727516 at #(0.125 0.5 0)
+Band 250 range: 5.93205507003639 at #(0 0 0) to 5.93274194536833 at #(0.5 0 0)
+Gap from band 98 (3.32242353220078) to band 99 (3.3232413075194), 0.0246107902923049%
+Gap from band 99 (3.33276949449775) to band 100 (3.33577804041672), 0.0902309206982676%
+Gap from band 116 (3.51800006213448) to band 117 (3.52076707874538), 0.0786221949247923%
+Gap from band 118 (3.54102265042145) to band 119 (3.5444054578289), 0.0954863236425545%
+Gap from band 125 (3.61963386298704) to band 126 (3.62038407264875), 0.0207239724648225%
+Gap from band 126 (3.62844524009471) to band 127 (3.63168662735951), 0.0892927931329647%
+Gap from band 128 (3.65259182721517) to band 129 (3.65936961349202), 0.185389004901442%
+Gap from band 132 (3.68856217366976) to band 133 (3.68881523583357), 0.00686049119522113%
+Gap from band 133 (3.69520273804254) to band 134 (3.69780614470608), 0.0704288796303147%
+Gap from band 134 (3.70593921577533) to band 135 (3.71037919834415), 0.119735489251955%
+Gap from band 136 (3.72465561328605) to band 137 (3.72490906914144), 0.00680458164206922%
+Gap from band 138 (3.74013885555945) to band 139 (3.74392897607361), 0.10128503908391%
+Gap from band 141 (3.77471010258638) to band 142 (3.77473825106971), 7.45709673438094e-4%
+Gap from band 142 (3.78752016935053) to band 143 (3.78765666561659), 0.0036037776814364%
+Gap from band 143 (3.79343583569058) to band 144 (3.80111195302868), 0.202148108133616%
+Gap from band 144 (3.80560591170981) to band 145 (3.80778091454265), 0.0571362754178833%
+Gap from band 147 (3.8295570838405) to band 148 (3.83127843338675), 0.0449389506503607%
+Gap from band 148 (3.83706112314756) to band 149 (3.84192017915081), 0.126554703337985%
+Gap from band 149 (3.84524719355383) to band 150 (3.84903726303509), 0.0985164898085822%
+Gap from band 150 (3.85597435620808) to band 151 (3.85645180236481), 0.0123812182294301%
+Gap from band 151 (3.86163042231839) to band 152 (3.86231045919116), 0.0176085468079793%
+Gap from band 153 (3.87319850223277) to band 154 (3.87895066474857), 0.148401750066851%
+Gap from band 154 (3.88146546783584) to band 155 (3.88517255420649), 0.0954618036822447%
+Gap from band 155 (3.89766317907009) to band 156 (3.91634500049041), 0.478162320566561%
+Gap from band 156 (3.91969130267332) to band 157 (3.92063354545191), 0.0240358096594623%
+Gap from band 157 (3.92864910411544) to band 158 (3.92984475627935), 0.0304295501186189%
+Gap from band 158 (3.93620929992703) to band 159 (3.93907928147503), 0.0728857493496375%
+Gap from band 159 (3.94591144782268) to band 160 (3.95050003442056), 0.116219541197828%
+Gap from band 160 (3.95248023803395) to band 161 (3.95670042051917), 0.106716047272508%
+Gap from band 161 (3.96194837869807) to band 162 (3.96527512344083), 0.0839321546028151%
+Gap from band 162 (3.96657586684422) to band 163 (3.97431814441607), 0.194997630263564%
+Gap from band 163 (3.98066669404383) to band 164 (3.9821573636903), 0.0374407279543149%
+Gap from band 164 (3.98737561564424) to band 165 (3.98872132024735), 0.0337434365186263%
+Gap from band 165 (3.99334181893859) to band 166 (3.99397297854118), 0.0158040497611679%
+Gap from band 168 (4.00930279912445) to band 169 (4.01263437281715), 0.0830615753103008%
+Gap from band 169 (4.02430337076635) to band 170 (4.02881841581787), 0.112131547769264%
+Gap from band 170 (4.03236437076135) to band 171 (4.03472085005302), 0.0584220750657984%
+Gap from band 171 (4.04003751477884) to band 172 (4.04079813013943), 0.0188251659609598%
+Gap from band 174 (4.0573022747759) to band 175 (4.06056521739145), 0.0803891568493276%
+Gap from band 175 (4.06213320543872) to band 176 (4.0641162237313), 0.0488052528995928%
+Gap from band 180 (4.09035746809237) to band 181 (4.09308679338491), 0.0667035836092312%
+Gap from band 181 (4.09794848376748) to band 182 (4.09976046996151), 0.0442071365125762%
+Gap from band 182 (4.10380867198917) to band 183 (4.10435228904672), 0.0132457699142925%
+Gap from band 183 (4.10615463321042) to band 184 (4.10861326230695), 0.059858759926057%
+Gap from band 184 (4.11532182981866) to band 185 (4.115441711436), 0.00291301327603753%
+Gap from band 185 (4.11835637176218) to band 186 (4.11912951863038), 0.0187714280421818%
+Gap from band 187 (4.13322469869786) to band 188 (4.13411302827107), 0.0214901000188142%
+Gap from band 188 (4.13996245636259) to band 189 (4.14763578299561), 0.185176124889477%
+Gap from band 189 (4.15296594924447) to band 190 (4.15496299670464), 0.0480756990861526%
+Gap from band 190 (4.15757417909568) to band 191 (4.15952084429269), 0.0468111808637128%
+Gap from band 191 (4.16401090576449) to band 192 (4.16844590946738), 0.106451285646782%
+Gap from band 192 (4.17448673526204) to band 193 (4.17859227551274), 0.0983000458970811%
+Gap from band 193 (4.18254851866138) to band 194 (4.19239494653341), 0.2351401633445%
+Gap from band 194 (4.19442741804657) to band 195 (4.19766884427526), 0.0772495006579237%
+Gap from band 195 (4.19930691578944) to band 196 (4.21744596996643), 0.431022614616213%
+Gap from band 196 (4.21790594332974) to band 197 (4.23673528876478), 0.445420329926229%
+Gap from band 197 (4.23719561274574) to band 198 (4.25184970423473), 0.345247102396293%
+Gap from band 198 (4.25258910290973) to band 199 (4.25561496016211), 0.0711279896427297%
+Gap from band 199 (4.25644541307805) to band 200 (4.27522632197983), 0.440263279811886%
+Gap from band 200 (4.2752578143197) to band 201 (4.9182000043626), 13.9869503449804%
+Gap from band 201 (4.9182051982258) to band 202 (5.01753461869301), 1.99943682700058%
+Gap from band 202 (5.01754382211617) to band 203 (5.07434087197755), 1.12559847011776%
+Gap from band 203 (5.0743432843052) to band 204 (5.13706881354789), 1.22853780929819%
+Gap from band 204 (5.13707831469911) to band 205 (5.13894986223497), 0.0364255041664052%
+Gap from band 205 (5.13899346075285) to band 206 (5.17716271802803), 0.739989907358774%
+Gap from band 206 (5.17718772676213) to band 207 (5.22761310892556), 0.96927145381716%
+Gap from band 207 (5.22767237652744) to band 208 (5.25302605125376), 0.483816510913441%
+Gap from band 208 (5.25310567194451) to band 209 (5.30706646169872), 1.02196799581134%
+Gap from band 209 (5.30722545228081) to band 210 (5.3452887023012), 0.71463411299975%
+Gap from band 210 (5.34539388476172) to band 211 (5.35300584170768), 0.142300851353142%
+Gap from band 211 (5.35312137424243) to band 212 (5.35473000569832), 0.0300458308359375%
+Gap from band 212 (5.35507691705502) to band 213 (5.36944103737314), 0.267874423431465%
+Gap from band 213 (5.37038208658647) to band 214 (5.41380322299752), 0.805274300553124%
+Gap from band 214 (5.41434652631281) to band 215 (5.423302133439), 0.165268452730767%
+Gap from band 215 (5.4233175541313) to band 216 (5.45334516002387), 0.55214741289147%
+Gap from band 216 (5.45348186004111) to band 217 (5.46215304892373), 0.15887649147189%
+Gap from band 217 (5.46319697656315) to band 218 (5.47901342745465), 0.289090600664958%
+Gap from band 218 (5.47947988477403) to band 219 (5.48068529161793), 0.0219961437532754%
+Gap from band 219 (5.48144599817818) to band 220 (5.49372065854753), 0.223680619224718%
+Gap from band 220 (5.49526011691129) to band 221 (5.50024633282835), 0.0906955207538987%
+Gap from band 221 (5.50162254639821) to band 222 (5.50330627816202), 0.0305995938846155%
+Gap from band 222 (5.50408287653211) to band 223 (5.54521782866714), 0.744571140428335%
+Gap from band 223 (5.54775297953123) to band 224 (5.56068115100879), 0.232763165818574%
+Gap from band 224 (5.56386008352742) to band 225 (5.56631616611684), 0.0441337591485737%
+Gap from band 225 (5.56814658166018) to band 226 (5.58362487263569), 0.277593403683851%
+Gap from band 226 (5.58663800164522) to band 227 (5.58726995606902), 0.0113112516443805%
+Gap from band 228 (5.59224844321121) to band 229 (5.64061546220286), 0.861169856572966%
+Gap from band 229 (5.64134180671128) to band 230 (5.64241512662289), 0.0190241586723869%
+Gap from band 230 (5.643467519125) to band 231 (5.66617640832872), 0.401584512286799%
+Gap from band 231 (5.66705010507398) to band 232 (5.66803400141092), 0.0173601947314977%
+Gap from band 232 (5.67028940181677) to band 233 (5.6983182476256), 0.493091971736741%
+Gap from band 233 (5.69855366260692) to band 234 (5.70887679167161), 0.18098955949925%
+Gap from band 234 (5.70900400686099) to band 235 (5.72698736225323), 0.314504528934895%
+Gap from band 235 (5.7273179925719) to band 236 (5.73758841766631), 0.179162824830976%
+Gap from band 236 (5.73775641229837) to band 237 (5.75065976637084), 0.224632427513157%
+Gap from band 237 (5.7517235268488) to band 238 (5.77262504677937), 0.362736683935424%
+Gap from band 238 (5.77381039929306) to band 239 (5.79064085947287), 0.291072352733649%
+Gap from band 239 (5.79224973544954) to band 240 (5.79711203541229), 0.0839097106274%
+Gap from band 240 (5.80061043669641) to band 241 (5.80072405764305), 0.00195875649831319%
+Gap from band 242 (5.80629622659407) to band 243 (5.81664321555598), 0.178044272077786%
+Gap from band 243 (5.81765671070933) to band 244 (5.82964093025909), 0.205785409099745%
+Gap from band 244 (5.83703329395146) to band 245 (5.84037071056658), 0.0571602492099663%
+Gap from band 245 (5.84291455706822) to band 246 (5.853230430077), 0.176397830569223%
+Gap from band 246 (5.8582433787954) to band 247 (5.86943387655744), 0.190839115340331%
+Gap from band 247 (5.87047897540175) to band 248 (5.90609811943065), 0.604915057101594%
+Gap from band 248 (5.9061256779144) to band 249 (5.92324930549251), 0.289510267484712%
+Gap from band 249 (5.92401216727516) to band 250 (5.93205507003639), 0.135675727882459%
+total elapsed time for run: 14 minutes, 56 seconds.
+done.

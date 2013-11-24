@@ -2,6 +2,7 @@
 #
 
 import readcenters
+import csv
 import sys
 import os
 
@@ -42,12 +43,17 @@ def MakeRad(res, n_s):
 
     return rad
 
-def CreateMakeFile(curr_id, N):
+def CreateMakeFile(curr_id, N, n_s, rad):
     print 'creating make...'
     
-    fname = curr_id + '_make.ctl'
+    fname = curr_id + '_TM_make.ctl'
+
+    ffolder = curr_id
+
+    for i in range(0, n_s):
+        ffolder += '_r{:0.4f}'.format(float(rad[i]))
     
-    fout = './dat/' + curr_id + '/Upload/' + fname
+    fout = './dat/' + curr_id + '/TMUpload/' + ffolder + '/' + fname
 
     ensure_dir(fout)
     
@@ -68,11 +74,15 @@ def CreateDefineFile(curr_id, N, n_s, n_c, rad, coords):
     
     fname = curr_id + '_define'
 
+    ffolder = curr_id
+
     for i in range(0, n_s):
+        ffolder += '_r{:0.4f}'.format(float(rad[i]))
         fname += '_r{:0.4f}'.format(float(rad[i]))
+    
     fname += '.ctl'
 
-    fout = './dat/' + curr_id + '/Upload/' + fname
+    fout = './dat/' + curr_id + '/TMUpload/' + ffolder + '/' + fname
     
     ensure_dir(fout)
 
@@ -115,7 +125,9 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
     fname_param = fname_param + append_rad + '.ctl'
     fname_append = '_' + curr_id + '_MHUDS' + append_rad
 
-    fout_param = './dat/' + curr_id + '/Upload/' + fname_param
+    ffolder = curr_id + append_rad
+
+    fout_param = './dat/' + curr_id + '/TMUpload/' + ffolder + '/' + fname_param
     
     ensure_dir(fout_param)
     old0 = 'VAR_NUM_BANDS'
@@ -157,16 +169,16 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
 def CreateFileRun(curr_id, n_s, rad, numbands, fname_param):
     
     fin_run = './lib/run_DNT.ctl'
-        
-    fout_run = './dat/' + curr_id + '/Upload/' + curr_id + '_run'
-    
-    fname_out = './out/' + curr_id + '_out'
-    
+
+    append_rad = ''
     for i in range(0, n_s):
-        fout_run += '_r{:0.4f}'.format(float(rad[i]))
-        fname_out += '_r{:0.4f}'.format(float(rad[i]))
-    fout_run += '.ctl'
-    fname_out += '.OUT'
+        append_rad += '_r{:0.4f}'.format(float(rad[i]))
+
+    ffolder = curr_id + append_rad
+
+    fout_run = './dat/' + curr_id + '/TMUpload/' + ffolder + '/' + curr_id + '_run' + append_rad + '.ctl'
+    
+    fname_out = './out/' + curr_id + '_out' + append_rad + '.OUT'
     
     old0 = 'VAR_NUM_BANDS'
     new0 = str(numbands)
@@ -180,41 +192,91 @@ def CreateFileRun(curr_id, n_s, rad, numbands, fname_param):
     old3 = 'VAR_CURR_ID'
     new3 = curr_id
 
+    old4 = 'VAR_RAD'
+    new4 = append_rad
+
     os.system("cp %s %s" % (fin_run, fout_run))
 
     cmd0 = "sed -i~ -e 's/" + old0 + "/" + new0 + "/' " + fout_run
     cmd1 = "sed -i~ -e 's/" + old1 + "/" + new1 + "/' " + fout_run
     cmd2 = "sed -i~ -e 's/" + old2 + "/" + new2 + "/' " + fout_run
-    cmd3 = "sed -i~ -e 's/" + old3 + "/" + new3 + "/' " + fout_run
+    cmd3 = "sed -i~ -e 's/" + old3 + "/" + new3 + "/g' " + fout_run
+    cmd4 = "sed -i~ -e 's/" + old4 + "/" + new4 + "/' " + fout_run
 
     os.system(cmd0)
     os.system(cmd1)
     os.system(cmd2)
     os.system(cmd3)
+    os.system(cmd4)
 
     os.system("rm %s" % (fout_run + '~'))
 
 # makes script to upload files to della
 def MakeQsub(curr_id, res, n_s, rad):
     
-    fout = './dat/' + curr_id + '/Upload/' + curr_id + '_qsub' + str(res) + '.sh'
+    fout = './dat/' + curr_id + '/TMUpload/' + curr_id + '_qsub' + str(res) + '.sh'
 
     with open(fout,'w') as f:
         cmd = '#!/bin/sh\n'
         
         f.write(cmd)
+        
         for r in rad:
             
-            curr_run = curr_id + '_run'
+            append_rad = ''
             for i in range(0, n_s):
-                curr_run += '_r{:0.4f}'.format(float(r[i]))
-            curr_run += '.ctl'
+                append_rad += '_r{:0.4f}'.format(float(r[i]))
+            
+            ffolder = curr_id + append_rad
 
-            cmd = 'qsub ' + curr_run + ';\n'
+            
+            curr_run = curr_id + '_run' + append_rad + '.ctl'
+            
+            cmd = 'qsub ' + './' + ffolder + '/' + curr_run + ';\n'
             
             f.write(cmd)
     
         f.close()
+
+def ReadDel(curr_id):
+    fin = './dat/' + curr_id + '/Del/' + curr_id + '_del' + '_T.txt'
+
+    cent_in = list(csv.reader( open(fin, 'rb') , delimiter = '\t' ))
+
+    N = len(cent_in)
+
+    centroids = []
+
+    for c in cent_in:
+        x = float(c[0])
+        y = float(c[1])
+        centroids.append([x,y])
+    
+    return [N, centroids]
+
+def UploadDel(res, curr_id, numbands):
+    print 'running tm.upload...'
+    
+    [N, centroids] = ReadDel(curr_id)
+    
+    rad = MakeRad(res, 1)
+    
+    fname_make = CreateMakeFile(curr_id, N)
+    
+    n_s = 1
+    n_c = [N]
+    
+    for r in rad:
+        fname_define = CreateDefineFile(curr_id, N, n_s, n_c, r, [centroids])
+        fname_param = CreateFileParam(curr_id, n_s, r, numbands, N, fname_make, fname_define)
+        fname_run = CreateFileRun(curr_id, n_s, r, numbands, fname_param)
+    
+    MakeQsub(curr_id, res, n_s, rad)
+    
+    up_folder = './dat/' + curr_id + '/Upload/'
+    cmd = 'scp ' + up_folder + '*.ctl ' + up_folder + '*.sh chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/TM/'
+    
+    os.system(cmd)
 
 def Upload(res, curr_id, numbands):
     print 'running tm.upload...'
@@ -227,9 +289,8 @@ def Upload(res, curr_id, numbands):
     
     rad = MakeRad(res, n_s)
     
-    fname_make = CreateMakeFile(curr_id, N)
-
     for r in rad:
+        fname_make = CreateMakeFile(curr_id, N, n_s, r)
         fname_define = CreateDefineFile(curr_id, N, n_s, n_c, r, coords)
         fname_param = CreateFileParam(curr_id, n_s, r, numbands, N, fname_make, fname_define)
         fname_run = CreateFileRun(curr_id, n_s, r, numbands, fname_param)

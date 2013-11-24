@@ -593,17 +593,22 @@ def MakePlots(curr_id, opt):
         N += n_c[i]
         
     delaunaymap.RunDelMap(curr_id, n_s, coords)
-    if opt==2:
+
+    if opt==3:
         GetNN(curr_id, n_s, n_c, r_c, coords)
         PlotCenters(curr_id, n_s, n_c, r_c, coords)
         #PlotSk(curr_id, n_s)
         #       elif opt==2:
-#        subbands = [97, 98, 99, 100, 101, 102, 198, 199, 200, 201, 202, 297, 298, 299, 300, 301, 302]
+    subbands = [97, 98, 99, 100, 101, 102, 103, 198, 199, 200, 201, 202, 203, 297, 298, 299, 300, 301, 302, 303]
 #    PlotBands(curr_id, 1, n_s)
 #PlotSomeBands(curr_id, 1, n_s, subbands)
-#    PlotSomeBands(curr_id, 2, n_s, subbands)
+#PlotSomeBands(curr_id, 2, n_s, subbands)
+#PlotSomeBands(curr_id, 1, n_s, subbands)
 #GridPlots(curr_id, 2, n_s)
 #    PlotBands(curr_id, 2, n_s)
+#    CalcBands(curr_id, 1, n_s)
 #    CalcBands(curr_id, 2, n_s)
 #    CalcBandsMin(curr_id, 0.03, n_s)
 #    CalcBandsMin(curr_id, 0.05, n_s)
+
+

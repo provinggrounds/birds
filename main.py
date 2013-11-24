@@ -1,6 +1,6 @@
 #!/Users/ccl/Library/Enthought/Canopy_64bit/User/bin/python
 
-from lib import tm, readcenters, birds, Sk, NN
+from lib import te, tm, readcenters, birds, Sk, NN, delanalyze
 
 import shutil
 import ast
@@ -102,9 +102,10 @@ def main():
     newconfig =     0
     runSk = 0
     
-    #NN.GetNNStatsMany('onespecies',1,23)
-    NN.GetNNStatsDelMany('twospecies',1,97)
     
+    #NN.GetNNStatsMany('onespecies',1,23)
+    #NN.GetNNStatsDelMany('twospecies',1,97)
+    #birds.MakePlots(curr_id, 0)
     if(newconfig):
     
         SaveParams()
@@ -114,8 +115,11 @@ def main():
 
         Sk.CalcSk(curr_id)
         Sk.PlotSk(curr_id)
-
-#tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
+    #te.Upload(curr_id, 650) #584 points for twospecies46
+    #birds.MakePlots(curr_id, 1)
+#delanalyze.MakePlots(curr_id)
+#tm.UploadDel(2, curr_id, numbands=650) # 1, 2, 3 are for different resolutions.
+    tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
     #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)
 

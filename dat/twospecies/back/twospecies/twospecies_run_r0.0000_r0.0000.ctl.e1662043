@@ -1,0 +1,9 @@
+mkdir: cannot create directory `out': File exists
+=>> PBS: job killed: walltime 9029 exceeded limit 9000
+mpiexec: killing job...
+
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 14429 on node della-083 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpiexec: clean termination accomplished
+

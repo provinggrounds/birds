@@ -1,0 +1,11 @@
+mkdir: cannot create directory `out': File exists
+=>> PBS: job killed: walltime 21631 exceeded limit 21600
+mpiexec: killing job...
+
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 28587 on node della-006 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpiexec: abort is already in progress...hit ctrl-c again to forcibly terminate
+
+mpiexec: clean termination accomplished
+

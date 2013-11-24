@@ -2,59 +2,40 @@
 #
 
 import readcenters
+import numpy as np
 import sys
+import csv
 import os
-
-maxrad = 0.5
 
 def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
 
-# assume box length of order 10 (number of points order 100)
-def MakeRad(res, n_s):
-    #print 'making radii for res {:d}...'.format(res),
+def MakeRad(res):
 
-    if res == 1:
-        inc = 0.1
-    elif res == 2:
-        inc = 0.05
-    elif res == 3:
-        inc = 0.025
-    else:
-        sys.exit('not valid res')
+    min = 0.0
+    max = 0.15
+    steps = 16
+    
+    return np.linspace(min, max, steps)
 
-    numper = int(maxrad / inc) + 1
-    len = numper ** n_s
 
-    rad = []
-    for i in range(0,len):
-        cur = []
-        for j in range(0,n_s):
-            cur.append( round((int(i / numper**(n_s - 1 - j)) % numper) * inc , 5))
-        rad.append(cur)
-
-    if res == 2:
-        rad = [r for r in rad if r not in MakeRad(1,n_s)]
-    elif res == 3:
-        rad = [r for r in rad if r not in MakeRad(2,n_s)]
-
-    return rad
-
-def CreateMakeFile(curr_id, N):
+def CreateMakeFile(curr_id, r, N):
     print 'creating make...'
     
-    fname = curr_id + '_make.ctl'
+    fname = curr_id + '_TE_make.ctl'
     
-    fout = './dat/' + curr_id + '/Upload/' + fname
+    fout_folder = curr_id + '_{:0.3f}'.format(r)
+
+    fout = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fname
 
     ensure_dir(fout)
     
     with open(fout,'w') as f:
         f.write('(set! geometry (list\n')
         for i in range(1,N+1):
-            str_make = '(make cylinder (center CV_LC_C_{:d}) (radius (abs CV_R_{:d})) (height CV_H) (axis (CV_A theta phi)) (material dielCylV))\n'.format(i,i)
+            str_make ='(make cylinder (center CH_Centre_C_{:d}) (radius CylinderHorizontalRadius)  (height CH_Height_C_{:d}) (axis CH_Axis_C_{:d})  (material dielCylH))\n'.format(i,i,i)
             f.write(str_make)
         f.write('))')
         f.close()
@@ -62,62 +43,59 @@ def CreateMakeFile(curr_id, N):
     return fname
 
 # creates define file
-def CreateDefineFile(curr_id, N, n_s, n_c, rad, coords):
-    print 'creating define for rad ',
-    print rad
+def CreateDefineFile(curr_id, N, r, walls):
+    print 'creating define...',
     
-    fname = curr_id + '_define'
+    fname = curr_id + '_TE_define.ctl'
 
-    for i in range(0, n_s):
-        fname += '_r{:0.4f}'.format(float(rad[i]))
-    fname += '.ctl'
+    fout_folder = curr_id + '_{:0.3f}'.format(r)
 
-    fout = './dat/' + curr_id + '/Upload/' + fname
+    fout = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fname
     
     ensure_dir(fout)
 
-    curr_index = 0
+    i = 1
 
     with open(fout,'w') as f:
-        for i in range(0, n_s):
-            
-            curr_rad = float(rad[i])
-            
-            for j in range(0, n_c[i]):
-                
-                curr_x = coords[i][j][0] * (N**0.5)
-                curr_y = coords[i][j][1] * (N**0.5)
-                
-                curr_index += 1
+        
+        for w in walls:
+            print w
+            xL = w[0] * (N**0.5)
+            yL = w[1] * (N**0.5)
 
-                str_CC = '(define CV_CC_C_{:d} (vector3 {:0.6f} ' \
-                    '{:0.6f} 0.000000))\n'.format(curr_index,curr_x, curr_y)
-                str_LC  = '(define CV_LC_C_{:d} (cartesian->lattice '\
-                    'CV_CC_C_{:d}))\n'.format(curr_index, curr_index)
-                str_rad = '(define CV_R_{:d} {:0.6f})\n'.format(curr_index, curr_rad)
+            xR = w[2] * (N**0.5)
+            yR = w[3] * (N**0.5)
 
-                f.write(str_CC + str_LC + str_rad)
-    
+            str_CC_L = '(define CH_CC_C_{:d}_L  (vector3 {:0.6f} {:0.6f} 0.000000))\n'.format(i , xL, yL)
+            str_CC_R = '(define CH_CC_C_{:d}_R  (vector3 {:0.6f} {:0.6f} 0.000000))\n'.format(i , xR, yR)
+            str_CH_C = '(define CH_Centre_C_{:d}  (vector3*  (vector3+ CH_CC_C_{:d}_L   CH_CC_C_{:d}_R) 0.5) )\n'.format(i,i,i)
+            str_CH_A = '(define CH_Axis_C_{:d}    (vector3*  (vector3- CH_CC_C_{:d}_L   CH_CC_C_{:d}_R) 0.5) )\n'.format(i,i,i)
+            str_CH_H = '(define CH_Height_C_{:d}  (vector3-norm CH_Axis_C_{:d}))\n'.format(i,i)
+
+            f.write( str_CC_L + str_CC_R + str_CH_C + str_CH_A + str_CH_H )
+        
+            i += 1
+        
         f.close()
+
     return fname
 
 # creates param file
-def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
+def CreateFileParam(curr_id, numbands, N, r, fname_make, fname_define):
 
-    fin_param = './lib/param_DNT.ctl'
+    fin_param = './lib/paramTE_DNT.ctl'
     
-    fname_param = curr_id + '_param'
-    
-    append_rad = ''
-    for i in range(0, n_s):
-        append_rad += '_r{:0.4f}'.format(float(rad[i]))
-    
-    fname_param = fname_param + append_rad + '.ctl'
-    fname_append = '_' + curr_id + '_MHUDS' + append_rad
+    fname_param = curr_id + '_TE_param_{:0.3f}'.format(r) + '.ctl'
 
-    fout_param = './dat/' + curr_id + '/Upload/' + fname_param
+    fout_folder = curr_id + '_{:0.3f}'.format(r)
+
+    fout_param = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fname_param
+
+    fname_append = '_' + curr_id + '_MHUDS'
+
     
     ensure_dir(fout_param)
+    
     old0 = 'VAR_NUM_BANDS'
     new0 = str(numbands)
 
@@ -132,6 +110,9 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
 
     old4 = 'VAR_STRING_APPEND'
     new4 = '\"' + fname_append + '\"'
+    
+    old5 = 'VAR_RADIUS'
+    new5 = str(r)
 
     #copies
     os.system("cp %s %s" % (fin_param, fout_param))
@@ -142,31 +123,31 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
     cmd2 = "sed -i~ -e 's/" + old2 + "/" + new2 + "/' " + fout_param
     cmd3 = "sed -i~ -e 's/" + old3 + "/" + new3 + "/' " + fout_param
     cmd4 = "sed -i~ -e 's/" + old4 + "/" + new4 + "/' " + fout_param
+    cmd5 = "sed -i~ -e 's/" + old5 + "/" + new5 + "/' " + fout_param
 
     os.system(cmd0)
     os.system(cmd1)
     os.system(cmd2)
     os.system(cmd3)
     os.system(cmd4)
+    os.system(cmd5)
 
     os.system("rm %s" % (fout_param + '~'))
 
     return fname_param
 
 # creates run file
-def CreateFileRun(curr_id, n_s, rad, numbands, fname_param):
+def CreateFileRun(curr_id, numbands, r, fname_param):
     
-    fin_run = './lib/run_DNT.ctl'
+    fin_run = './lib/runTE_DNT.ctl'
+    
+    fout_folder = curr_id + '_{:0.3f}'.format(r)
+    
+    fout_file = curr_id + '_TE_run_{:0.3f}'.format(r) + '.ctl'
         
-    fout_run = './dat/' + curr_id + '/Upload/' + curr_id + '_run'
+    fout_run = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fout_file
     
-    fname_out = './out/' + curr_id + '_out'
-    
-    for i in range(0, n_s):
-        fout_run += '_r{:0.4f}'.format(float(rad[i]))
-        fname_out += '_r{:0.4f}'.format(float(rad[i]))
-    fout_run += '.ctl'
-    fname_out += '.OUT'
+    fname_out = './out/' + curr_id + '_TE_out_{:0.3f}'.format(r) + '.OUT'
     
     old0 = 'VAR_NUM_BANDS'
     new0 = str(numbands)
@@ -179,73 +160,95 @@ def CreateFileRun(curr_id, n_s, rad, numbands, fname_param):
 
     old3 = 'VAR_CURR_ID'
     new3 = curr_id
+    
+    old4 = 'VAR_RAD'
+    new4 = '{:0.3f}'.format(r)
 
     os.system("cp %s %s" % (fin_run, fout_run))
 
     cmd0 = "sed -i~ -e 's/" + old0 + "/" + new0 + "/' " + fout_run
     cmd1 = "sed -i~ -e 's/" + old1 + "/" + new1 + "/' " + fout_run
     cmd2 = "sed -i~ -e 's/" + old2 + "/" + new2 + "/' " + fout_run
-    cmd3 = "sed -i~ -e 's/" + old3 + "/" + new3 + "/' " + fout_run
+    cmd3 = "sed -i~ -e 's/" + old3 + "/" + new3 + "/g' " + fout_run
+    cmd4 = "sed -i~ -e 's/" + old4 + "/" + new4 + "/' " + fout_run
 
     os.system(cmd0)
     os.system(cmd1)
     os.system(cmd2)
     os.system(cmd3)
+    os.system(cmd4)
 
     os.system("rm %s" % (fout_run + '~'))
 
-# makes script to upload files to della
-def MakeQsub(curr_id, res, n_s, rad):
-    
-    fout = './dat/' + curr_id + '/Upload/' + curr_id + '_qsub' + str(res) + '.sh'
 
+# makes script to upload files to della
+def MakeQsub(curr_id, rad):
+    
+    fout = './dat/' + curr_id + '/TEUpload/' + curr_id + '_TE_qsub.sh'
+    
+    ensure_dir(fout)
+    
     with open(fout,'w') as f:
         cmd = '#!/bin/sh\n'
         
         f.write(cmd)
         for r in rad:
             
-            curr_run = curr_id + '_run'
-            for i in range(0, n_s):
-                curr_run += '_r{:0.4f}'.format(float(r[i]))
-            curr_run += '.ctl'
-
-            cmd = 'qsub ' + curr_run + ';\n'
+            cur_file = curr_id + '_TE_run_{:0.3f}'.format(r) + '.ctl'
+            cur_folder = curr_id + '_{:0.3f}'.format(r)
+            cur_run = './' + cur_folder + '/' + cur_file
+            
+            cmd = 'qsub ' + cur_run + ';\n'
             
             f.write(cmd)
-    
+        
         f.close()
 
-def Upload(res, curr_id, numbands):
-    print 'running tm.upload...'
 
-    [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
+def readDel(curr_id):
     
-    N = 0
-    for i in range(0,n_s):
-        N += n_c[i]
+    fin = './dat/' + curr_id + '/Del/' + curr_id + '_del_walls.txt'
     
-    rad = MakeRad(res, n_s)
+    walls_in = list(csv.reader( open(fin, 'rb') , delimiter = '\t' ))
     
-    fname_make = CreateMakeFile(curr_id, N)
+    walls = []
+    
+    N = len(walls_in)
+    
+    for w in walls_in:
+        xL = float(w[0])
+        yL = float(w[1])
+        xR = float(w[2])
+        yR = float(w[3])
+        walls.append( [xL, yL, xR, yR] )
 
+    return [N, walls]
+
+def Upload(curr_id, numbands):
+    print 'running TE.upload...'
+    
+    [N, walls] = readDel(curr_id)
+    
+    N1 = 584
+    
+    rad = MakeRad(1)
+    
     for r in rad:
-        fname_define = CreateDefineFile(curr_id, N, n_s, n_c, r, coords)
-        fname_param = CreateFileParam(curr_id, n_s, r, numbands, N, fname_make, fname_define)
-        fname_run = CreateFileRun(curr_id, n_s, r, numbands, fname_param)
+        fname_make = CreateMakeFile(curr_id, r, N)
+        fname_define = CreateDefineFile(curr_id, N1, r, walls)
+        fname_param = CreateFileParam(curr_id, numbands, N1, r, fname_make, fname_define)
+        fname_run = CreateFileRun(curr_id, numbands, r, fname_param)
+    
+    MakeQsub(curr_id, rad)
 
-    MakeQsub(curr_id, res, n_s, rad)
-
-    up_folder = './dat/' + curr_id + '/Upload/'
-    cmd = 'scp ' + up_folder + '*.ctl ' + up_folder + '*.sh chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/'
+    up_folder = './dat/' + curr_id + '/TEUpload/'
+    cmd = 'scp -r ' + up_folder +' chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/TE/'
 
     os.system(cmd)
 
 def Download(res, curr_id):
     
-    print 'running tm.download...'
-
-    [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
+    print 'running TE.download...'
 
     down_folder = './dat/' + curr_id + '/Download/'
     
