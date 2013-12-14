@@ -1,6 +1,6 @@
 #!/bin/bash
 # parallel job using 48 processors.  Runs for 2.5 hours (max).
-#PBS -l nodes=6:ppn=8,walltime=2:30:00
+#PBS -l nodes=4:ppn=12,walltime=2:30:00
 #PBS -m abe
 #PBS -M chaneyl@princeton.edu
 module load openmpi/gcc/1.4.5/64

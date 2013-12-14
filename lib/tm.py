@@ -35,7 +35,6 @@ def MakeRad(res, n_s):
         for j in range(0,n_s):
             cur.append( round((int(i / numper**(n_s - 1 - j)) % numper) * inc , 5))
         rad.append(cur)
-
     if res == 2:
         rad = [r for r in rad if r not in MakeRad(1,n_s)]
     elif res == 3:
@@ -68,7 +67,7 @@ def CreateMakeFile(curr_id, N, n_s, rad):
     return fname
 
 # creates define file
-def CreateDefineFile(curr_id, N, n_s, n_c, rad, coords):
+def CreateDefineFile(curr_id, N, n_s, n_c, rad, coords, N_part):
     print 'creating define for rad ',
     print rad
     
@@ -95,8 +94,8 @@ def CreateDefineFile(curr_id, N, n_s, n_c, rad, coords):
             
             for j in range(0, n_c[i]):
                 
-                curr_x = coords[i][j][0] * (N**0.5)
-                curr_y = coords[i][j][1] * (N**0.5)
+                curr_x = coords[i][j][0] * (N_part**0.5)
+                curr_y = coords[i][j][1] * (N_part**0.5)
                 
                 curr_index += 1
 
@@ -112,7 +111,7 @@ def CreateDefineFile(curr_id, N, n_s, n_c, rad, coords):
     return fname
 
 # creates param file
-def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
+def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define, N_part):
 
     fin_param = './lib/param_DNT.ctl'
     
@@ -123,7 +122,7 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
         append_rad += '_r{:0.4f}'.format(float(rad[i]))
     
     fname_param = fname_param + append_rad + '.ctl'
-    fname_append = '_' + curr_id + '_MHUDS' + append_rad
+    fname_append = 'MHUDS' + append_rad + '_'
 
     ffolder = curr_id + append_rad
 
@@ -134,7 +133,7 @@ def CreateFileParam(curr_id, n_s, rad, numbands, N, fname_make, fname_define):
     new0 = str(numbands)
 
     old1 = 'VAR_NUM_PTS'
-    new1 = str(N)
+    new1 = str(N_part)
 
     old2 = 'VAR_MAKE_FILENAME'
     new2 = '\"' + fname_make + '\"'
@@ -278,7 +277,7 @@ def UploadDel(res, curr_id, numbands):
     
     os.system(cmd)
 
-def Upload(res, curr_id, numbands):
+def Upload(res, curr_id, numbands, N_part):
     print 'running tm.upload...'
 
     [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
@@ -291,16 +290,15 @@ def Upload(res, curr_id, numbands):
     
     for r in rad:
         fname_make = CreateMakeFile(curr_id, N, n_s, r)
-        fname_define = CreateDefineFile(curr_id, N, n_s, n_c, r, coords)
-        fname_param = CreateFileParam(curr_id, n_s, r, numbands, N, fname_make, fname_define)
+        fname_define = CreateDefineFile(curr_id, N, n_s, n_c, r, coords, N_part)
+        fname_param = CreateFileParam(curr_id, n_s, r, numbands, N, fname_make, fname_define, N_part)
         fname_run = CreateFileRun(curr_id, n_s, r, numbands, fname_param)
 
     MakeQsub(curr_id, res, n_s, rad)
 
-    up_folder = './dat/' + curr_id + '/Upload/'
-    cmd = 'scp ' + up_folder + '*.ctl ' + up_folder + '*.sh chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/'
-
-    os.system(cmd)
+#    up_folder = './dat/' + curr_id + '/TMUpload/'
+#    cmd = 'scp -r ' + up_folder + ' chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/TM/'
+#    os.system(cmd)
 
 def Download(res, curr_id):
     

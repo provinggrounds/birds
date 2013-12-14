@@ -83,10 +83,16 @@ def GetNN(curr_id, n_s, n_c, r_c, coords):
         axes_indiv = plt.subplot(1, n_s + 1, i+1)
         axes_indiv.grid()
         plt.title('species {:d}'.format(i))
-        plt.hist(NN_sp,normed=1, bins=20)
-        
+
         tmp_a = np.array(NN_sp)
         N = len(NN_sp)
+
+        y,binEdges=np.histogram(NN_sp,bins=N**0.5)
+        bincenters = 0.5*(binEdges[1:]+binEdges[:-1])
+        pyl.plot(bincenters,y,'-', color='r')
+        plt.hist(NN_sp, bins=int(N**0.5))
+        
+        
         mean = np.mean(tmp_a)
         med = np.median(tmp_a)
         std = np.std(tmp_a)
@@ -116,10 +122,15 @@ def GetNN(curr_id, n_s, n_c, r_c, coords):
     axes_combined = plt.subplot(1, n_s + 1, n_s+1)
     axes_combined.grid()
     plt.title('all species')
-    plt.hist(NN_all, normed=1, bins=20)
-
     tmp_a = np.array(NN_all)
     N = len(NN_all)
+
+    y,binEdges=np.histogram(NN_all,bins=N**0.5)
+    bincenters = 0.5*(binEdges[1:]+binEdges[:-1])
+    pyl.plot(bincenters,y,'-',color='r')
+    plt.hist(NN_all, bins=N**0.5)
+
+
     mean = np.mean(tmp_a)
     med = np.median(tmp_a)
     std = np.std(tmp_a)
@@ -313,11 +324,12 @@ def PlotSomeBands(curr_id, res, n_s, subbands):
         
         with open(tmp_bands,'r') as fin_bands:
             bands = [b.split() for b in fin_bands]
+            if len(bands) == 0: continue
             
             for i in range(len(subbands)):
                 
                 colorVal = scalarMap.to_rgba(i)
-
+            
                 cur_hi = float(bands[int(subbands[i-1])][1])
                 nxt_lo = float(bands[int(subbands[i-1])+1][0])
                 
@@ -363,6 +375,7 @@ def CalcBands(curr_id, res, n_s):
         initiate = 1
 
     for r in rad:
+        
 
         cur_fout = fname_out
         for i in range(0, n_s):
@@ -422,6 +435,7 @@ def CalcBands(curr_id, res, n_s):
 
         with open(tmp_bands,'r') as fin_bands:
             bands = [band.split() for band in fin_bands]
+            if len(bands) == 0: continue
             numbands_f = len(bands)
             
             print 'num bands...' + str(numbands_f)
@@ -584,6 +598,50 @@ def GridPlots(curr_id, res, n_s):
 
     blank_img.save(out_img)
 
+def GridPlots2(curr_id, res):
+    
+    min = 0
+    max = 0.5
+    inc = 0.05
+    
+    dpi = 400
+    
+    rad = [i * inc for i in range(0, int(max/inc)+1)]
+    
+    fname_out = './dat/' + curr_id + '/Download/' + curr_id + '_out'
+    fname_band = './dat/' + curr_id + '/Plots/Bands/' + curr_id + '_subbands'
+    
+    max_x = 0
+    max_y = 0
+    dpi_in = 400
+    
+    for r in rad:
+        if r == 0: continue
+        curr_fband = fname_band + '_r{:0.4f}'.format(r)
+        curr_fband = curr_fband + '_dpi' + str(dpi_in) + '.png'
+        cur_x = Image.open(curr_fband).size[0]
+        cur_y = Image.open(curr_fband).size[1]
+        if cur_x > max_x: max_x = cur_x
+        if cur_y > max_y: max_y = cur_y
+    print 'max (x,y) = ({:d},{:d})'.format(max_x,max_y)
+    
+    blank_img = Image.new("RGB", (len(rad) * max_x, max_y), "white")
+    
+    for i in range(len(rad)):
+        if rad[i]==0: continue
+        cur_x = i * max_x
+        curr_fband = fname_band + '_r{:0.4f}'.format(rad[i])
+        curr_fband = curr_fband + '_dpi' + str(dpi_in) + '.png'
+        print 'pasting ' + curr_fband
+        blank_img.paste(Image.open(curr_fband), (cur_x, 0))
+    
+    out_img = './dat/' + curr_id + '/Plots/' + curr_id + 'grid_dpi' + str(dpi_in) + '.png'
+    
+    ensure_dir(out_img)
+    
+    blank_img.save(out_img)
+
+
 def MakePlots(curr_id, opt):
 
     [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
@@ -593,18 +651,19 @@ def MakePlots(curr_id, opt):
         N += n_c[i]
         
     delaunaymap.RunDelMap(curr_id, n_s, coords)
+        #GetNN(curr_id, n_s, n_c, r_c, coords)
 
-    if opt==3:
-        GetNN(curr_id, n_s, n_c, r_c, coords)
-        PlotCenters(curr_id, n_s, n_c, r_c, coords)
+    GetNN(curr_id, n_s, n_c, r_c, coords)
+    PlotCenters(curr_id, n_s, n_c, r_c, coords)
         #PlotSk(curr_id, n_s)
         #       elif opt==2:
-    subbands = [97, 98, 99, 100, 101, 102, 103, 198, 199, 200, 201, 202, 203, 297, 298, 299, 300, 301, 302, 303]
+        #subbands = [97, 98, 99, 100, 101, 102, 103, 198, 199, 200, 201, 202, 203, 297, 298, 299, 300, 301, 302, 303]
+    subbands = [97, 98, 99, 100, 101, 102, 298, 299, 300, 301, 302]
 #    PlotBands(curr_id, 1, n_s)
+#    PlotSomeBands(curr_id, 1, n_s, subbands)
+#    PlotSomeBands(curr_id, 2, n_s, subbands)
 #PlotSomeBands(curr_id, 1, n_s, subbands)
-#PlotSomeBands(curr_id, 2, n_s, subbands)
-#PlotSomeBands(curr_id, 1, n_s, subbands)
-#GridPlots(curr_id, 2, n_s)
+#    GridPlots2(curr_id, 2)
 #    PlotBands(curr_id, 2, n_s)
 #    CalcBands(curr_id, 1, n_s)
 #    CalcBands(curr_id, 2, n_s)

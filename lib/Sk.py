@@ -70,7 +70,7 @@ def CalcSk(curr_id):
     RunSk(total_in, outname)
     
     del_fin = './dat/' + curr_id + '/Del/' + curr_id + '_del_T.txt'
-    del_data = list(csv.reader( open(del_fin, 'rb') , delimiter = ' ' ))
+    del_data = list(csv.reader( open(del_fin, 'rb') , delimiter = '\t' ))
     del_in = [maxx, maxy, len(del_data)]
 
     for i in range( len(del_data) ):

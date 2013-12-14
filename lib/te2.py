@@ -1,21 +1,28 @@
-# te.py (for delauanay)
+# te2.py (for regular)
 #
 
 import readcenters
+import numpy as np
 import sys
 import csv
 import os
+
+from scipy.spatial import Delaunay
 
 def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
 
+def unique_rows(data):
+    uniq = np.unique(data.view(data.dtype.descr * data.shape[1]))
+    return uniq.view(data.dtype).reshape(-1, data.shape[1])
+
 def MakeRad(res):
 
-    min = 0.0
-    max = 0.15
-    inc = 0.5
+    min = 0.05
+    max = 0.05
+    inc = 0.05
 
     rad = []
     cur = min
@@ -31,7 +38,7 @@ def CreateMakeFile(curr_id, r, N):
     
     fname = curr_id + '_TE_make.ctl'
     
-    fout_folder = curr_id + '_{:0.3f}'.format(r)
+    fout_folder = curr_id + '_O_{:0.3f}'.format(r)
 
     fout = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fname
 
@@ -53,7 +60,7 @@ def CreateDefineFile(curr_id, N, r, walls):
     
     fname = curr_id + '_TE_define.ctl'
 
-    fout_folder = curr_id + '_{:0.3f}'.format(r)
+    fout_folder = curr_id + '_O_{:0.3f}'.format(r)
 
     fout = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fname
     
@@ -93,7 +100,7 @@ def CreateFileParam(curr_id, numbands, N, r, fname_make, fname_define):
     
     fname_param = curr_id + '_TE_param_{:0.3f}'.format(r) + '.ctl'
 
-    fout_folder = curr_id + '_{:0.3f}'.format(r)
+    fout_folder = curr_id + '_O_{:0.3f}'.format(r)
 
     fout_param = './dat/' + curr_id + '/TEUpload/' + fout_folder + '/' + fname_param
 
@@ -147,7 +154,7 @@ def CreateFileRun(curr_id, numbands, r, fname_param):
     
     fin_run = './lib/runTE_DNT.ctl'
     
-    fout_folder = curr_id + '_{:0.3f}'.format(r)
+    fout_folder = curr_id + '_O_{:0.3f}'.format(r)
     
     fout_file = curr_id + '_TE_run_{:0.3f}'.format(r) + '.ctl'
         
@@ -168,7 +175,7 @@ def CreateFileRun(curr_id, numbands, r, fname_param):
     new3 = curr_id
     
     old4 = 'VAR_RAD'
-    new4 = '{:0.3f}'.format(r)
+    new4 = 'O_{:0.3f}'.format(r)
 
     os.system("cp %s %s" % (fin_run, fout_run))
 
@@ -201,7 +208,7 @@ def MakeQsub(curr_id, rad):
         for r in rad:
             
             cur_file = curr_id + '_TE_run_{:0.3f}'.format(r) + '.ctl'
-            cur_folder = curr_id + '_{:0.3f}'.format(r)
+            cur_folder = curr_id + '_O_{:0.3f}'.format(r)
             cur_run = './' + cur_folder + '/' + cur_file
             
             cmd = 'qsub ' + cur_run + ';\n'
@@ -211,21 +218,52 @@ def MakeQsub(curr_id, rad):
         f.close()
 
 
-def readDel(curr_id):
+def getWallsNonDel(curr_id, n_s, coords):
     
-    fin = './dat/' + curr_id + '/Del/' + curr_id + '_del_walls.txt'
+    all_coords = []
+    for i in range(n_s):
+        all_coords.extend(coords[i])
+    points = np.array(all_coords)
+    tri = Delaunay(points)
     
-    walls_in = list(csv.reader( open(fin, 'rb') , delimiter = '\t' ))
-    
+    indices = []
+
+    for t in tri.vertices:
+    # append 0-1, 0-2, 1-2
+        t0 = t[0]
+        t1 = t[1]
+        t2 = t[2]
+        if(t0 < t1):
+            indices.append([t0,t1])
+        else:
+            indices.append([t1,t0])
+        if(t0 < t2):
+            indices.append([t0,t2])
+        else:
+            indices.append([t2,t0])
+        if(t1 < t2):
+            indices.append([t1,t2])
+        else:
+            indices.append([t2,t1])
+
+    unique_indices = unique_rows(np.array(indices))
+
+    print points
+
+    N = len(unique_indices)
+
+    in_walls = []
+    for i in range(N):
+        wall = [points[unique_indices[i][0]], points[unique_indices[i][1]]]
+        in_walls.append(wall)
+
     walls = []
-    
-    N = len(walls_in)
-    
-    for w in walls_in:
-        xL = float(w[0])
-        yL = float(w[1])
-        xR = float(w[2])
-        yR = float(w[3])
+
+    for w in in_walls:
+        xL = w[0][0]
+        yL = w[0][1]
+        xR = w[1][0]
+        yR = w[1][1]
         walls.append( [xL, yL, xR, yR] )
 
     return [N, walls]
@@ -233,9 +271,11 @@ def readDel(curr_id):
 def Upload(curr_id, numbands):
     print 'running TE.upload...'
     
-    [N, walls] = readDel(curr_id)
+    [n_s, n_c, r_c, coords] = readcenters.read(curr_id)
     
-    N1 = 584
+    [N, walls] = getWallsNonDel(curr_id, n_s, coords)
+    
+    N1 = 300
     
     rad = MakeRad(1)
     
@@ -244,13 +284,13 @@ def Upload(curr_id, numbands):
         fname_define = CreateDefineFile(curr_id, N1, r, walls)
         fname_param = CreateFileParam(curr_id, numbands, N1, r, fname_make, fname_define)
         fname_run = CreateFileRun(curr_id, numbands, r, fname_param)
-    
-    MakeQsub(curr_id, rad)
 
-    up_folder = './dat/' + curr_id + '/TEUpload/'
-    cmd = 'scp -r ' + up_folder +' chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/TE/'
+    #MakeQsub(curr_id, rad)
 
-    os.system(cmd)
+#up_folder = './dat/' + curr_id + '/TEUpload/'
+#    cmd = 'scp -r ' + up_folder +' chaneyl@della.princeton.edu:/home/chaneyl/' + curr_id + '/TE/'
+
+#    os.system(cmd)
 
 def Download(res, curr_id):
     

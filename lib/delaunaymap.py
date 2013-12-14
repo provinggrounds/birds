@@ -115,6 +115,68 @@ def DelSaveWalls(curr_id, walls):
             f.write(xL + '\t' + yL + '\t' + xR + '\t' + yR + '\n')
         f.close()
 
+
+# computes bond-orientational-order parameter
+# Q = \abs{ \frac{1}{N} \sum_{m=1}^N \frac{1}{N_b} \sum_{n=1}^{N_b} \exp( i 6 \theta_{mn}) }
+def getWallsNonDel(n_s, coords):
+    
+    all_coords = []
+    for i in range(n_s):
+        all_coords.extend(coords[i])
+    points = np.array(all_coords)
+    tri = Delaunay(points)
+    
+    indices = []
+    
+    for t in tri.vertices:
+        # append 0-1, 0-2, 1-2
+        t0 = t[0]
+        t1 = t[1]
+        t2 = t[2]
+        if(t0 < t1):
+            indices.append([t0,t1])
+        else:
+            indices.append([t1,t0])
+        if(t0 < t2):
+            indices.append([t0,t2])
+        else:
+            indices.append([t2,t0])
+        if(t1 < t2):
+            indices.append([t1,t2])
+        else:
+            indices.append([t2,t1])
+    
+    unique_indices = unique_rows(np.array(indices))
+    
+    print points
+    
+    N = len(unique_indices)
+    
+    in_walls = []
+    for i in range(N):
+        wall = [points[unique_indices[i][0]], points[unique_indices[i][1]]]
+        in_walls.append(wall)
+    
+    walls = []
+    
+    for w in in_walls:
+        xL = w[0][0]
+        yL = w[0][1]
+        xR = w[1][0]
+        yR = w[1][1]
+        walls.append( [xL, yL, xR, yR] )
+    
+    return [N, walls]
+
+def CalculateBOO(n_s, coords):
+    
+    [N, walls] = getWallsNonDel(n_s, coords)
+    
+    Q = 0.0 + 0.0j
+
+
+
+
 def AddPlotStuff(ax):
     ax.grid()
     ax.set_aspect('equal')
@@ -183,6 +245,8 @@ def RunDelMap(curr_id, n_s, coords):
             x = p[0]
             y = p[1]
             my_circle_scatter(axes_tesselation, [x], [y], radius=rad, alpha=0.5, color=colorVal)
+
+    Q = CalculateBOO(n_s, coords)
 
     mapped_coords = GetCentroids(points[tri.vertices])
 

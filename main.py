@@ -1,6 +1,6 @@
 #!/Users/ccl/Library/Enthought/Canopy_64bit/User/bin/python
 
-from lib import te, tm, readcenters, birds, Sk, NN, delanalyze
+from lib import te, te2, tm, readcenters, birds, Sk, NN, delanalyze
 
 import shutil
 import ast
@@ -16,15 +16,15 @@ num_args = len(sys.argv)
 # twospecies1 2 100 30 [200,100] [0,0] 1 0.0001 0.58 0 200 0.08
 
 if num_args == 1:
-    
-    curr_id             = 'twospecies46' #unique id to identify pattern and associated Sk
+        
+    curr_id             = 'two02' #unique id to identify pattern and associated Sk
 
     # parameters for packing code
     num_species         = 2
     num_stagegrowth     = 10000
     num_stagerelax      = 300
-    num_cells           = [200, 100]   #[250, 120, 95, 90, 60]
-    radii               = [0.025, 0.02]  #[0.012, 0.0095, 0.0085, 0.009, 0.008]
+    num_cells           = [100, 100]   #[250, 120, 95, 90, 60]
+    radii               = [0.02, 0.02]  #[0.012, 0.0095, 0.0085, 0.009, 0.008]
     growthrate          = 1
     transmod            = 0.0001
     start_quench        = 0.58
@@ -100,14 +100,13 @@ def main():
     os.environ['PATH'] = os.environ['PATH'] + ':/usr/texbin'
     
     newconfig =     0
-    runSk = 0
+    runSk =         0
     
     
     #NN.GetNNStatsMany('onespecies',1,23)
     #NN.GetNNStatsDelMany('twospecies',1,97)
     #birds.MakePlots(curr_id, 0)
     if(newconfig):
-    
         SaveParams()
         GetConfig()
         birds.MakePlots(curr_id, 2)
@@ -115,11 +114,12 @@ def main():
 
         Sk.CalcSk(curr_id)
         Sk.PlotSk(curr_id)
-    #te.Upload(curr_id, 650) #584 points for twospecies46
-    #birds.MakePlots(curr_id, 1)
+            #te.Upload(curr_id, 650) #584 points for twospecies46-del
+#te2.Upload(curr_id, 350) #300 points for twospecies46-reg
 #delanalyze.MakePlots(curr_id)
-#tm.UploadDel(2, curr_id, numbands=650) # 1, 2, 3 are for different resolutions.
-    tm.Upload(2, curr_id, numbands=350) # 1, 2, 3 are for different resolutions.
+    #tm.UploadDel(2, curr_id, numbands=650) # 1, 2, 3 are for different resolutions.
+    tm.Upload(1, curr_id, numbands=250, N_part=200) # 1, 2, 3 are for different resolutions.
+    tm.Upload(2, curr_id, numbands=250, N_part=200) # 1, 2, 3 are for different resolutions.
     #tm.Download(1, curr_id)
     #tm.Analyze(1, curr_id)
 
