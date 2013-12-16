@@ -30,10 +30,13 @@
 (set-param! epsSi 11.56) ; dielectric constant
 (set-param! epsAir 1) ; dielectric constant
 
-VAR_RAD
+(define-param epsBack epsAir) ; dielectric constant
+(define-param epsCylH epsSi) ; dielectric constant
+(define-param epsCylV epsSi) ; dielectric constant
 
-VAR_DIEL
-
+(define dielBack (make dielectric (epsilon epsBack)))
+(define dielCylH (make dielectric (epsilon epsCylH)))
+(define dielCylV (make dielectric (epsilon epsCylV)))
 
 ;;; Fill the space with background dielectric
 

@@ -8,10 +8,28 @@ import os
 
 maxrad = 0.5
 
+
+class SaveFile():
+    def __init__(self, id, str_rad):
+        folder = './dat/{0}/{0}_{1}/'.format(id, str_rad)
+        self.make   = './dat/' + curr_id + '/' + curr_id + '_params.txt'
+        self.define = './dat/' + curr_id + '/' + curr_id + '_centers.txt'
+        self.centers   = './dat/' + curr_id + '/' + curr_id + '_centers_hard.txt'
+
 def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
+
+# substitutes str_new for str_old in file
+def substitute(str_old, str_new, file):
+    cmd = "sed -i~ -e 's/" + str_old + "/" + str_new + "/' " + file
+    os.system(cmd)
+    os.system("rm %s" % (file + '~'))
+
+# copies file to file_new
+def copyfile(file, file_new):
+    os.system("cp %s %s" % (file, file_new))
 
 # assume box length of order 10 (number of points order 100)
 def MakeRad(res, n_s):

@@ -5,7 +5,7 @@
 #PBS -M chaneyl@princeton.edu
 module load openmpi/gcc/1.4.5/64
 module load hdf5/gcc/openmpi-1.4.5/1.8.8
-cd /home/chaneyl/VAR_CURR_ID/TM
+cd /home/chaneyl/VAR_FOLDER
 mkdir out
 mpiexec -n 48 /home/florescu/Exec/MPI_MFT_v1/bin/mft-mpi \
 mesh-size=7 \
