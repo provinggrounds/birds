@@ -30,9 +30,9 @@
 (set-param! epsSi 11.56) ; dielectric constant
 (set-param! epsAir 1) ; dielectric constant
 
-VAR_RAD
+VAR_RAD_CV
 
-VAR_DIEL
+VAR_DIEL_CV
 
 ;;; Fill the space with background dielectric
 (set! default-material  dielBack)

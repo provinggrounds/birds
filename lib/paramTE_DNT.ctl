@@ -30,22 +30,32 @@
 (set-param! epsSi 11.56) ; dielectric constant
 (set-param! epsAir 1) ; dielectric constant
 
-VAR_RAD
+VAR_RAD_CV
 
-VAR_DIEL
-
+VAR_DIEL_CV
 
 ;;; Fill the space with background dielectric
-
 (set! default-material  dielBack)
 
-(set-param! CylinderHorizontalRadius VAR_RADIUS) ;;radius of cylinder , thickness = 2 * CylinderHorizontalRadius
+;; Set-up parameters that define the ball-and-stick PA icosahedral lattice
+
+(define-param CylinderVerticalRadius   0.20)
+
+(define-param theta 0)
+(define-param phi   (* pi 0.5))
+
+(define-param CV_R CylinderVerticalRadius)
+;vertical cylinder heights and axes
+(define CV_H infinity)
+;(define CV_A (vector3 0 0 1)) ; A: axis to define orientation
+
+(define CV_A (lambda (theta phi) (vector3 (* (sin theta) (cos phi) ) (* (sin theta) (sin phi) ) (* (cos theta) 1 ))))
 
 (include VAR_DEF_FILENAME )
 
-(include VAR_MAKE_FILENAME )              
+(include VAR_MAKE_FILENAME)
 
- ;;; Set-up the k-space analysis
+;;; Set-up the k-space analysis
 ;;Set-up the high-symmetry points of the Brillouin zone for the SC lattice,
 
 (define Gamma     (vector3 0    0   0))     		; Gamma point
@@ -74,7 +84,8 @@ VAR_DIEL
 
 (set-param! resolution (vector3 (* res_x res) (* res_y res) 1)) ; use a 8x8x8 grid
 
-;;(define fname (string-append VAR_STRING_APPEND))
+(set! filename-prefix VAR_STRING_APPEND)
 
-;; run the simulation
+;; Run calculation
 (run-te)
+;;(run-te (output-at-kpoint X  fix-efield-phase output-efield-z)) ; run simulation and output E-field at point X
