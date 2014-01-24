@@ -10,7 +10,6 @@ import matplotlib.colors as colors
 import matplotlib.cm as cmx
 import numpy as np
 
-
 # parameters for plotting figures
 mpl.rcParams['xtick.major.size'] = 6
 mpl.rcParams['ytick.major.size'] = 6
@@ -21,13 +20,13 @@ mpl.rcParams['figure.subplot.top'] = 0.8
 mpl.rcParams['figure.subplot.wspace'] = 0.1
 mpl.rcParams['figure.subplot.hspace'] = 0.1
 
-
 # makes sure folder for file [f] exists
 def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
 
+# since each pair of neighbors is overcounted
 def unique_rows(data):
     uniq = np.unique(data.view(data.dtype.descr * data.shape[1]))
     return uniq.view(data.dtype).reshape(-1, data.shape[1])

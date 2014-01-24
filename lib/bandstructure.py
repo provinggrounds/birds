@@ -7,11 +7,18 @@
 
 import os
 import csv
+import mhudtools as mht
 
 class SaveFileName():
     def __init__(self, sample_id, polarization):
         folder = './dat/{0}/'.format(sample_id)
         self.bands = '{0}{1}_{2}_bands.csv'.format(folder,sample_id, polarization)
+        
+class SaveFileNameMin():
+    def __init__(self, sample_id, polarization, min):
+        folder = './dat/{0}/'.format(sample_id)
+        self.bands = '{0}{1}_{2}_bands.csv'.format(folder,sample_id, polarization)
+        self.minbands = '{0}{1}_{2}_bands_'.format(folder,sample_id, polarization) + '{:0.2f}.csv'.format(min)
 
 # extracts parameters from filename
 # example filename:
@@ -205,59 +212,61 @@ def ExtractBandsFromNewFile(filepath):
             f.write('\n')
         f.close()
 
+def GetBandsMin(sample_id, min, polarization):
+    
+    #print 'outputting all gaps for {0} greater than {:0.4f}'.format(sample_id, float(min))
+    
+    # we just need to get n_s
+    [N, n_s, n_c, r_c, coords] = mht.read(sample_id)
 
-def CalcBandsMin(sample_id, min, n_s):
+    files = SaveFileNameMin(sample_id, polarization, min)
     
-    print 'outputting all gaps for ' + sample_id + ' greater than {:0.4f}'.format(float(min))
+    fin = files.bands
+    fout = files.minbands
     
-    fname_band = './dat/' + sample_id + '/' + sample_id + '_bands.csv'
-    lines = list(csv.reader( open(fname_band, 'rb') , delimiter = '\t' ))
-    lines = [line[0].split(',') for line in lines]
-    numrows = len(lines)
-    numcols = len(lines[0])
-    
+    # read existing file
+    [firsttime, lines, rows, cols, numbands_initial] = ReadBands(fin, n_s)
+
     y_ind = []
     
-    for r in range(1, numrows):
-        for c in range(n_s+3-1, numcols, 3):
-            if c>=len(lines[r]):
+    # searches through all rows, from 1 to end.
+    # c goes through indices of where the gaps appear
+    # since there are 2 * n_s + 1 parameters, and the first band
+    # is not indexed, the first column index is
+    # 2 * n_s + 1 + 2
+    
+    min = float(min)
+    
+    for r in range(1, rows):
+        for c in range(2 * n_s + 1 + 2, cols, 3):
+            if c>=len(lines[r]) or lines[r][c] == "":
                 break
-            if lines[r][c] == "":
-                break
-            cur_num = float(lines[r][c])
-            if cur_num > float(min):
-                print 'comparing {:0.4f} to {:0.4f}'.format(cur_num, float(min))
+            cur_gap = float(lines[r][c])
+            if cur_gap > min:
+                print 'comparing {:0.4f} to {:0.4f}'.format(cur_gap, min)
                 y_ind.append(c)
     y_ind = list(set(y_ind))
     y_ind.sort()
     
-    out_name = './dat/' + sample_id + '/' + sample_id + '_bands_min{:0.2f}'.format(float(min)) + '.csv'
-    
-    with open(out_name,'w+') as fout:
-        
-        for x in range(numrows):
-            print lines[x][0],
-            print lines[x][1],
-            fout.write(lines[x][0])
-            fout.write(',')
-            fout.write(lines[x][1])
-            fout.write(',')
-            print '|',
+    with open(fout,'w+') as f:
+        for x in range(rows):
+            for c in range(2*n_s + 1):
+                f.write(lines[x][c] + ',')
+                print lines[x][c],
+                print '|',
             for y in y_ind:
                 if y>=len(lines[x]):
                     break
                 print lines[x][y-1],
                 print lines[x][y+1],
                 print lines[x][y],
-                fout.write(lines[x][y-1])
-                fout.write(',')
-                fout.write(lines[x][y+1])
-                fout.write(',')
-                fout.write(lines[x][y])
-                fout.write(',')
+                f.write(lines[x][y-1])
+                f.write(',')
+                f.write(lines[x][y+1])
+                f.write(',')
+                f.write(lines[x][y])
+                f.write(',')
                 print '|',
-            fout.write('\n')
+            f.write('\n')
             print '\n'
-        
-        fout.close()
 
